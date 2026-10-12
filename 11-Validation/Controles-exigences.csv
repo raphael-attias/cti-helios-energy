@@ -39,11 +39,15 @@ REQ-15,"chaque objet du bundle porte sa source et sa date de collecte (SCO : x_h
 REQ-15,les 39 observables portent aussi la cote Admiralty de l'équipe (x_helios_admiralty),OK,
 REQ-19,"40 IoC cotés par l'équipe, fiabilité A-F et crédibilité 1-6 séparées (Cotes-Admiralty-IoC.csv)",OK,40
 REQ-13,"manifeste MISP : les 40 attributs d'IoC portent la cote de l'équipe dans leur commentaire (relu en direct le 2026-10-10 : 40 sur 46 attributs, 0 échec)",OK,40
-REQ-31,Resume-prez-doc.md : tous les liens relatifs pointent vers un fichier existant,OK,"113/113 liens, cassés : []"
-REQ-31,Resume-prez-doc.md : chaque point renvoie à un document complet (au moins autant de « Détail complet » que de points numérotés),OK,22 renvois pour 21 points
+REQ-31,Resume-prez-doc.md : tous les liens relatifs pointent vers un fichier existant,OK,"130/130 liens, cassés : []"
+REQ-31,Resume-prez-doc.md : chaque point renvoie à un document complet (au moins autant de « Détail complet » que de points numérotés),OK,23 renvois pour 21 points
 OPT-05,"note dark web : règles (consultation seule, aucune interaction, aucun achat), méthode, journal horodaté, limites",OK,
 OPT-05,"chaque consultation figure au journal de collecte, horodatée, sans donnée envoyée à un tiers",OK,3
 OPT-05,les sources consultées sont enregistrées et cotées (SRC-019 à SRC-021),OK,
+REQ-11,Timeline-incident.md : les 12 événements observés (une ligne par alerte ALERT-001 à 012) avec technique ATT&CK,OK,12
+REQ-11,Timeline-incident.md : chaque événement de Chronologie.csv est repris (12 observés + anomalies + autres repères = 34),OK,34/34
+REQ-11,chaque technique de la chronologie figure dans la matrice ATT&CK vérifiée (artefacts d'abord),OK,"14 techniques, hors matrice : []"
+REQ-31,Resume-prez-doc.md : la chronologie est en tête (avant la section A) et identique à la génération,OK,
 REQ-17,18 lignes avec URL officielle,OK,18
 REQ-17,statut de vérification renseigné,OK,
 REQ-17,"correspondance v18.1/v19.2 : 19 lignes, toutes présentes dans l'une des deux versions",OK,19

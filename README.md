@@ -9,7 +9,7 @@ Investigation CTI sur l'attaquant de l'incident INC-2026-0302 (victime fictive :
 | `fourniture/` | sources originales (lecture seule) | 7 fichiers d'origine : 40 IoC, 12 alertes, 3 fiches de binaires (sans échantillon), mémo, journal brut |
 | `01-Cadrage/` | **livrable final** | note de cadrage (PDF 2 p., remise après l'échéance de fin de J1), planning, rôles |
 | `02-Artefacts/`, `03-Sources/` | livrables et preuves | inventaires, intégrité, registre des sources, journal de collecte |
-| `04-Analyse/` | **livrable final** | analyses IoC, alertes et fiches, chronologie, ATT&CK, Diamond, attribution (cluster non attribué), cartographie, matrice CID |
+| `04-Analyse/` | **livrable final** | analyses IoC, alertes et fiches, **chronologie de l'incident (`Timeline-incident.md`, frise et tableau ATT&CK)**, ATT&CK, Diamond, attribution (cluster non attribué), cartographie, matrice CID |
 | `05-Plateformes/` | livrables, preuves, scripts | **méthodes d'intégration et d'import**, **investigation OpenCTI finale**, vérifications MISP, OpenCTI, TheHive, Cortex, guide de consultation, journaux et scripts d'ingestion |
 | `06-STIX-Graphe/` | livrable et preuves | bundle STIX 2.1, graphe et script, validation, justification des 25 objets liés, écarts avec les plateformes |
 | `07-Detection-Tests/` | livrable et preuves | 15 règles Sigma, adaptations Wazuh, tests et réconciliation |

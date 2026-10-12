@@ -82,6 +82,7 @@ Tout est dans `00-Pilotage/Decisions-et-limites-finales.md`. À retenir : le dé
 ## 9. Commandes utiles
 
 - Tout régénérer dans l'ordre (local, aucune écriture en production) : `bash 11-Validation/regenerer-tout.sh`. Enchaîne la chaîne STIX, les tests Sigma, la matrice, le tableau de bord, la revue, les PDF modifiés, `controle-coherence.py` (42 contrôles), `controles-exigences.py` (89 contrôles, 2 KO attendus sur REQ-15), le manifeste et `verifier-manifest.py`.
+- Chronologie de présentation : `python3 04-Analyse/generer-timeline.py` (génère `04-Analyse/Timeline-incident.md` et le bloc balisé `TIMELINE` en tête de `10-Soutenance/Resume-prez-doc.md` depuis `Chronologie.csv`, `Matrice-analyse-alertes.csv` et `Matrice-ATTACK.csv` ; ne pas éditer le bloc à la main).
 - Chaîne STIX seule : `bash 11-Validation/regenerer-stix.sh` (bundle, validation 0 erreur et 218 avertissements classés, graphe, inventaire, `Derives-du-bundle.txt`).
 - Les statuts ne se modifient pas à la main : éditer `11-Validation/maj-matrice.py`, puis relancer `regenerer-tout.sh`. `Tableau-de-bord.md`, `Exigences-origine.md`, `Suivi-RFI.md` et `Audit-final-criteres.md` sont générés ; `Cloture-finale-mission.md` est rédigé à la main à partir de leurs chiffres.
 - Le rendu PDF n'est pas déterministe (dates en métadonnées) : ne régénérer que les PDF dont le Markdown a changé.

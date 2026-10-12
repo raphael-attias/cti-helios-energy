@@ -4,6 +4,7 @@
 set -eu
 B="$(cd "$(dirname "$0")/.." && pwd)"; PY=/Users/rapatt/Projet/cti-helios-env/.venv/bin/python; cd "$B"
 bash 11-Validation/regenerer-stix.sh
+"$PY" 04-Analyse/generer-timeline.py
 "$PY" 07-Detection-Tests/tester-sigma.py > /dev/null && echo "tests Sigma rejoués"
 "$PY" 11-Validation/maj-matrice.py | head -3
 "$PY" 11-Validation/generer-exigences-origine.py

@@ -6,7 +6,7 @@
   OK  original inchangé 03_alertes_siem_12.csv
   OK  original inchangé 04_memo_technique_SOC.md
   OK  original inchangé 05_journaux_bruts.log
-  OK  arborescence cible : fichiers présents : 57/57 ; manquants : []
+  OK  arborescence cible : fichiers présents : 58/58 ; manquants : []
   OK  dossiers sigma, wazuh, jeux-tests non vides
   OK  pagination 01-Cadrage/Note-cadrage.pdf : 2 pages (attendu 2 à 2) ; texte extractible 4408 caractères
   OK  pagination 08-Rapports/Rapport-strategique.pdf : 2 pages (attendu 2 à 3) ; texte extractible 6463 caractères

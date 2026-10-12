@@ -1,19 +1,19 @@
 chemin_relatif,format,taille_octets,sha256,date_modification_utc,statut_de_validation
 .DS_Store,texte,6148,3ff75a9ccc506e490729585166172635befeff2a39193da027bcf18f732c75c3,2026-10-07T06:41Z,support non évalué séparément
-AGENTS.md,md,13291,08589b2e37109f5a9a061172a3d3c78c49a2094185cb5d30f8fdbab51b66c27d,2026-10-12T05:39Z,support non évalué séparément
-README.md,md,3407,18a8408cf29887ff04436b84c9d8bf9f8f29ebcc0b7007c44e057941786d294e,2026-10-10T11:20Z,support non évalué séparément
+AGENTS.md,md,13604,281eec7c6e0678f18d4fcc5c4dfb3afca08f1f6d1c0f86184a7d1a99bd167b5d,2026-10-12T14:18Z,support non évalué séparément
+README.md,md,3475,80797ccf7d9fe528062330af6720e93e627fb2d57e05907a913e72a4a184bdb6,2026-10-12T14:18Z,support non évalué séparément
 07-Detection-Tests/Limites-detection.md,md,2375,6a4922399d7433d76c25fd8a9b758e959097271b979160cf97035cba6f013496,2026-10-07T15:39Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/Plan-tests.md,md,8405,e9fc6e9819cb149b7186e5fde6e40ec9df60f46e2ba6dec3b726313285608c10,2026-10-06T20:48Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/Reconciliation-tests.md,md,6245,af7609b04a8a02cfdfda6b9d4f41be8759ba96b42be62d96597de32ec94cad13,2026-10-06T20:48Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/Registre-regles.csv,csv,4490,127a55e88313b9d7991ce380d899b9e3930baf6d2fb0e6c932e9d91f712b7071,2026-10-06T10:14Z,REQ-22 : SATISFAIT ET CONTRÔLÉ
-07-Detection-Tests/Resultats-tests.csv,csv,18418,3ec22efc964fb10806b85248eedae2044aaaf4c3a82e0b31c1295c19201fdccd,2026-10-12T13:28Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
+07-Detection-Tests/Resultats-tests.csv,csv,18418,3ec22efc964fb10806b85248eedae2044aaaf4c3a82e0b31c1295c19201fdccd,2026-10-12T14:19Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/Resultats-wazuh.csv,csv,18375,a06aedbcf18a003a4bfd04cb5f0b404322b3b9556ed398a7e66cb41d6072a437,2026-10-06T12:02Z,OPT-03 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/generer-jeux-wazuh.py,py,5468,1194337750d141446bc98fcfaa6deed6aab39ed9ebc11511ceb66643be94addc,2026-10-06T10:16Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/generer-sigma.py,py,11448,1a0cb0090d6476841cdd111bd270be91d76fca6bf89c52f7f5b97699c8db10db,2026-10-06T10:14Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/tester-sigma.py,py,12782,0be3b7c5a41d7fac2a0cda10e5078453836c766cc62a5ac9b26058ed908f4e36,2026-10-06T10:12Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/resultats/sortie-tester-sigma.txt,txt,2673,6b3be1ac64ce92d4f872fc410466d0ca1f6642c7463d70e3c58929ebac2543d5,2026-10-06T10:14Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
-07-Detection-Tests/resultats/synthese-par-regle.csv,csv,767,ea67d7b891264e0a6ab635d6604794a06d1d592d633c5420f1fb349f53c0a1ed,2026-10-12T13:28Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
-07-Detection-Tests/resultats/validation-syntaxique-et-conversion.csv,csv,2348,26fa71164d1da27a950202d1a3d789dcca7d49db121a4491ccb49faa1818dcd6,2026-10-12T13:28Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
+07-Detection-Tests/resultats/synthese-par-regle.csv,csv,767,ea67d7b891264e0a6ab635d6604794a06d1d592d633c5420f1fb349f53c0a1ed,2026-10-12T14:19Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
+07-Detection-Tests/resultats/validation-syntaxique-et-conversion.csv,csv,2348,26fa71164d1da27a950202d1a3d789dcca7d49db121a4491ccb49faa1818dcd6,2026-10-12T14:19Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/resultats/wazuh-e2e-alertes-helios.json,json,18132,35aeaaa1d771f0408f0ecace0766cae1280f9ce9f949bda3383d91bf1e377e9b,2026-10-06T10:24Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/resultats/wazuh-logtest-brut.json,json,14273,64e40c2cc8a3ebc91b793a6ab217c56891267ddba26899c1e220438ba7e200a8,2026-10-06T10:21Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
 07-Detection-Tests/resultats/wazuh-logtest-production-brut.json,json,14262,14434e9bfe2fdfec55af6df8f4bab68e8ea8e8203f2e08c3e0f3769622b36c5c,2026-10-06T10:26Z,REQ-23 : SATISFAIT ET CONTRÔLÉ
@@ -106,9 +106,11 @@ README.md,md,3407,18a8408cf29887ff04436b84c9d8bf9f8f29ebcc0b7007c44e057941786d29
 04-Analyse/Matrice-risques-CID-rapport.md,md,5945,2acdfdd3fccb181f69abe374029876e2e6e2000399f1794bd1a1d7980c9644e9,2026-10-07T20:37Z,REQ-20 : SATISFAIT ET CONTRÔLÉ
 04-Analyse/Matrice-risques-CID.csv,csv,3289,ef648d23a369e2f19520dbab83a996d93fb2588d29696f0ac9e794ae5f7302a7,2026-10-06T11:58Z,REQ-20 : SATISFAIT ET CONTRÔLÉ
 04-Analyse/Matrice-risques-CID.pdf,pdf,123027,92548efc064efb3e1a4a48e4f31391b782d58e46cdc523d00b761243abd1c2ac,2026-10-07T20:44Z,REQ-20 : SATISFAIT ET CONTRÔLÉ
+04-Analyse/Timeline-incident.md,md,8540,3cb96adf9021a8c16ae3c06ae9c543d7e18585306f29cc0bb601cb69ae7ffda2,2026-10-12T14:19Z,support non évalué séparément
 04-Analyse/Version-ATTACK.md,md,4615,57c546f0cc637f2efc01bba32505cf734beec26adb79a9f773c007c14af2d351,2026-10-06T21:42Z,support non évalué séparément
 04-Analyse/generer-analyse-alertes.py,py,43894,f2df9132e0e38629e75f7ca9edc8c8b9ed3b250f80a49e30c4f335ec5da6324f,2026-10-07T15:40Z,support non évalué séparément
 04-Analyse/generer-analyse-ioc.py,py,8068,5efb597c60e93b45cb7c96ddbee69fcf958a1ad105b30e7b360a5b12af3f2940,2026-10-10T10:52Z,support non évalué séparément
+04-Analyse/generer-timeline.py,py,9083,b1067d8c3c55f7fee97e12c8304d330e1e1d0683149d281b6dc1e70071e5b154,2026-10-12T14:18Z,support non évalué séparément
 04-Analyse/sortie-generer-analyse-alertes.txt,txt,139,0262ce7af7bdbe9d140670a29f60aa525d715c7d47ae629b72d6d5d3b93a71e7,2026-10-06T09:18Z,support non évalué séparément
 04-Analyse/verifier-attack.py,py,4086,8f91e955ec72872d835a1e149d5a1c261d889a06d6d03bde002dde2d8463660d,2026-10-06T21:41Z,support non évalué séparément
 fourniture/00_LISEZ-MOI.md,md,1488,b07b83f22c9d07560207528a6a612eee17864273748a90d73c1c5e0dcbc346fd,2026-09-23T05:40Z,"original fourni, inchangé"
@@ -130,18 +132,18 @@ fourniture/05_journaux_bruts.log,log,32452,bc55524ab7f953e293ebc329c7353e3962c0f
 02-Artefacts/Volumetrie-journal.json,json,229,f89c88f6d3bb78d100499f72f7cd8349640e0325c1bc1b01eb4ae0f08c1cd42d,2026-10-06T09:05Z,support non évalué séparément
 02-Artefacts/generer-inventaires.py,py,9227,6b517c191b582170d059745fbb6aef965dd4cb708f33c219151d99998887a717,2026-10-06T09:05Z,support non évalué séparément
 02-Artefacts/sortie-generer-inventaires.txt,txt,711,7baa7ccb103e672a4962bde76204dfa0d090082d8a0a225c9a529c373cc23af9,2026-10-06T09:05Z,support non évalué séparément
-11-Validation/Audit-final-criteres.md,md,31610,e53e50ef36fc7e22fd7035ff71f9db2cfe886b9838327c0dc63a8fae9719b132,2026-10-12T13:28Z,support non évalué séparément
+11-Validation/Audit-final-criteres.md,md,31503,c87f40a67c342a69bf3f98dc8a72a9a853e86064e275df169e5589aaa4a5d4bf,2026-10-12T14:19Z,support non évalué séparément
 11-Validation/Cloture-finale-mission.md,md,11713,7959d13be99ffc5a662cbf05308a43fbc8e96a37e0b06d2be8fd41421fabcbcf,2026-10-12T05:39Z,support non évalué séparément
 11-Validation/Controle-final.md,md,4459,bb9f788e17f88a6d61b95c85d2f9fabae22ef5b98c3e04a367f0df55b5ff9d16,2026-10-07T20:36Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
 11-Validation/Controle-live-2026-10-07.md,md,5282,85a46bc28416bab1fe76f5915fee72d72d7bdc88aae284c9ded34d81daf3fdbb,2026-10-07T09:48Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
-11-Validation/Controles-exigences.csv,csv,7203,1ce822fbfde0d2a86d9b786b0dd3f7da2898a79fe021733ef6e86fe50b1e1c0d,2026-10-12T13:28Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
+11-Validation/Controles-exigences.csv,csv,7727,ecf7544040ecc852f2223098d634c4109671899eb611126c84fee65e49616f46,2026-10-12T14:19Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
 11-Validation/Couverture-competences.md,md,4485,80fc674748685509cbff42027545bf471ae6e99cebffe5f8afebda89728d2e4e,2026-10-12T05:38Z,REQ-32 : SATISFAIT ET CONTRÔLÉ
 11-Validation/Depot-Git-confirmation.md,md,5860,befe83b5e701c131d15fc6f0c870fe6e8cd9be163ee7ad4ba602a8685b45bd9f,2026-10-07T15:43Z,support non évalué séparément
-11-Validation/Pages-PDF.csv,csv,912,b68cbb1e20ca9b0176de167d787f7f6850cab01395c3e67e2a15d4a97439fc41,2026-10-12T13:28Z,support non évalué séparément
+11-Validation/Pages-PDF.csv,csv,912,b68cbb1e20ca9b0176de167d787f7f6850cab01395c3e67e2a15d4a97439fc41,2026-10-12T14:19Z,support non évalué séparément
 11-Validation/Relecture-finale.md,md,10355,14a6c496025dc283ea0aab78501658d47097b5dbfa16f674cce415d3ce09b1af,2026-10-07T20:49Z,support non évalué séparément
-11-Validation/controle-coherence-sortie.txt,txt,3110,ef0aa72b357bf02a5859a11711fcbd91b96fa2a6797cd5ea7d5981c839f5fa5e,2026-10-12T13:28Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
-11-Validation/controle-coherence.py,py,10755,31d1fc40d8efab82cfb3d3422f5f5a8e8d18d9996de7c294f54e5f32e71b936f,2026-10-10T11:20Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
-11-Validation/controles-exigences.py,py,21965,5024742623e078b5021f7498625c5c1c57eb96d09de9bee1f89272d7cb652e67,2026-10-12T05:40Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
+11-Validation/controle-coherence-sortie.txt,txt,3110,046fedf97d92b2e8f9dcf0649fff673d5a5059c7fccaaecd79cd525720cebf2a,2026-10-12T14:19Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
+11-Validation/controle-coherence.py,py,10787,5c0d58f8e83ab2115f849425d5396e6abb943b13b5223478e4b15d23f83fc745,2026-10-12T14:18Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
+11-Validation/controles-exigences.py,py,23282,ebe3f09082cd9804b52171e18d0491590e70653f98ffb40334f9809e8feaaa7a,2026-10-12T14:19Z,REQ-34 : SATISFAIT ET CONTRÔLÉ
 11-Validation/generer-audit-final.py,py,14311,a2287f44f2a58bc72f5e021d6702506a4576632ee4fb4bfd562057ca5e589a1c,2026-10-10T11:15Z,support non évalué séparément
 11-Validation/generer-exigences-origine.py,py,8333,8484827ee3233b0f325154a0a09d7a6c40aba5b918bbe1e59a979f8ac6ddaa85,2026-10-07T20:36Z,support non évalué séparément
 11-Validation/generer-manifest.py,py,3730,3a45f92dae13edbf98dcbfc5302909c963f2b9f2a1df9c77506d1ced1f0bdc7c,2026-10-12T13:33Z,REQ-33 : SATISFAIT ET CONTRÔLÉ
@@ -151,7 +153,8 @@ fourniture/05_journaux_bruts.log,log,32452,bc55524ab7f953e293ebc329c7353e3962c0f
 11-Validation/maj-matrice.py,py,23811,bfe516687d229f038b71183adda190b881fa5c5c50475c1b6af49d970e2955b7,2026-10-12T05:40Z,support non évalué séparément
 11-Validation/preparer-depot-git.sh,sh,6199,29605978baab74a661164a586b3efcdc0ece7590642f73175f4677ac907e63d0,2026-10-12T13:32Z,support non évalué séparément
 11-Validation/regenerer-stix.sh,sh,836,43e6722e8584d73d7511f4fd78a7508fed27381e0ec174e746e6354a2d04dece,2026-10-07T09:47Z,support non évalué séparément
-11-Validation/regenerer-tout.sh,sh,1644,87d53a9317585de3c9a90adb09241c691d1c000c1b8e9eb441863351ccaa9ec7,2026-10-07T15:42Z,support non évalué séparément
+11-Validation/regenerer-tout.sh,sh,1681,7300e490424f75aa7e05175e6b7ed494e64f796146bc7cab8f2f4df041c7d6b5,2026-10-12T14:18Z,support non évalué séparément
+11-Validation/synchroniser-depot-git.sh,sh,2660,b42f15b6189f520e88aac1965c5db2e3039afe9a3f4ff4fb06801a0c7aaeceb8,2026-10-12T14:19Z,support non évalué séparément
 11-Validation/verifier-depot.sh,sh,3988,c220417e40fa78b22c981a6dcb307eaa3c07dd029f3436600160d6f921d55abc,2026-10-06T21:56Z,support non évalué séparément
 11-Validation/verifier-manifest.py,py,1326,74122289781185298a656e4261a4342fb306b7a270b9c50f0a75d1e91ac9271a,2026-10-06T21:56Z,support non évalué séparément
 11-Validation/preuves-consultation/misp-evenement-6-entete.jpg,jpg,44776,6cac99578bdaeb4d4c5504ed05c7f5e4f15cdd096e51d41e327f3444a05bbcec,2026-10-06T20:41Z,support non évalué séparément
@@ -171,14 +174,14 @@ fourniture/05_journaux_bruts.log,log,32452,bc55524ab7f953e293ebc329c7353e3962c0f
 11-Validation/preuves-consultation/wazuh-discover-27-alertes.jpg,jpg,72295,58e2e8fbc88c04b62335b6ca94424ab04e7c9e058fa10e83a67c0ef99e030fad,2026-10-06T20:41Z,support non évalué séparément
 11-Validation/preuves-consultation/wazuh-discover-rule-id-27sur27.jpg,jpg,74866,ba3922963a51adc58bf2283874567c52e957ab444cc9ef8ecd62af8816d063d7,2026-10-06T20:42Z,support non évalué séparément
 00-Pilotage/Decisions-et-limites-finales.md,md,9334,ea6759db70eff2ec30c88b16bd5939fd49996aef9b06bddfad39b8ffc790229c,2026-10-07T20:46Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
-00-Pilotage/Exigences-origine.md,md,10993,88e44a865624f7e3dd7a5c61e34bb4e2338fdb79786fed61e3c22632d5dc09af,2026-10-12T13:28Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
+00-Pilotage/Exigences-origine.md,md,10993,92b41c99abffae1f175080a10fe8caf851fb60d5e6bca30eff8143982695d30a,2026-10-12T14:19Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
 00-Pilotage/Insertion-organisation-MISP.md,md,5789,902d994426dabc030250e25177b63b1652b22c70deae6f3b49e9ee6b8d01e475,2026-10-07T15:40Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
 00-Pilotage/Inventaire-infrastructure.md,md,6057,0137ab3d94d5c7d3faad1346f43223041d2b629e36ecb8b7045715be67d44b3d,2026-10-07T15:41Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
 00-Pilotage/Journal-decisions.md,md,12776,632f3817357a7d1acc709fb00c44898ab0ca48d3d774838b6f5b89ed98169f8f,2026-10-12T05:39Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
-00-Pilotage/Matrice-exigences.csv,csv,19542,2f4a9b297d3fda382d0807e1300b36be842e235db32da9ae5a5ffc99bc021452,2026-10-12T13:28Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
+00-Pilotage/Matrice-exigences.csv,csv,19542,f180006e33eb7c4793a3d231b0557d54a40684532292c5960b343b1ebc872a72,2026-10-12T14:19Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
 00-Pilotage/Options-restes-production.md,md,9532,e6444be18a56abc89225bf797379277bd09a0ddb0e03967ad3d1ca4a58529035,2026-10-07T15:40Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
-00-Pilotage/Suivi-RFI.md,md,2435,5cb59fe09bd03d02dadc945091920afcb08f9eb1aa7b67824c3a4e4dae1ce84f,2026-10-12T13:28Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
-00-Pilotage/Tableau-de-bord.md,md,3719,9e75c8a87c36951166102885d091dc5e5d7c27d1013d0b7b301bcd1e78e54568,2026-10-12T13:28Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
+00-Pilotage/Suivi-RFI.md,md,2435,5cb59fe09bd03d02dadc945091920afcb08f9eb1aa7b67824c3a4e4dae1ce84f,2026-10-12T14:19Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
+00-Pilotage/Tableau-de-bord.md,md,3719,9e75c8a87c36951166102885d091dc5e5d7c27d1013d0b7b301bcd1e78e54568,2026-10-12T14:19Z,REQ-35 : SATISFAIT ET CONTRÔLÉ
 08-Rapports/Note-attribution.md,md,3785,77d2cd35de5a0637d3292fc6a7b7de9fccc0e223ffc179b4526d514b705931ef,2026-10-07T20:37Z,REQ-27 : SATISFAIT ET CONTRÔLÉ
 08-Rapports/Note-attribution.pdf,pdf,96666,209fab0517e0c172ab3c85fb52b8232ba87df7a031326ceca6190a8e692449b5,2026-10-06T12:05Z,REQ-27 : SATISFAIT ET CONTRÔLÉ
 08-Rapports/Note-partage-communautaire.md,md,3315,b4e5b3ff9def275bde244cdad3b154c18a2199dd466f6abc0dd24c4015d8d353,2026-10-07T15:39Z,REQ-29 : SATISFAIT ET CONTRÔLÉ
@@ -190,11 +193,11 @@ fourniture/05_journaux_bruts.log,log,32452,bc55524ab7f953e293ebc329c7353e3962c0f
 08-Rapports/Rapport-tactique.md,md,40047,2874b0e7f33332da2975971113c26d31e160d070a729ca88a1a07fac2593f912,2026-10-10T11:14Z,REQ-26 : SATISFAIT ET CONTRÔLÉ
 08-Rapports/Rapport-tactique.pdf,pdf,1032152,a537a0417be2be746d60de01695375de75735a643f78b61c88ea8f9e7a13f07b,2026-10-10T11:14Z,REQ-26 : SATISFAIT ET CONTRÔLÉ
 08-Rapports/composer-rapport-tactique.py,py,16824,62ad112551494c113414f291592bd9f7f4159338b762134379be0fd86b5ce820,2026-10-10T11:14Z,REQ-26 : SATISFAIT ET CONTRÔLÉ
-10-Soutenance/Plan-soutenance.md,md,2061,1d49618868c2b5c59a7a60cf82c97bef38e31269b4a99eff831779b358e15d22,2026-10-12T05:40Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
+10-Soutenance/Plan-soutenance.md,md,2186,f6e4bad0722bc7c0f93e048a7c67e3d4dcaf71cd32143168a0c51e7393e70f21,2026-10-12T14:18Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
 10-Soutenance/Questions-reponses.md,md,6367,70f91f1d3efb5c7195a7576d34dd4580f3cbb15ccb584ec74f87770d35e202b6,2026-10-10T11:14Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
 10-Soutenance/Questions-reponses.pdf,pdf,68894,6720fd0be481ea9c03e10cdf1265ec4566201f598130dace46a5bf5b87bf9ff1,2026-10-10T11:14Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
-10-Soutenance/Resume-prez-doc.md,md,24387,4632995e589aaf8a781e289c50577dad5f201e70cc5e2a6f4f7b6cd113bfde6c,2026-10-12T05:40Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
-10-Soutenance/Support-soutenance.pdf,pdf,794633,2e73efb554c93ba65a363a17befc4ef67c561aa6782e072282a9e94d2c6bb380,2026-10-12T13:28Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
+10-Soutenance/Resume-prez-doc.md,md,29221,dc06924180d577a0d7dd63efddb6bc121de4125d90e7c886404506ba5a6dfa2d,2026-10-12T14:19Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
+10-Soutenance/Support-soutenance.pdf,pdf,791492,d9d721dd4205c91055107af636495c413fc6e11adcef5e5c1203cfd06710e72b,2026-10-12T14:19Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
 10-Soutenance/generer-support.py,py,12473,6c3581c2caaaf87c96cbad07118d6050b90e0bef10ad814cecbf59f634aa927d,2026-10-10T11:14Z,REQ-31 : SATISFAIT ET CONTRÔLÉ
 03-Sources/Darkweb-consultatif.md,md,6747,f19b2e8def3e118efe7d1004f0ca3566daccb14d0deeaa467ae1aa96832f5bd8,2026-10-12T05:38Z,REQ-06 : SATISFAIT ET CONTRÔLÉ
 03-Sources/Journal-collecte.csv,csv,5933,7559bc7bbf61f43ca6c9c1962095811041bbf2aef97a35522d7dca07b92d54be,2026-10-12T05:38Z,REQ-06 : SATISFAIT ET CONTRÔLÉ
@@ -216,20 +219,20 @@ fourniture/05_journaux_bruts.log,log,32452,bc55524ab7f953e293ebc329c7353e3962c0f
 99-Historique/pieces-jointes-opencti-avant-remplacement/Rapport-tactique-version-finale-2026-10-07-avant-md.pdf,pdf,1031071,3435f4cdc827d74eee315eabaae4b6fdf38738c3dc068a6773602d670643a15c,2026-10-10T11:13Z,support non évalué séparément
 99-Historique/pieces-jointes-opencti-avant-remplacement/Rapport-tactique-version-intermediaire-2026-10-07.pdf,pdf,1007739,5c904ee33a515fe88a50c99afbe1a1b73741d9b6c0070ccbf3bff121beeeb419,2026-10-07T20:49Z,support non évalué séparément
 99-Historique/pieces-jointes-opencti-avant-remplacement/Rapport-tactique.pdf,pdf,813014,2e508c46c048b2f9873f80aeb136c14500bbc8c9e5061d55f395410ea6f0b76e,2026-10-07T20:40Z,support non évalué séparément
-06-STIX-Graphe/Bundle-STIX.json,json,112521,7c8eb3651817e2d1d7c8b3a77c79c9fc23d399b2c743e8d723eb2adca2981053,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Derives-du-bundle.txt,txt,65,a1d15b384e865bcfc6a35489b2e41549f76668b0c6b6282fb6575c8c69d3bc45,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Bundle-STIX.json,json,112521,7c8eb3651817e2d1d7c8b3a77c79c9fc23d399b2c743e8d723eb2adca2981053,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Derives-du-bundle.txt,txt,65,a1d15b384e865bcfc6a35489b2e41549f76668b0c6b6282fb6575c8c69d3bc45,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/Ecarts-bundle-plateformes.csv,csv,5120,0797207d01c0d495efce6a01aa5576e0bc7218ac609ab9726818e8d586e201eb,2026-10-07T20:38Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/Ecarts-bundle-plateformes.md,md,7215,54c35ae0e4ae8677de1e561ebec8b0928476d9ca893bcc34121790d0e35d75d8,2026-10-07T20:38Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/Export-MISP-brut.json,json,33415,16b70f60497ecfc7e8b05e34176fff098f752bb2d6e4327fcf351685c0eb6800,2026-10-06T11:52Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Graphe-CTI-annexe-portrait.png,png,677412,c4563c13b5fac455e2187e7ae7ee870f69cdd38c3b04c0a60110c0ce9661191c,2026-10-12T13:28Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Graphe-CTI.pdf,pdf,52376,50207a3a91093186e3637ee5618839d4a97d274bc2017dbbb2ec566d971e22cc,2026-10-12T13:28Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Graphe-CTI.png,png,636086,90ea8469632f040614e9e9b539b5cc234865b3ab0a1104ec0c030c8b11dac162,2026-10-12T13:28Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Inventaire-liaison-STIX.csv,csv,65990,dd7340dcc48fc88a14500cfe3b13b1be6ec0754a6e31c2e20a74e30432f42381,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Inventaire-objets-STIX.csv,csv,28315,c1cfd0d720bfba241cade1d999225da7c1573e58cc87d461a6e01e12a51c6c69,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Justification-25-objets-lies.md,md,15139,f769f84c20388ecf4d2168a74991aa9a9ae7cab3022fe14b29fb8bae2515ae2d,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Liaison-STIX.json,json,1004,9fea97da549fe5b1e073707e529f6352809bebf0fef6ce08698c675dc0a794ba,2026-10-12T13:28Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Graphe-CTI-annexe-portrait.png,png,673704,55ec5e0a9554c95a1980cc56279d7d99cc0c27987861ed73e4f78807148dd2cf,2026-10-12T14:19Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Graphe-CTI.pdf,pdf,52314,83c42699a605097e0c57f26477f44c2159b60f78495de3429971722d34ac0ed1,2026-10-12T14:19Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Graphe-CTI.png,png,630794,121761a514a25ce122c44ed6eca81eb3bea7f53214a125f6777e6a28296dc43d,2026-10-12T14:19Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Inventaire-liaison-STIX.csv,csv,65990,dd7340dcc48fc88a14500cfe3b13b1be6ec0754a6e31c2e20a74e30432f42381,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Inventaire-objets-STIX.csv,csv,28315,c1cfd0d720bfba241cade1d999225da7c1573e58cc87d461a6e01e12a51c6c69,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Justification-25-objets-lies.md,md,15139,f769f84c20388ecf4d2168a74991aa9a9ae7cab3022fe14b29fb8bae2515ae2d,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Liaison-STIX.json,json,1004,9fea97da549fe5b1e073707e529f6352809bebf0fef6ce08698c675dc0a794ba,2026-10-12T14:19Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/Rapport-validation-STIX.md,md,14517,8a230bcef51c6f512e6f4a37345e5df9fd0775860f08c9bf0f61566c4328f0b4,2026-10-10T10:56Z,REQ-16 : SATISFAIT ET CONTRÔLÉ
-06-STIX-Graphe/Rapport-validation-sortie.txt,txt,45832,987962c1b3f205635ccc099dfa7c74e19ead67343c939af06258ee510e2aebf4,2026-10-12T13:28Z,REQ-16 : SATISFAIT ET CONTRÔLÉ
+06-STIX-Graphe/Rapport-validation-sortie.txt,txt,45832,987962c1b3f205635ccc099dfa7c74e19ead67343c939af06258ee510e2aebf4,2026-10-12T14:19Z,REQ-16 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/Script-generation-graphe.py,py,5468,a7900c3b04eedf93b069f6186c2136b2d2f6c147a673954142381681134054a8,2026-10-06T12:12Z,REQ-24 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/generer-bundle.py,py,25097,fe21d5fd8d6ab843208a69f8251ec6717915e23fe20518aee13f79080401dc3f,2026-10-10T10:55Z,REQ-15 : SATISFAIT ET CONTRÔLÉ
 06-STIX-Graphe/generer-graphe.py,py,6235,207328f925e4b0a558fabb2e2bd27096b710c0a45fed125e16d27e8fb05a37c7,2026-10-07T20:48Z,REQ-24 : SATISFAIT ET CONTRÔLÉ

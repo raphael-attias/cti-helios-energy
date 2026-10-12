@@ -28,7 +28,7 @@ Le dénominateur n'a pas été ajusté pour améliorer un pourcentage : la corre
 | REQ-08 | Planning 35 h | brief §2 (5 jours, 35 h), §5 `Planning-35h.md` | SATISFAIT ET CONTRÔLÉ | 3/3 OK | non |
 | REQ-09 | Rôles et communication | brief §2 (équipe de 2 ou 3), §5 `Roles-et-communication.md` | SATISFAIT ET CONTRÔLÉ | 2/2 OK | oui : titulaires et rôles à fournir par l'équipe |
 | REQ-10 | Analyse des IoC, alertes, binaires | brief §5 `04-Analyse`, §8 (analyse des IoC, alertes, binaires) | SATISFAIT ET CONTRÔLÉ | 7/7 OK | oui : jugement analytique des 12 alertes |
-| REQ-11 | Chronologie | brief §8 (chronologie à 7 colonnes), §5 `Chronologie.csv` | SATISFAIT ET CONTRÔLÉ | 4/4 OK | oui : interprétation des contradictions |
+| REQ-11 | Chronologie | brief §8 (chronologie à 7 colonnes), §5 `Chronologie.csv` | SATISFAIT ET CONTRÔLÉ | 7/7 OK | oui : interprétation des contradictions |
 | REQ-12 | Enrichissement par sources ouvertes tracé | brief §2 (« enrichir depuis des sources ouvertes ») | SATISFAIT ET CONTRÔLÉ | 2/2 OK | non |
 | REQ-13 | Événement MISP dédié ingéré | brief §2 et §7 (MISP obligatoire, événement dédié) | SATISFAIT ET CONTRÔLÉ | 1/1 OK | non |
 | REQ-14 | Vérification MISP en lecture | brief §7 (relecture par API, comparaison au manifeste), §5 `Verification-MISP.md` | SATISFAIT ET CONTRÔLÉ | voir preuve | non |
@@ -48,7 +48,7 @@ Le dénominateur n'a pas été ajusté pour améliorer un pourcentage : la corre
 | REQ-28 | Note ANSSI, 1 page | brief §12 (note ANSSI, une page) | SATISFAIT ET CONTRÔLÉ | 4/4 OK | oui : relecture juridique avant tout usage réel |
 | REQ-29 | Note de partage TLP, 1 page | brief §12 (note de partage, une page, TLP) | SATISFAIT ET CONTRÔLÉ | 3/3 OK | oui : politique de partage |
 | REQ-30 | Journaux J1 à J5 | brief §11 (journaux J1 à J5) | SATISFAIT ET CONTRÔLÉ | 7/7 OK | non |
-| REQ-31 | Soutenance : plan, support PDF, questions | brief §12 (soutenance 20 min + 10 min de questions) | SATISFAIT ET CONTRÔLÉ | 6/6 OK | oui : répétition orale |
+| REQ-31 | Soutenance : plan, support PDF, questions | brief §12 (soutenance 20 min + 10 min de questions) | SATISFAIT ET CONTRÔLÉ | 7/7 OK | oui : répétition orale |
 | REQ-32 | Couverture des 8 compétences | brief §13 (huit compétences) | SATISFAIT ET CONTRÔLÉ | 3/3 OK | oui : jugement d'un formateur |
 | REQ-33 | Manifeste des livrables avec hashes | brief §14 (manifeste avec hash) | SATISFAIT ET CONTRÔLÉ | voir preuve | non |
 | REQ-34 | Contrôle final de cohérence | brief §14 (cohérence entre inventaire, MISP, STIX, graphe, rapports, règles) | SATISFAIT ET CONTRÔLÉ | voir preuve | non |

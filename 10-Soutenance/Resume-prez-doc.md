@@ -10,6 +10,42 @@ Vues d'ensemble : [README](../README.md) (carte du dossier) · [Clôture finale]
 2. Les faits suffisent pour **agir** (chasser, isoler, qualifier les données sorties, examiner la notification) mais pas pour **accuser** : le groupe reste **non attribué**.
 3. Tout ce qui est affirmé renvoie à un artefact du dossier. Les manques sont écrits : aucun échantillon de binaire, aucune source indépendante, aucune relecture par un tiers.
 
+<!-- TIMELINE:DEBUT (généré par 04-Analyse/generer-timeline.py : ne pas modifier à la main) -->
+## Chronologie de l'incident
+
+Du 2 au 7 mars 2026 (bornes d'observation, pas début ni fin certains). Heures UTC. Chaque ligne repose sur une alerte retrouvée dans le journal brut.
+
+```mermaid
+timeline
+    title Intrusion INC-2026-0302 (heures UTC, bornes d'observation)
+    2 mars : 08:31 PowerShell masqué lancé par Word : 08:42 téléchargement d'un exécutable de 421 376 octets : 08:46 tâche planifiée imitant Edge : 09:16 connexion de balise vers 198.51.100.24
+    3 mars : 10:13 balayage SMB et RDP du réseau interne
+    4 mars : 01:48 ouverture RDP du compte svc-backup-temp : 11:05 thread distant dans explorer.exe
+    5 mars : 14:07 accès mémoire à LSASS sur le contrôleur de domaine : 14:12 compte svc-backup-temp créé puis supprimé : 15:31 2,47 Go sortis en clair vers 203.0.113.28
+    6 mars : 03:10 contact du domaine de repli
+    7 mars : 09:02 journal Security effacé
+```
+
+| # | Date et heure (UTC) | Phase | Hôte | Ce qui est observé | Technique ATT&CK | Confiance | Preuve |
+|---|---|---|---|---|---|---|---|
+| 1 | 02/03 08:31 | Exécution | `comptabilite-07` | PowerShell masqué lancé par Word | T1059.001 PowerShell (observée) ; T1564.003 Hidden Window (observée) | élevée | [ALERT-001](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 2 | 02/03 08:42 | Chargement d'outil | `comptabilite-07` | Téléchargement d'un exécutable de 421 376 octets | T1105 Ingress Tool Transfer (observée) | élevée | [ALERT-002](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 3 | 02/03 08:46 | Persistance | `comptabilite-07` | Tâche planifiée imitant Edge | T1053.005 Scheduled Task (observée) | moyenne | [ALERT-003](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 4 | 02/03 09:16 | Commande et contrôle | `comptabilite-07` | Connexion de balise vers 198.51.100.24 | T1071.001 Web Protocols (probable) | moyenne | [ALERT-004](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 5 | 03/03 10:13 | Découverte | `comptabilite-07` | Balayage SMB et RDP du réseau interne | T1046 Network Service Discovery (observée) | élevée | [ALERT-006](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 6 | 04/03 01:48 | Mouvement latéral | `srv-fichiers-02` | Ouverture RDP du compte svc-backup-temp | T1021.001 Remote Desktop Protocol (observée) ; T1078 Valid Accounts (probable) | moyenne | [ALERT-007](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 7 | 04/03 11:05 | Injection de code | `srv-fichiers-02` | Thread distant dans explorer.exe | T1055 Process Injection (observée) | élevée | [ALERT-008](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 8 | 05/03 14:07 | Accès aux identifiants | `dc-01` | Accès mémoire à LSASS sur le contrôleur de domaine | T1003.001 LSASS Memory (probable) | élevée | [ALERT-005](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 9 | 05/03 14:12 | Persistance (compte) | `dc-01` | Compte svc-backup-temp créé puis supprimé | T1136.002 Domain Account (probable) | moyenne | [ALERT-009](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 10 | 05/03 15:31 | Exfiltration | `dc-01` | 2,47 Go sortis en clair vers 203.0.113.28 | T1048.003 Exfiltration Over Unencrypted Non-C2 Protocol (probable) | moyenne | [ALERT-010](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 11 | 06/03 03:10 | Commande et contrôle (repli) | `srv-fichiers-02` | Contact du domaine de repli | T1008 Fallback Channels (probable) ; T1071.001 Web Protocols (probable) | faible à moyenne | [ALERT-011](../04-Analyse/Matrice-analyse-alertes.csv) |
+| 12 | 07/03 09:02 | Effacement des traces | `comptabilite-07` | Journal Security effacé | T1685.005 Clear Windows Event Logs (observée) | élevée | [ALERT-012](../04-Analyse/Matrice-analyse-alertes.csv) |
+
+**Lecture** : entrée par un document Office qui lance PowerShell masqué sur le poste de la comptabilité (2 mars), puis balayage interne (3 mars), rebond RDP et injection sur un serveur (4 mars), accès aux identifiants et sortie de 2,47 Go depuis le contrôleur de domaine (5 mars), canal de repli (6 mars), effacement du journal de sécurité (7 mars). Le compte `svc-backup-temp` est utilisé 36 heures avant sa création : anomalie signalée, non résolue.
+
+**Détail complet** : [Chronologie de présentation, avec anomalies et repères déclarés](../04-Analyse/Timeline-incident.md) · [Chronologie.csv (34 événements)](../04-Analyse/Chronologie.csv) · [Matrice ATT&CK](../04-Analyse/Matrice-ATTACK.csv) · [Analyse des alertes](../04-Analyse/Analyse-alertes.md)
+<!-- TIMELINE:FIN -->
+
 ---
 
 # A. Points à valider
@@ -69,8 +105,9 @@ Vues d'ensemble : [README](../README.md) (carte du dossier) · [Clôture finale]
 
 | # | Point | Durée | Sections |
 |---|---|---|---|
-| 1 | Cadrage et dossier reçu | 2 min | [1](#1-cadrage-et-périmètre) et [2](#2-ce-qui-a-été-reçu) |
-| 2 | Sources, dark web, IoC | 3 min | [3 à 5](#3-sources-et-traçabilité) |
+| 0 | Chronologie de l'incident | 2 min | [chronologie](#chronologie-de-lincident) |
+| 1 | Cadrage et dossier reçu | 1 min | [1](#1-cadrage-et-périmètre) et [2](#2-ce-qui-a-été-reçu) |
+| 2 | Sources, dark web, IoC | 2 min | [3 à 5](#3-sources-et-traçabilité) |
 | 3 | Alertes, chronologie, ATT&CK, Diamond | 4 min | [6 à 9](#6-analyse-des-12-alertes-et-des-fiches-de-binaires) |
 | 4 | Attribution | 2 min | [10](#10-attribution) |
 | 5 | Impact et décisions | 3 min | [11 et 12](#11-impact-sur-les-actifs-matrice-cid) |
@@ -121,7 +158,7 @@ Vues d'ensemble : [README](../README.md) (carte du dossier) · [Clôture finale]
 
 **Contenu** : 34 événements, heures normalisées en UTC, chacun rattaché à une ligne de journal avec son niveau de confiance. Les dates sont des bornes d'observation (du 2 au 7 mars), pas le début ni la fin de l'intrusion.
 
-**Détail complet** : [Chronologie](../04-Analyse/Chronologie.csv)
+**Détail complet** : [Chronologie de présentation (frise, 12 événements observés, anomalies)](../04-Analyse/Timeline-incident.md) · [Chronologie.csv](../04-Analyse/Chronologie.csv) · [en tête de ce document](#chronologie-de-lincident)
 
 ## 8. Cartographie ATT&CK
 

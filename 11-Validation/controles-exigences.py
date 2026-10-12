@@ -117,6 +117,13 @@ _dw = rd("03-Sources", "Darkweb-consultatif.md"); _jc = [r for r in csvr("03-Sou
 chk("OPT-05", "note dark web : règles (consultation seule, aucune interaction, aucun achat), méthode, journal horodaté, limites", has(_dw, "aucun achat") and has(_dw, "aucune interaction") and has(_dw, "journal des consultations") and has(_dw, "limites"))
 chk("OPT-05", "chaque consultation figure au journal de collecte, horodatée, sans donnée envoyée à un tiers", len(_jc) >= 3 and all(r["date_utc"].startswith("2026-10-12 ") and r["donnees_envoyees_a_un_tiers"].lower().startswith("non") for r in _jc), len(_jc))
 chk("OPT-05", "les sources consultées sont enregistrées et cotées (SRC-019 à SRC-021)", {"SRC-019", "SRC-020", "SRC-021"} <= {r["id"] for r in rs if r["fiabilite_admiralty"]})
+_tl = rd("04-Analyse", "Timeline-incident.md"); _ch = csvr("04-Analyse", "Chronologie.csv"); _obs = [r for r in _ch if re.search(r"\(ALERT-\d{3}\)", r["statut"])]
+chk("REQ-11", "Timeline-incident.md : les 12 événements observés (une ligne par alerte ALERT-001 à 012) avec technique ATT&CK", all(f"ALERT-{i:03d}" in _tl for i in range(1, 13)) and len(_obs) == 12, len(_obs))
+chk("REQ-11", "Timeline-incident.md : chaque événement de Chronologie.csv est repris (12 observés + anomalies + autres repères = 34)", all(r["id"] in _tl for r in _ch), f"{sum(r['id'] in _tl for r in _ch)}/{len(_ch)}")
+_att_ids = {r["technique_id"] for r in csvr("04-Analyse", "Matrice-ATTACK.csv")}; _tl_t = set(re.findall(r"\bT\d{4}(?:\.\d{3})?\b", _tl))
+chk("REQ-11", "chaque technique de la chronologie figure dans la matrice ATT&CK vérifiée (artefacts d'abord)", _tl_t <= _att_ids and len(_tl_t) >= 10, f"{len(_tl_t)} techniques, hors matrice : {sorted(_tl_t - _att_ids)}")
+_rzt = rd("10-Soutenance", "Resume-prez-doc.md")
+chk("REQ-31", "Resume-prez-doc.md : la chronologie est en tête (avant la section A) et identique à la génération", _rzt.find("TIMELINE:DEBUT") != -1 and _rzt.find("TIMELINE:DEBUT") < _rzt.find("# A. Points à valider") and all(f"ALERT-{i:03d}" in _rzt.split("TIMELINE:FIN")[0] for i in range(1, 13)))
 # ---- REQ-17 ATT&CK
 am = csvr("04-Analyse", "Matrice-ATTACK.csv"); chk("REQ-17", "18 lignes avec URL officielle", len(am) == 18 and all(r["url_officielle"].startswith("https://attack.mitre.org/") for r in am), len(am))
 chk("REQ-17", "statut de vérification renseigné", all(r["statut_verification_officielle"] for r in am))

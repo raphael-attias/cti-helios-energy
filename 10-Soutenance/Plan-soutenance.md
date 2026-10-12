@@ -8,7 +8,7 @@ Support : `Support-soutenance.pdf` (15 diapositives, durées indicatives totalis
 | 2 | Mission et dossier | 1 | 3 fiches, 0 échantillon | `Inventaire-*.csv` |
 | 3 | Méthode et garde-fous | 1 | preuves relues, aucun IoC envoyé à un tiers | `Controle-coherence-sources.csv` |
 | 4 | 21 incohérences | 1 | ne pas corriger, documenter les lectures | `Integrite-et-provenance.md` |
-| 5 | Chronologie | 1 | bornes d'observation, pas début et fin | `Chronologie.csv` |
+| 5 | Chronologie | 1 | bornes d'observation, pas début et fin | `Chronologie.csv` ; version présentable : `04-Analyse/Timeline-incident.md` (frise et tableau ATT&CK, aussi en tête de `Resume-prez-doc.md`) |
 | 6 | 12 alertes | 3 | alerte 8, alerte 9, T1685.005 | `Matrice-analyse-alertes.csv` |
 | 7 | Fiches binaires | 1 | capacité supposée contre comportement observé | `Analyse-binaires.md` |
 | 8 | Graphe | 1 | hypothèses visibles | `Graphe-CTI.png` |
