@@ -1,0 +1,646 @@
+{
+  "statut": "PROPOSITION : NON APPROUVE, NON EXECUTE, AUCUNE ECRITURE DANS OPENCTI",
+  "cible": {
+    "plateforme": "OpenCTI 6.9.21 (édition Communauté, licence d'essai expirée)",
+    "url": "http://172.16.0.4:8180",
+    "instance_ecriture": "A DECIDER (option A instance isolée locale recommandée ; option B production avec garde-fous, voir Plan-modelisation-OpenCTI.md)"
+  },
+  "noms_exacts": {
+    "report": "[CHALLENGE FICTIF] Helios Energy — Investigation CTI",
+    "incident": "[CHALLENGE FICTIF] Helios Energy — Intrusion"
+  },
+  "rapport": {
+    "type_propose": "internal-report",
+    "published": "2026-10-06 (date de rédaction, PAS une date d'incident)",
+    "statut_workflow": "NEW",
+    "contenu_prevu": [
+      "contexte et périmètre",
+      "observations et conclusions documentées",
+      "sources",
+      "limites et incohérences",
+      "attribution hypothétique (identifiée comme telle)",
+      "références aux entités et relations"
+    ],
+    "pieces_jointes_futures": "rapports stratégique et tactique SEULEMENT après production réelle et contrôle (non fournis à ce jour)"
+  },
+  "incident": {
+    "first_seen": "2026-03-02T08:31:00Z (première observation du dossier : ALERT-001 ; NON début certain de l'intrusion)",
+    "last_seen": "2026-03-07T09:02:00Z (dernière observation du dossier : ALERT-012 ; NON fin certaine)",
+    "severity": "non renseignée",
+    "incident_type": "non renseigné",
+    "dates_non_renseignees": [
+      "début réel",
+      "fin réelle",
+      "date de détection par le SOC (le mémo est daté du 2 mars mais décrit des faits postérieurs, I-02)"
+    ],
+    "impacts_soutenus": [
+      "exécution d'une commande PowerShell encodée et masquée sur comptabilite-07",
+      "accès mémoire à lsass.exe sur dc-01",
+      "création puis suppression d'un compte sur dc-01",
+      "sortie de 2 469 135 790 octets vers 203.0.113.28:8080 depuis dc-01",
+      "effacement du journal Security de comptabilite-07"
+    ],
+    "impacts_non_demontres": [
+      "contenu et étendue des données exfiltrées",
+      "vol effectif d'identifiants",
+      "présence continue de l'attaquant",
+      "atteinte d'un serveur de fichiers autre que par les événements de srv-fichiers-02"
+    ]
+  },
+  "traitement_des_12_alertes": {
+    "ALERT-001": "ligne du registre N-ALERTES (commande tronquée : pas d'Observed Data) ; T1059.001 et T1564.003 via Incident uses",
+    "ALERT-002": "Observed Data OD-02 + Sighting SIG-01 (si IND-04 approuvé) ; T1105 via Incident uses",
+    "ALERT-003": "registre N-ALERTES seulement (aucun observable adapté) ; T1053.005 via Incident uses",
+    "ALERT-004": "Observed Data OD-04 + Sighting SIG-02",
+    "ALERT-005": "registre N-ALERTES seulement (accès mémoire : aucun observable) ; T1003.001 NON liée (probable, extraction non démontrée)",
+    "ALERT-006": "registre N-ALERTES seulement (nature de 198.51.100.55 inconnue : pas d'Observed Data) ; T1046 via Incident uses",
+    "ALERT-007": "registre N-ALERTES seulement (chronologie contradictoire I-03) ; T1021.001 via Incident uses",
+    "ALERT-008": "registre N-ALERTES seulement ; T1055 (parent) via Incident uses ; T1055.012 NON utilisée",
+    "ALERT-009": "registre N-ALERTES seulement (I-03) ; aucune technique liée (T1136.002 probable, T1543.003 écartée)",
+    "ALERT-010": "Observed Data OD-10 + Sighting SIG-03",
+    "ALERT-011": "Observed Data OD-11 + Sighting SIG-04",
+    "ALERT-012": "registre N-ALERTES seulement ; T1070.001 liée seulement après vérification officielle du nom et de l'ID"
+  },
+  "observables": [
+    {
+      "id_local": "OBS-F-BIN001",
+      "type": "StixFile",
+      "valeur": {
+        "name": "facture_mars_2026.xlsm",
+        "size": 68242,
+        "hashes": {
+          "MD5": "8ba35251cca8daa4a05331bba8f95b05",
+          "SHA-1": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+          "SHA-256": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5"
+        }
+      },
+      "iocs_sources": [
+        "IOC-001",
+        "IOC-002",
+        "IOC-003"
+      ],
+      "remarque": "empreintes DECLAREES par la fiche ; AUCUN contenu binaire, AUCUN Artifact"
+    },
+    {
+      "id_local": "OBS-F-BIN002",
+      "type": "StixFile",
+      "valeur": {
+        "name": "svchost_update.exe",
+        "size": 421376,
+        "hashes": {
+          "MD5": "91678506a5474354f1ceb4c12c3c56dd",
+          "SHA-1": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+          "SHA-256": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9"
+        }
+      },
+      "iocs_sources": [
+        "IOC-004",
+        "IOC-005",
+        "IOC-006"
+      ],
+      "remarque": "taille corroborée par la ligne Squid ; échantillon non fourni"
+    },
+    {
+      "id_local": "OBS-F-BIN003",
+      "type": "StixFile",
+      "valeur": {
+        "name": "rundll32_helper.dll",
+        "size": 210944,
+        "hashes": {
+          "MD5": "3435016f3f2aacce36b71abb636cfc64",
+          "SHA-1": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+          "SHA-256": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0"
+        }
+      },
+      "iocs_sources": [
+        "IOC-007",
+        "IOC-008",
+        "IOC-009"
+      ],
+      "remarque": "échantillon non fourni"
+    },
+    {
+      "id_local": "OBS-F-PS",
+      "type": "StixFile",
+      "valeur": {
+        "hashes": {
+          "SHA-256": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f"
+        }
+      },
+      "iocs_sources": [
+        "IOC-010"
+      ],
+      "remarque": "charge PowerShell déchiffrée en mémoire, DECLAREE (aucune capture)"
+    },
+    {
+      "id_local": "OBS-F-MOD",
+      "type": "StixFile",
+      "valeur": {
+        "hashes": {
+          "SHA-256": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171"
+        }
+      },
+      "iocs_sources": [
+        "IOC-011"
+      ],
+      "remarque": "module injecté, DECLARE rattaché à BIN-002 par le SOC, non corroboré"
+    },
+    {
+      "id_local": "OBS-F-ARC",
+      "type": "StixFile",
+      "valeur": {
+        "hashes": {
+          "SHA-256": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730"
+        }
+      },
+      "iocs_sources": [
+        "IOC-012"
+      ],
+      "remarque": "archive chiffrée avant exfiltration, DECLAREE"
+    },
+    {
+      "id_local": "OBS-IP-19",
+      "type": "IPv4-Addr",
+      "valeur": "198.51.100.23",
+      "iocs_sources": [
+        "IOC-019"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-20",
+      "type": "IPv4-Addr",
+      "valeur": "198.51.100.24",
+      "iocs_sources": [
+        "IOC-020"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-21",
+      "type": "IPv4-Addr",
+      "valeur": "203.0.113.14",
+      "iocs_sources": [
+        "IOC-021"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-22",
+      "type": "IPv4-Addr",
+      "valeur": "203.0.113.15",
+      "iocs_sources": [
+        "IOC-022"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-23",
+      "type": "IPv4-Addr",
+      "valeur": "198.51.100.40",
+      "iocs_sources": [
+        "IOC-023"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-24",
+      "type": "IPv4-Addr",
+      "valeur": "203.0.113.28",
+      "iocs_sources": [
+        "IOC-024"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-25",
+      "type": "IPv4-Addr",
+      "valeur": "198.51.100.55",
+      "iocs_sources": [
+        "IOC-025"
+      ],
+      "remarque": "plage de documentation RFC 5737 ; NATURE INCONNUE (I-05)"
+    },
+    {
+      "id_local": "OBS-IP-26",
+      "type": "IPv4-Addr",
+      "valeur": "203.0.113.44",
+      "iocs_sources": [
+        "IOC-026"
+      ],
+      "remarque": "plage de documentation RFC 5737 ; source RDP INCONNUE (I-04)"
+    },
+    {
+      "id_local": "OBS-IP-27",
+      "type": "IPv4-Addr",
+      "valeur": "198.51.100.61",
+      "iocs_sources": [
+        "IOC-027"
+      ],
+      "remarque": "plage de documentation RFC 5737"
+    },
+    {
+      "id_local": "OBS-IP-28",
+      "type": "IPv4-Addr",
+      "valeur": "203.0.113.60",
+      "iocs_sources": [
+        "IOC-028"
+      ],
+      "remarque": "plage de documentation RFC 5737 ; non vérifiable (D4)"
+    },
+    {
+      "id_local": "OBS-U-29",
+      "type": "Url",
+      "valeur": "https://cdn-svc-update.test/win/svchost_update.exe",
+      "iocs_sources": [
+        "IOC-029"
+      ],
+      "remarque": "URL en .test"
+    },
+    {
+      "id_local": "OBS-U-30",
+      "type": "Url",
+      "valeur": "https://mail-secure-login.test/owa/auth",
+      "iocs_sources": [
+        "IOC-030"
+      ],
+      "remarque": "URL en .test"
+    },
+    {
+      "id_local": "OBS-U-31",
+      "type": "Url",
+      "valeur": "https://api-telemetry-eu.test/v2/beacon",
+      "iocs_sources": [
+        "IOC-031"
+      ],
+      "remarque": "URL en .test"
+    },
+    {
+      "id_local": "OBS-U-32",
+      "type": "Url",
+      "valeur": "https://helios-energy-portal.test/hr/doc",
+      "iocs_sources": [
+        "IOC-032"
+      ],
+      "remarque": "URL en .test"
+    },
+    {
+      "id_local": "OBS-U-X1",
+      "type": "Url",
+      "valeur": "https://static-assets-cache.test/",
+      "iocs_sources": [],
+      "remarque": "EXTRAIT de la ligne de journal 11 (alerte 11), absent des 40 IoC ; indicateur extrait pendant l'analyse"
+    },
+    {
+      "id_local": "OBS-X-33",
+      "type": "X509-Certificate",
+      "valeur": {
+        "hashes": {
+          "SHA-1": "bda5d6c36e3ff362f9ce0957370a429fff58eb37"
+        }
+      },
+      "iocs_sources": [
+        "IOC-033"
+      ],
+      "remarque": "empreinte seule, aucun certificat fourni"
+    },
+    {
+      "id_local": "OBS-X-34",
+      "type": "X509-Certificate",
+      "valeur": {
+        "hashes": {
+          "SHA-1": "0315d14dd4b9095a10e359cbaf4129f0a6322a59"
+        }
+      },
+      "iocs_sources": [
+        "IOC-034"
+      ],
+      "remarque": "empreinte seule, aucun certificat fourni"
+    },
+    {
+      "id_local": "OBS-X-35",
+      "type": "X509-Certificate",
+      "valeur": {
+        "hashes": {
+          "SHA-1": "1e8bd87af841cda6441306558f11d973eb0a5601"
+        }
+      },
+      "iocs_sources": [
+        "IOC-035"
+      ],
+      "remarque": "empreinte seule, aucun certificat fourni ; pivot non vérifiable (C4)"
+    },
+    {
+      "id_local": "OBS-ACC",
+      "type": "User-Account",
+      "valeur": {
+        "account_login": "svc-backup-temp"
+      },
+      "iocs_sources": [
+        "IOC-037"
+      ],
+      "remarque": "compte du SI victime, chronologie contradictoire (I-03)"
+    },
+    {
+      "id_local": "OBS-F-TMP",
+      "type": "StixFile",
+      "valeur": {
+        "name": "~df3a9.tmp",
+        "parent_directory": "C:\\Windows\\Temp"
+      },
+      "iocs_sources": [
+        "IOC-039"
+      ],
+      "remarque": "nom seul, aucun hash ; lié au répertoire OBS-DIR"
+    },
+    {
+      "id_local": "OBS-DIR",
+      "type": "Directory",
+      "valeur": {
+        "path": "C:\\Windows\\Temp"
+      },
+      "iocs_sources": [
+        "IOC-039"
+      ],
+      "remarque": "répertoire de l'IoC 39"
+    }
+  ],
+  "exclus_observables": [
+    {
+      "ioc": "IOC-013..018",
+      "raison": "6 noms de domaine : pas d'observable Domain-Name (Google DNS en mode automatique sans garde TLP transmettrait la valeur à un tiers) ; présents dans MISP, et indicateurs IND-04 et IND-08 sans observable"
+    },
+    {
+      "ioc": "IOC-036",
+      "raison": "nom de tâche planifiée : aucun type d'observable adapté dans la liste réelle (le type « Texte » dénaturerait la donnée) ; décrit dans le rapport et la Note"
+    },
+    {
+      "ioc": "IOC-038",
+      "raison": "clé de registre dont la valeur source est tronquée (« HKCU\\...\\Run\\WinTelemetry ») : un observable Windows-Registry-Key invalide serait une donnée inventée"
+    },
+    {
+      "ioc": "IOC-040",
+      "raison": "actif victime (comptabilite-07), pas un observable offensif : représenté comme entité System"
+    }
+  ],
+  "indicateurs": [
+    {
+      "id_local": "IND-01",
+      "pattern": "[file:hashes.'SHA-256' = '2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5']",
+      "contexte_menace": "BIN-001 dropper (fiche)",
+      "sources": [
+        "ART-002",
+        "IOC-001"
+      ],
+      "confiance_analyste": "faible (15)",
+      "limites": "échantillon non fourni ; hash non recalculable ; verdict = déclaration de la fiche",
+      "based_on": [
+        "OBS-F-BIN001"
+      ]
+    },
+    {
+      "id_local": "IND-02",
+      "pattern": "[file:hashes.'SHA-256' = 'cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9']",
+      "contexte_menace": "BIN-002 balise (fiche)",
+      "sources": [
+        "ART-002",
+        "IOC-004",
+        "journal:2"
+      ],
+      "confiance_analyste": "faible (15)",
+      "limites": "taille corroborée par Squid mais pas le hash ; échantillon non fourni",
+      "based_on": [
+        "OBS-F-BIN002"
+      ]
+    },
+    {
+      "id_local": "IND-03",
+      "pattern": "[file:hashes.'SHA-256' = 'f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0']",
+      "contexte_menace": "BIN-003 outil d'identifiants (fiche)",
+      "sources": [
+        "ART-002",
+        "IOC-007"
+      ],
+      "confiance_analyste": "faible (15)",
+      "limites": "outil générique « très largement partagé » selon la fiche ; échantillon non fourni",
+      "based_on": [
+        "OBS-F-BIN003"
+      ]
+    },
+    {
+      "id_local": "IND-04",
+      "pattern": "[domain-name:value = 'cdn-svc-update.test']",
+      "contexte_menace": "domaine de téléchargement de BIN-002",
+      "sources": [
+        "IOC-013",
+        "ALERT-002",
+        "journal:2"
+      ],
+      "confiance_analyste": "moyenne (50)",
+      "limites": "« jamais vu » non vérifiable ; résolution vers 198.51.100.23 déclarée ; SANS observable (Google DNS)",
+      "based_on": []
+    },
+    {
+      "id_local": "IND-05",
+      "pattern": "[url:value = 'https://cdn-svc-update.test/win/svchost_update.exe']",
+      "contexte_menace": "URL de la seconde charge",
+      "sources": [
+        "IOC-029",
+        "ALERT-002",
+        "journal:2"
+      ],
+      "confiance_analyste": "moyenne (50)",
+      "limites": "contenu de la réponse non vu ; exécution non démontrée",
+      "based_on": [
+        "OBS-U-29"
+      ]
+    },
+    {
+      "id_local": "IND-06",
+      "pattern": "[ipv4-addr:value = '198.51.100.24']",
+      "contexte_menace": "destination de la connexion de balise (ALERT-004)",
+      "sources": [
+        "IOC-020",
+        "ALERT-004",
+        "journal:4"
+      ],
+      "confiance_analyste": "faible (15)",
+      "limites": "une seule connexion ; « beacon » = annotation de la source ; rôle de C2 non démontré (I-12)",
+      "based_on": [
+        "OBS-IP-20"
+      ]
+    },
+    {
+      "id_local": "IND-07",
+      "pattern": "[ipv4-addr:value = '203.0.113.28']",
+      "contexte_menace": "destination de la sortie de 2 469 135 790 octets (ALERT-010)",
+      "sources": [
+        "IOC-024",
+        "ALERT-010",
+        "journal:10"
+      ],
+      "confiance_analyste": "moyenne (50)",
+      "limites": "contenu et nature de l'exfiltration inconnus ; direction du champ bytes non précisée",
+      "based_on": [
+        "OBS-IP-24"
+      ]
+    },
+    {
+      "id_local": "IND-08",
+      "pattern": "[domain-name:value = 'static-assets-cache.test']",
+      "contexte_menace": "domaine du « repli C2 » (ALERT-011)",
+      "sources": [
+        "IOC-016",
+        "ALERT-011",
+        "journal:11"
+      ],
+      "confiance_analyste": "faible (15)",
+      "limites": "« failover C2 » = annotation ; perte du C2 principal non montrée (I-11) ; SANS observable (Google DNS)",
+      "based_on": []
+    }
+  ],
+  "indicateurs_non_crees": "Les 32 autres observables (dont tous les IPv4 hors 198.51.100.24 et 203.0.113.28, les domaines d'hameçonnage et d'usurpation, les certificats, le compte, les fichiers dérivés) restent des OBSERVABLES : aucun indicateur n'est justifié par un artefact d'observation ou une vérification.",
+  "observed_data": [
+    {
+      "id_local": "OD-02",
+      "alerte": "ALERT-002",
+      "first_last": "2026-03-02T08:42:00Z",
+      "number_observed": 1,
+      "objets": [
+        "OBS-U-29"
+      ],
+      "brut": "Squid: GET https://cdn-svc-update.test/win/svchost_update.exe 200 421376"
+    },
+    {
+      "id_local": "OD-04",
+      "alerte": "ALERT-004",
+      "first_last": "2026-03-02T09:16:00Z",
+      "number_observed": 1,
+      "objets": [
+        "OBS-IP-20"
+      ],
+      "brut": "Zeek: conn 198.51.100.24:443 duration=0.4 orig_bytes=812 (beacon)"
+    },
+    {
+      "id_local": "OD-10",
+      "alerte": "ALERT-010",
+      "first_last": "2026-03-05T15:31:00Z",
+      "number_observed": 1,
+      "objets": [
+        "OBS-IP-24"
+      ],
+      "brut": "Zeek: large outbound 203.0.113.28:8080 bytes=2469135790 cleartext"
+    },
+    {
+      "id_local": "OD-11",
+      "alerte": "ALERT-011",
+      "first_last": "2026-03-06T03:10:00Z",
+      "number_observed": 1,
+      "objets": [
+        "OBS-U-X1"
+      ],
+      "brut": "Squid: GET https://static-assets-cache.test/ 200 (failover C2)"
+    }
+  ],
+  "sightings": [
+    {
+      "id_local": "SIG-01",
+      "indicateur": "IND-04",
+      "ou": "System comptabilite-07",
+      "first_last": "2026-03-02T08:42:00Z",
+      "count": 1,
+      "preuves": [
+        "ALERT-002",
+        "journal:2"
+      ]
+    },
+    {
+      "id_local": "SIG-02",
+      "indicateur": "IND-06",
+      "ou": "System comptabilite-07",
+      "first_last": "2026-03-02T09:16:00Z",
+      "count": 1,
+      "preuves": [
+        "ALERT-004",
+        "journal:4"
+      ]
+    },
+    {
+      "id_local": "SIG-03",
+      "indicateur": "IND-07",
+      "ou": "System dc-01",
+      "first_last": "2026-03-05T15:31:00Z",
+      "count": 1,
+      "preuves": [
+        "ALERT-010",
+        "journal:10"
+      ]
+    },
+    {
+      "id_local": "SIG-04",
+      "indicateur": "IND-08",
+      "ou": "System srv-fichiers-02",
+      "first_last": "2026-03-06T03:10:00Z",
+      "count": 1,
+      "preuves": [
+        "ALERT-011",
+        "journal:11"
+      ]
+    }
+  ],
+  "separation_rejeu_wazuh": {
+    "auteur_dossier": "[CHALLENGE FICTIF] Dossier pédagogique (SOC Helios)",
+    "auteur_analyse": "[CHALLENGE FICTIF] Équipe CTI",
+    "auteur_rejeu_futur": "[CHALLENGE FICTIF] Rejeu Wazuh (laboratoire) : créé SEULEMENT lors d'un rejeu approuvé, jamais l'identité de production « Wazuh »",
+    "labels": [
+      "challenge:helios-fictif",
+      "challenge:source=dossier-pedagogique",
+      "challenge:source=rejeu-wazuh",
+      "analytic:observed",
+      "analytic:hypothesis",
+      "analytic:declared-unverified"
+    ],
+    "note": "labels et auteurs = traçabilité et filtrage, PAS une isolation technique"
+  },
+  "comptages_par_rubrique": {
+    "Analyses": {
+      "Report": 1,
+      "Note": 3,
+      "Grouping": 0
+    },
+    "Evenements": {
+      "Incident": 1,
+      "Observed-Data": 4,
+      "Sighting": 4
+    },
+    "Observations": {
+      "Observables (hors Artifact)": 27,
+      "Indicator": 8,
+      "Artifact": 0
+    },
+    "Support (hors des trois rubriques, non comptés comme objets analytiques)": {
+      "Identity-Organization": 3,
+      "Identity-System": 3,
+      "Label": 6,
+      "External-Reference": 11
+    }
+  },
+  "relations_envisagees": {
+    "based-on (Indicator vers Observable)": 6,
+    "related-to (Indicator vers Incident)": 8,
+    "targets (Incident vers Organization victime)": 1,
+    "targets (Incident vers System)": 3,
+    "uses (Incident vers Attack-Pattern existant, techniques OBSERVEES)": 8
+  },
+  "total_objets_dont_rubriques": 71,
+  "total_relations": 30,
+  "exclusions_globales": [
+    "aucun Artifact (aucun contenu binaire)",
+    "aucun Intrusion-Set / Threat-Actor / Malware de production lié (attribution = hypothèse, consignée en Note)",
+    "aucune relation vers FIN7 ou Carbanak",
+    "aucun Grouping",
+    "aucun incident par alerte",
+    "aucun sighting par alerte (4 sur 12, justifiés)",
+    "aucun Artifact ni YARA/Sigma importé"
+  ]
+}

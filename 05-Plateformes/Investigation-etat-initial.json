@@ -1,0 +1,371 @@
+{
+ "workspace": {
+  "id": "14c28507-2b09-48b8-9b36-c2dc2470d64a",
+  "name": "[CHALLENGE FICTIF] Helios Energy — Investigation CTI",
+  "type": "investigation",
+  "description": "Investigation CTI sur l'intrusion INC-2026-0302 (victime fictive Helios Energy). Exercice pédagogique : toutes les données sont fictives (plages de documentation, domaines .test). Cluster NON ATTRIBUÉ : aucun acteur n'est placé dans cette vue. Lecture suggérée de la vue : chaîne d'attaque (techniques ATT&CK, incident), infrastructure (adresses, URL, certificats), actifs victimes (3 systèmes et l'organisation), capacités (fichiers BIN), preuves (données observées, indicateurs expirés), hypothèses et inconnues (3 notes). Rapport de référence : 3ec91c0f-915b-4e1d-9cd9-c1c12c79f342 (le graphe de connaissance complet se consulte sur le rapport).",
+  "tags": [
+   "challenge:helios-fictif",
+   "INC-2026-0302",
+   "CTI",
+   "non-attribue"
+  ],
+  "created_at": "2026-10-07T10:53:05.753Z",
+  "updated_at": "2026-10-07T10:54:35.151Z",
+  "manifest": null,
+  "graph_data": null,
+  "authorizedMembers": [
+   {
+    "id": "88ec0c6a-13ce-5e39-b486-354fe4a7084f_0",
+    "name": "admin",
+    "access_right": "admin"
+   }
+  ]
+ },
+ "investigated_entities_ids": [
+  "01f83a9f-77fa-4a97-8b0f-f2c207336277",
+  "0224a105-400a-4e0d-b924-1762411f19c0",
+  "034a43d3-540f-427b-8944-a9c5b6589732",
+  "03528372-6afb-4401-b5ae-7593c9a5d8f2",
+  "05c17f0d-63ea-4285-9481-fc98b2625d79",
+  "0d892462-cc9a-40ce-acf7-6ce50035d4cb",
+  "10ea33c6-d2cf-4ecc-a9bf-0f3b9ea173d2",
+  "1229cddc-c9c9-4a5a-ba4d-db619d72f6b9",
+  "133d9b95-2a51-4a9a-8595-4815490f2cbd",
+  "17b79173-6249-436e-823a-115fbc1c77ba",
+  "1966009c-b447-4fc8-b3a5-59eb1e8d5b6e",
+  "19826506-1f99-496a-b4d6-29da9da40340",
+  "1c2b4cb4-9dc6-4482-81d9-9f9764f014ca",
+  "1d3f37f3-66f3-462c-86bd-677f8883b4cb",
+  "1dc23241-953b-4f86-84c0-150330f136cc",
+  "1fdc26a1-befd-458f-9027-0186d7f05b62",
+  "22ca29f9-f098-4688-a3d3-945629ff33e7",
+  "22e25b8f-f76a-4871-baba-f9536749e690",
+  "24ec5336-ba19-4e65-9b0a-86194be4034c",
+  "26cabc79-3692-4152-8a0d-40c1e9b23209",
+  "26dd7d01-e492-4acb-89bc-3f6bd8dc2b05",
+  "274fa92b-d434-45c2-a368-e7e188bc30c3",
+  "2dbf2832-9ff1-47a3-880e-d5b3cbe9b682",
+  "31040b7f-ec76-4735-8ddc-341a4725f1e3",
+  "3a45a25d-bff3-4dc9-9602-d3a42a2854db",
+  "3af8aafe-72b9-4bc1-bd47-bb49b2fd11b8",
+  "3c74b9e1-7ca8-4fd4-9551-ac9696c64a26",
+  "3d6f746e-9b95-4a2f-bae3-c0e905347e4f",
+  "3ec91c0f-915b-4e1d-9cd9-c1c12c79f342",
+  "4b6b2038-5ca2-40c8-bf0e-22fcb275a729",
+  "51515b48-622c-46bb-a33c-653d21a00f99",
+  "59f82532-6ffe-4d59-bfbf-220094c9e257",
+  "5acffca8-4abd-4ddf-92ed-3570d9ea0ef7",
+  "5b520000-bfaf-4b95-ae76-efc567571979",
+  "5c32ae19-8dfb-4839-824f-73d30bcb8936",
+  "5c7aeff2-a19c-431a-8e67-1fd2644c53cb",
+  "5d1737ea-3505-435e-8520-790215e5b32f",
+  "676e1ee3-83d1-45d5-8a22-96fffb4017d9",
+  "679e79c1-b753-45fa-a817-761107fb660f",
+  "69af4a7b-24aa-409c-a0e2-49b53f6d4242",
+  "6fc6b9cb-a9ec-43bc-92d5-b85260999595",
+  "717a16b4-bea6-4604-8f2b-4e5b8298dbce",
+  "718d7e57-7cc8-4b53-b6b8-37c911957716",
+  "7433779e-d3d5-4cad-9754-b56e63e807b4",
+  "766a3b03-a346-4d35-b4ce-ff9841150e1e",
+  "7ad50437-12dd-4ab6-b818-4b95841a938e",
+  "85036e84-d1a5-4a56-8295-4b17aed842f1",
+  "87868514-f665-4bc0-9ea5-e4eaed267745",
+  "889c1a58-bcfe-4731-bc0c-a2db981eab36",
+  "942d4e75-a49e-4aff-931e-15c7e7abfd5e",
+  "985f65c4-9786-47fe-8ecb-a3320bff755f",
+  "998d4bfb-1e19-4009-ab8d-02e34bc70327",
+  "a21f378b-5ff2-42cd-9c38-b406ae005f5a",
+  "a2f66075-be6c-42a9-9524-d428833fd4c1",
+  "a59df39d-941b-4c3b-a10e-5eb5d0fc65e0",
+  "a7993d2d-b32a-4e30-a5c1-cac85192c37a",
+  "b244f0ff-832d-4040-b8d1-87719f3226a2",
+  "b350974c-721e-474e-91f7-cd04f3d19126",
+  "b3facd82-edc9-4963-949b-dc59881de8c1",
+  "b5adf766-9f7e-4c73-bfed-dfd2cb2e625f",
+  "b6ea01bf-fa10-48b1-87f3-4f30989b5efd",
+  "b6f8d17a-7196-4b68-9767-3029eaf05d02",
+  "b79e9783-693f-4dab-88a6-c110a4761040",
+  "b9bdb09b-ffae-470a-9556-36844ff68ebf",
+  "bbc7930b-93f1-47c1-b54b-5f3123265ab1",
+  "bd98d8b8-a197-4d05-a048-15fbd78d2389",
+  "c452ee0b-cfaf-4e48-8587-f868019832e1",
+  "c501769b-70b5-4944-8208-46c300acd417",
+  "c77ca4ee-a3fa-4377-b619-1bc711a7f09b",
+  "ca48bc76-5cb9-4589-a9e2-fbc8e5096c09",
+  "cacccf65-ff3a-4e6e-ac96-a8db542a9196",
+  "cb13c885-fbcd-4df8-a9f9-2a93e4e9d9fe",
+  "d34e8b82-3883-4e35-b1a3-04b2394ad8da",
+  "d5922341-334a-46b8-ab90-5d741cd53c04",
+  "d7823815-142b-4b7f-a770-0065caa262ea",
+  "daeda9ae-1ee9-4145-afbd-76172ddaa5b5",
+  "dc8cd02d-674a-4a94-8aeb-834cce253263",
+  "de25be27-12e7-4c52-9b58-56e66ec1657a",
+  "e1959233-979d-4ea9-b2de-f0431ddf554b",
+  "e2dd62bb-d177-4d02-a69c-2afc76a81ab6",
+  "e56e0e34-eb58-4124-a21a-e7fe096e7d55",
+  "e61c6594-743e-42f9-a519-11dbb50dc7f5",
+  "e6b7bd45-9b7e-47eb-84a2-015b9828720b",
+  "e810fc76-1d36-43b2-bfb6-1e2698fbe027",
+  "ed4e0420-67c3-429e-bc53-e8c8357c3060",
+  "fb5d939d-0960-4dbf-9a4f-f6ad45d033a8"
+ ],
+ "entites": {
+  "01f83a9f-77fa-4a97-8b0f-f2c207336277": [
+   "IPv4-Addr",
+   "203.0.113.44"
+  ],
+  "034a43d3-540f-427b-8944-a9c5b6589732": [
+   "System",
+   "srv-fichiers-02"
+  ],
+  "05c17f0d-63ea-4285-9481-fc98b2625d79": [
+   "Observed-Data",
+   "2026-03-02T08:42:00.000Z - 2026-03-02T08:42:00.000Z"
+  ],
+  "1229cddc-c9c9-4a5a-ba4d-db619d72f6b9": [
+   "X509-Certificate",
+   "0315d14dd4b9095a10e359cbaf4129f0a6322a59"
+  ],
+  "133d9b95-2a51-4a9a-8595-4815490f2cbd": [
+   "Url",
+   "https://cdn-svc-update.test/win/svchost_update.exe"
+  ],
+  "17b79173-6249-436e-823a-115fbc1c77ba": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-03 BIN-003 outil d'identifiants (fiche)"
+  ],
+  "1966009c-b447-4fc8-b3a5-59eb1e8d5b6e": [
+   "Observed-Data",
+   "2026-03-02T09:16:00.000Z - 2026-03-02T09:16:00.000Z"
+  ],
+  "1c2b4cb4-9dc6-4482-81d9-9f9764f014ca": [
+   "StixFile",
+   "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171"
+  ],
+  "1d3f37f3-66f3-462c-86bd-677f8883b4cb": [
+   "Attack-Pattern",
+   "[T1564.003] T1564.003"
+  ],
+  "1fdc26a1-befd-458f-9027-0186d7f05b62": [
+   "Observed-Data",
+   "2026-03-06T03:10:00.000Z - 2026-03-06T03:10:00.000Z"
+  ],
+  "22e25b8f-f76a-4871-baba-f9536749e690": [
+   "StixFile",
+   "~df3a9.tmp"
+  ],
+  "24ec5336-ba19-4e65-9b0a-86194be4034c": [
+   "IPv4-Addr",
+   "203.0.113.14"
+  ],
+  "26cabc79-3692-4152-8a0d-40c1e9b23209": [
+   "X509-Certificate",
+   "bda5d6c36e3ff362f9ce0957370a429fff58eb37"
+  ],
+  "26dd7d01-e492-4acb-89bc-3f6bd8dc2b05": [
+   "Attack-Pattern",
+   "[T1059.001] T1059.001"
+  ],
+  "2dbf2832-9ff1-47a3-880e-d5b3cbe9b682": [
+   "Note",
+   "[CHALLENGE FICTIF] N-ALERTES : registre des 12 alertes du dossier"
+  ],
+  "31040b7f-ec76-4735-8ddc-341a4725f1e3": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-01 BIN-001 dropper (fiche)"
+  ],
+  "3d6f746e-9b95-4a2f-bae3-c0e905347e4f": [
+   "IPv4-Addr",
+   "203.0.113.15"
+  ],
+  "3ec91c0f-915b-4e1d-9cd9-c1c12c79f342": [
+   "Report",
+   "[CHALLENGE FICTIF] Helios Energy — Investigation CTI"
+  ],
+  "4b6b2038-5ca2-40c8-bf0e-22fcb275a729": [
+   "StixFile",
+   "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f"
+  ],
+  "51515b48-622c-46bb-a33c-653d21a00f99": [
+   "Note",
+   "[CHALLENGE FICTIF] N-LIMITES : limites et incohérences"
+  ],
+  "5b520000-bfaf-4b95-ae76-efc567571979": [
+   "Url",
+   "https://static-assets-cache.test/"
+  ],
+  "5c32ae19-8dfb-4839-824f-73d30bcb8936": [
+   "IPv4-Addr",
+   "198.51.100.24"
+  ],
+  "5c7aeff2-a19c-431a-8e67-1fd2644c53cb": [
+   "Organization",
+   "Helios Energy (fictif)"
+  ],
+  "676e1ee3-83d1-45d5-8a22-96fffb4017d9": [
+   "System",
+   "dc-01"
+  ],
+  "6fc6b9cb-a9ec-43bc-92d5-b85260999595": [
+   "Attack-Pattern",
+   "[T1046] T1046"
+  ],
+  "717a16b4-bea6-4604-8f2b-4e5b8298dbce": [
+   "Attack-Pattern",
+   "[T1685.005] Clear Windows Event Logs"
+  ],
+  "7433779e-d3d5-4cad-9754-b56e63e807b4": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-04 domaine de téléchargement de BIN-002"
+  ],
+  "7ad50437-12dd-4ab6-b818-4b95841a938e": [
+   "Url",
+   "https://helios-energy-portal.test/hr/doc"
+  ],
+  "889c1a58-bcfe-4731-bc0c-a2db981eab36": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-08 domaine du « repli C2 » (ALERT-011)"
+  ],
+  "985f65c4-9786-47fe-8ecb-a3320bff755f": [
+   "Attack-Pattern",
+   "[T1055] T1055"
+  ],
+  "998d4bfb-1e19-4009-ab8d-02e34bc70327": [
+   "StixFile",
+   "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0"
+  ],
+  "a2f66075-be6c-42a9-9524-d428833fd4c1": [
+   "Incident",
+   "[CHALLENGE FICTIF] Helios Energy — Intrusion"
+  ],
+  "a7993d2d-b32a-4e30-a5c1-cac85192c37a": [
+   "Url",
+   "https://api-telemetry-eu.test/v2/beacon"
+  ],
+  "b244f0ff-832d-4040-b8d1-87719f3226a2": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-05 URL de la seconde charge"
+  ],
+  "b350974c-721e-474e-91f7-cd04f3d19126": [
+   "IPv4-Addr",
+   "198.51.100.55"
+  ],
+  "b3facd82-edc9-4963-949b-dc59881de8c1": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-06 destination de la connexion de balise (ALERT-004)"
+  ],
+  "b5adf766-9f7e-4c73-bfed-dfd2cb2e625f": [
+   "IPv4-Addr",
+   "198.51.100.40"
+  ],
+  "b79e9783-693f-4dab-88a6-c110a4761040": [
+   "Directory",
+   "C:\\Windows\\Temp"
+  ],
+  "b9bdb09b-ffae-470a-9556-36844ff68ebf": [
+   "StixFile",
+   "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5"
+  ],
+  "bbc7930b-93f1-47c1-b54b-5f3123265ab1": [
+   "Url",
+   "https://mail-secure-login.test/owa/auth"
+  ],
+  "bd98d8b8-a197-4d05-a048-15fbd78d2389": [
+   "Attack-Pattern",
+   "[T1021.001] T1021.001"
+  ],
+  "c452ee0b-cfaf-4e48-8587-f868019832e1": [
+   "Note",
+   "[CHALLENGE FICTIF] N-ATTRIB : attribution hypothétique (inconnue)"
+  ],
+  "c501769b-70b5-4944-8208-46c300acd417": [
+   "Observed-Data",
+   "2026-03-05T15:31:00.000Z - 2026-03-05T15:31:00.000Z"
+  ],
+  "c77ca4ee-a3fa-4377-b619-1bc711a7f09b": [
+   "StixFile",
+   "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730"
+  ],
+  "ca48bc76-5cb9-4589-a9e2-fbc8e5096c09": [
+   "IPv4-Addr",
+   "198.51.100.61"
+  ],
+  "cacccf65-ff3a-4e6e-ac96-a8db542a9196": [
+   "StixFile",
+   "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9"
+  ],
+  "cb13c885-fbcd-4df8-a9f9-2a93e4e9d9fe": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-07 destination de la sortie de 2 469 135 790 octets (ALERT-010)"
+  ],
+  "d5922341-334a-46b8-ab90-5d741cd53c04": [
+   "User-Account",
+   "svc-backup-temp"
+  ],
+  "d7823815-142b-4b7f-a770-0065caa262ea": [
+   "X509-Certificate",
+   "1e8bd87af841cda6441306558f11d973eb0a5601"
+  ],
+  "daeda9ae-1ee9-4145-afbd-76172ddaa5b5": [
+   "System",
+   "comptabilite-07"
+  ],
+  "dc8cd02d-674a-4a94-8aeb-834cce253263": [
+   "IPv4-Addr",
+   "198.51.100.23"
+  ],
+  "de25be27-12e7-4c52-9b58-56e66ec1657a": [
+   "IPv4-Addr",
+   "203.0.113.28"
+  ],
+  "e56e0e34-eb58-4124-a21a-e7fe096e7d55": [
+   "Attack-Pattern",
+   "[T1053.005] T1053.005"
+  ],
+  "e61c6594-743e-42f9-a519-11dbb50dc7f5": [
+   "Indicator",
+   "[CHALLENGE FICTIF] IND-02 BIN-002 balise (fiche)"
+  ],
+  "e810fc76-1d36-43b2-bfb6-1e2698fbe027": [
+   "Attack-Pattern",
+   "[T1105] T1105"
+  ],
+  "ed4e0420-67c3-429e-bc53-e8c8357c3060": [
+   "IPv4-Addr",
+   "203.0.113.60"
+  ]
+ },
+ "relations_ids": [
+  "0224a105-400a-4e0d-b924-1762411f19c0",
+  "03528372-6afb-4401-b5ae-7593c9a5d8f2",
+  "0d892462-cc9a-40ce-acf7-6ce50035d4cb",
+  "10ea33c6-d2cf-4ecc-a9bf-0f3b9ea173d2",
+  "19826506-1f99-496a-b4d6-29da9da40340",
+  "1dc23241-953b-4f86-84c0-150330f136cc",
+  "22ca29f9-f098-4688-a3d3-945629ff33e7",
+  "274fa92b-d434-45c2-a368-e7e188bc30c3",
+  "3a45a25d-bff3-4dc9-9602-d3a42a2854db",
+  "3af8aafe-72b9-4bc1-bd47-bb49b2fd11b8",
+  "3c74b9e1-7ca8-4fd4-9551-ac9696c64a26",
+  "59f82532-6ffe-4d59-bfbf-220094c9e257",
+  "5acffca8-4abd-4ddf-92ed-3570d9ea0ef7",
+  "5d1737ea-3505-435e-8520-790215e5b32f",
+  "679e79c1-b753-45fa-a817-761107fb660f",
+  "69af4a7b-24aa-409c-a0e2-49b53f6d4242",
+  "718d7e57-7cc8-4b53-b6b8-37c911957716",
+  "766a3b03-a346-4d35-b4ce-ff9841150e1e",
+  "85036e84-d1a5-4a56-8295-4b17aed842f1",
+  "87868514-f665-4bc0-9ea5-e4eaed267745",
+  "942d4e75-a49e-4aff-931e-15c7e7abfd5e",
+  "a21f378b-5ff2-42cd-9c38-b406ae005f5a",
+  "a59df39d-941b-4c3b-a10e-5eb5d0fc65e0",
+  "b6ea01bf-fa10-48b1-87f3-4f30989b5efd",
+  "b6f8d17a-7196-4b68-9767-3029eaf05d02",
+  "d34e8b82-3883-4e35-b1a3-04b2394ad8da",
+  "e1959233-979d-4ea9-b2de-f0431ddf554b",
+  "e2dd62bb-d177-4d02-a69c-2afc76a81ab6",
+  "e6b7bd45-9b7e-47eb-84a2-015b9828720b",
+  "fb5d939d-0960-4dbf-9a4f-f6ad45d033a8"
+ ]
+}

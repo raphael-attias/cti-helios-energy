@@ -1,0 +1,163 @@
+test_id,det,type,evenement,origine,attendu,obtenu,resultat
+TEST-001,DET-001,positif réel,E01,dossier:journal l.1,déclenche,déclenche,OK
+TEST-002,DET-001,autre événement du même logsource,E03,dossier:détail alerte 3 (Image déduite de la commande),ne déclenche pas,ne déclenche pas,OK
+TEST-003,DET-001,autre événement du même logsource,E13,dossier:journal l.12 (Image déduite),ne déclenche pas,ne déclenche pas,OK
+TEST-004,DET-001,autre événement du même logsource,E14,fiche BIN-02 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-005,DET-001,autre événement du même logsource,E15,fiche BIN-03 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-006,DET-001,positif synthétique,S01,synthétique,déclenche,déclenche,OK
+TEST-007,DET-001,autre événement du même logsource,S02,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-008,DET-001,autre événement du même logsource,S04,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-009,DET-001,autre événement du même logsource,S10,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-010,DET-001,négatif synthétique,N01,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-011,DET-001,négatif synthétique,N02,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-012,DET-001,négatif synthétique,N05,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-013,DET-001,négatif synthétique,N06,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-014,DET-001,négatif synthétique,N16,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-015,DET-001,négatif synthétique,N17,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-016,DET-001,négatif synthétique,N21,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-017,DET-001,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-018,DET-002,positif réel,E01,dossier:journal l.1,déclenche,déclenche,OK
+TEST-019,DET-002,autre événement du même logsource,E03,dossier:détail alerte 3 (Image déduite de la commande),ne déclenche pas,ne déclenche pas,OK
+TEST-020,DET-002,autre événement du même logsource,E13,dossier:journal l.12 (Image déduite),ne déclenche pas,ne déclenche pas,OK
+TEST-021,DET-002,autre événement du même logsource,E14,fiche BIN-02 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-022,DET-002,autre événement du même logsource,E15,fiche BIN-03 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-023,DET-002,autre événement du même logsource,S01,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-024,DET-002,positif synthétique,S02,synthétique,déclenche,déclenche,OK
+TEST-025,DET-002,autre événement du même logsource,S04,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-026,DET-002,autre événement du même logsource,S10,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-027,DET-002,négatif synthétique,N01,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-028,DET-002,négatif synthétique,N02,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-029,DET-002,négatif synthétique,N05,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-030,DET-002,négatif synthétique,N06,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-031,DET-002,négatif synthétique,N16,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-032,DET-002,négatif synthétique,N17,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-033,DET-002,négatif synthétique,N21,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-034,DET-002,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-035,DET-003,positif réel,E02,dossier:journal l.2,déclenche,déclenche,OK
+TEST-036,DET-003,autre événement du même logsource,E11,dossier:journal l.11,ne déclenche pas,ne déclenche pas,OK
+TEST-037,DET-003,positif synthétique,S03,synthétique,déclenche,déclenche,OK
+TEST-038,DET-003,autre événement du même logsource,S12,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-039,DET-003,négatif synthétique,N03,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-040,DET-003,négatif synthétique,N04,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-041,DET-003,négatif synthétique,N20,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-042,DET-003,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-043,DET-004,positif réel,E02,dossier:journal l.2,déclenche,déclenche,OK
+TEST-044,DET-004,positif réel,E11,dossier:journal l.11,déclenche,déclenche,OK
+TEST-045,DET-004,autre événement du même logsource,S03,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-046,DET-004,positif synthétique,S12,synthétique,déclenche,déclenche,OK
+TEST-047,DET-004,négatif synthétique,N03,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-048,DET-004,négatif synthétique,N04,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-049,DET-004,négatif synthétique,N20,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-050,DET-004,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-051,DET-005,autre événement du même logsource,E01,dossier:journal l.1,ne déclenche pas,ne déclenche pas,OK
+TEST-052,DET-005,positif réel,E03,dossier:détail alerte 3 (Image déduite de la commande),déclenche,déclenche,OK
+TEST-053,DET-005,autre événement du même logsource,E13,dossier:journal l.12 (Image déduite),ne déclenche pas,ne déclenche pas,OK
+TEST-054,DET-005,autre événement du même logsource,E14,fiche BIN-02 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-055,DET-005,autre événement du même logsource,E15,fiche BIN-03 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-056,DET-005,autre événement du même logsource,S01,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-057,DET-005,autre événement du même logsource,S02,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-058,DET-005,positif synthétique,S04,synthétique,déclenche,déclenche,OK
+TEST-059,DET-005,autre événement du même logsource,S10,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-060,DET-005,négatif synthétique,N01,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-061,DET-005,négatif synthétique,N02,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-062,DET-005,négatif synthétique,N05,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-063,DET-005,négatif synthétique,N06,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-064,DET-005,négatif synthétique,N16,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-065,DET-005,négatif synthétique,N17,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-066,DET-005,négatif synthétique,N21,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-067,DET-005,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-068,DET-006,positif réel,E04,dossier:journal l.4,déclenche,déclenche,OK
+TEST-069,DET-006,positif réel,E10,dossier:journal l.10,déclenche,déclenche,OK
+TEST-070,DET-006,autre événement du même logsource,S09,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-071,DET-006,positif synthétique,S11,synthétique,déclenche,déclenche,OK
+TEST-072,DET-006,négatif synthétique,N14,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-073,DET-006,négatif synthétique,N19,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-074,DET-006,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-075,DET-007,positif réel,E08,dossier:journal l.8,déclenche,déclenche,OK
+TEST-076,DET-007,positif synthétique,S05,synthétique,déclenche,déclenche,OK
+TEST-077,DET-007,négatif synthétique,N07,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-078,DET-007,négatif synthétique,N08,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-079,DET-007,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-080,DET-008,positif réel,E05,dossier:journal l.5,déclenche,déclenche,OK
+TEST-081,DET-008,positif synthétique,S13,synthétique,déclenche,déclenche,OK
+TEST-082,DET-008,négatif synthétique,N18,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-083,DET-008,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-084,DET-009,positif réel,E06,dossier:journal l.6,déclenche,déclenche,OK
+TEST-085,DET-009,autre événement du même logsource,E09,dossier:journal l.9,ne déclenche pas,ne déclenche pas,OK
+TEST-086,DET-009,autre événement du même logsource,E12,dossier:journal l.12,ne déclenche pas,ne déclenche pas,OK
+TEST-087,DET-009,positif synthétique,S06,synthétique,déclenche,déclenche,OK
+TEST-088,DET-009,autre événement du même logsource,S08,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-089,DET-009,négatif synthétique,N09,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-090,DET-009,négatif synthétique,N10,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-091,DET-009,négatif synthétique,N13,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-092,DET-009,négatif synthétique,N15,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-093,DET-009,négatif synthétique,N22,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-094,DET-009,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-095,DET-010,positif réel,E07,dossier:journal l.7,déclenche,déclenche,OK
+TEST-096,DET-010,positif synthétique,S07,synthétique,déclenche,déclenche,OK
+TEST-097,DET-010,négatif synthétique,N11,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-098,DET-010,négatif synthétique,N12,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-099,DET-010,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-100,DET-011,autre événement du même logsource,E06,dossier:journal l.6,ne déclenche pas,ne déclenche pas,OK
+TEST-101,DET-011,positif réel,E09,dossier:journal l.9,déclenche,déclenche,OK
+TEST-102,DET-011,autre événement du même logsource,E12,dossier:journal l.12,ne déclenche pas,ne déclenche pas,OK
+TEST-103,DET-011,autre événement du même logsource,S06,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-104,DET-011,positif synthétique,S08,synthétique,déclenche,déclenche,OK
+TEST-105,DET-011,négatif synthétique,N09,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-106,DET-011,négatif synthétique,N10,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-107,DET-011,négatif synthétique,N13,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-108,DET-011,négatif synthétique,N15,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-109,DET-011,négatif synthétique,N22,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-110,DET-011,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-111,DET-012,autre événement du même logsource,E04,dossier:journal l.4,ne déclenche pas,ne déclenche pas,OK
+TEST-112,DET-012,positif réel,E10,dossier:journal l.10,déclenche,déclenche,OK
+TEST-113,DET-012,positif synthétique,S09,synthétique,déclenche,déclenche,OK
+TEST-114,DET-012,autre événement du même logsource,S11,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-115,DET-012,négatif synthétique,N14,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-116,DET-012,négatif synthétique,N19,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-117,DET-012,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-118,DET-013,autre événement du même logsource,E06,dossier:journal l.6,ne déclenche pas,ne déclenche pas,OK
+TEST-119,DET-013,autre événement du même logsource,E09,dossier:journal l.9,ne déclenche pas,ne déclenche pas,OK
+TEST-120,DET-013,positif réel,E12,dossier:journal l.12,déclenche,déclenche,OK
+TEST-121,DET-013,autre événement du même logsource,S06,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-122,DET-013,autre événement du même logsource,S08,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-123,DET-013,négatif synthétique,N09,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-124,DET-013,négatif synthétique,N10,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-125,DET-013,négatif synthétique,N13,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-126,DET-013,négatif synthétique,N15,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-127,DET-013,négatif synthétique,N22,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-128,DET-013,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-129,DET-014,autre événement du même logsource,E01,dossier:journal l.1,ne déclenche pas,ne déclenche pas,OK
+TEST-130,DET-014,autre événement du même logsource,E03,dossier:détail alerte 3 (Image déduite de la commande),ne déclenche pas,ne déclenche pas,OK
+TEST-131,DET-014,positif réel,E13,dossier:journal l.12 (Image déduite),déclenche,déclenche,OK
+TEST-132,DET-014,autre événement du même logsource,E14,fiche BIN-02 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-133,DET-014,autre événement du même logsource,E15,fiche BIN-03 (nom seul),ne déclenche pas,ne déclenche pas,OK
+TEST-134,DET-014,autre événement du même logsource,S01,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-135,DET-014,autre événement du même logsource,S02,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-136,DET-014,autre événement du même logsource,S04,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-137,DET-014,positif synthétique,S10,synthétique,déclenche,déclenche,OK
+TEST-138,DET-014,négatif synthétique,N01,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-139,DET-014,négatif synthétique,N02,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-140,DET-014,négatif synthétique,N05,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-141,DET-014,négatif synthétique,N06,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-142,DET-014,négatif synthétique,N16,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-143,DET-014,négatif synthétique,N17,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-144,DET-014,négatif synthétique,N21,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-145,DET-014,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK
+TEST-146,DET-015,autre événement du même logsource,E01,dossier:journal l.1,ne déclenche pas,ne déclenche pas,OK
+TEST-147,DET-015,autre événement du même logsource,E03,dossier:détail alerte 3 (Image déduite de la commande),ne déclenche pas,ne déclenche pas,OK
+TEST-148,DET-015,autre événement du même logsource,E13,dossier:journal l.12 (Image déduite),ne déclenche pas,ne déclenche pas,OK
+TEST-149,DET-015,positif réel,E14,fiche BIN-02 (nom seul),déclenche,déclenche,OK
+TEST-150,DET-015,positif réel,E15,fiche BIN-03 (nom seul),déclenche,déclenche,OK
+TEST-151,DET-015,autre événement du même logsource,S01,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-152,DET-015,autre événement du même logsource,S02,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-153,DET-015,autre événement du même logsource,S04,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-154,DET-015,autre événement du même logsource,S10,synthétique,ne déclenche pas,ne déclenche pas,OK
+TEST-155,DET-015,négatif synthétique,N01,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-156,DET-015,négatif synthétique,N02,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-157,DET-015,négatif synthétique,N05,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-158,DET-015,négatif synthétique,N06,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-159,DET-015,négatif synthétique,N16,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-160,DET-015,négatif synthétique,N17,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-161,DET-015,négatif synthétique,N21,synthétique négatif,ne déclenche pas,ne déclenche pas,OK
+TEST-162,DET-015,bruit du dossier (agrégé),B001..B360,"bruit du dossier (syslog Linux, 360 lignes, applicable seulement comme contrôle croisé)",ne déclenche pas,0 déclenchement(s),OK

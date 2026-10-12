@@ -1,0 +1,102 @@
+<!-- VARIANTE PRODUCTION (niveaux abaissés à 4-7 pour rester SOUS le seuil 10 de l'intégration custom-thehive et sous email_alert_level 12) des règles de TEST Wazuh du challenge CTI Helios (adaptations MANUELLES des règles Sigma DET-001 à DET-015, ids 130101 à 130115).
+     Différences de logique avec Sigma : pas de normalisation de chemins ; exclusions limitées aux champs décodés ; seuil d'octets approché par le nombre de chiffres ;
+     DET-005 adaptée au journal du dossier (nom de tâche) et non à la ligne de commande schtasks. Ne pas déployer en production sans revue. -->
+<group name="helios_challenge,">
+  <rule id="130101" level="7">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="parent_image" type="pcre2">(?i)(winword|excel|powerpnt)\.exe$</field>
+    <field name="image" type="pcre2">(?i)powershell(\.exe)?$</field>
+    <field name="command_line" type="pcre2">(?i)(-enc|-encodedcommand)</field>
+    <field name="command_line" type="pcre2">(?i)(-w hidden|-windowstyle hidden)</field>
+    <description>[CHALLENGE FICTIF] DET-001 Office lançant PowerShell encodé et masqué</description>
+    <mitre><id>T1059.001</id><id>T1564.003</id></mitre>
+  </rule>
+  <rule id="130102" level="4">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="image" type="pcre2">(?i)powershell(\.exe)?$</field>
+    <field name="command_line" type="pcre2">(?i)-enc.*SQBFAFgA</field>
+    <description>[CHALLENGE FICTIF] DET-002 Chasse : PowerShell encodé commençant par IEX</description>
+    <mitre><id>T1059.001</id></mitre>
+  </rule>
+  <rule id="130103" level="5">
+    <decoded_as>helios-squid</decoded_as>
+    <field name="http_url" type="pcre2">(?i)\.exe$</field>
+    <field name="http_status">^200$</field>
+    <description>[CHALLENGE FICTIF] DET-003 Téléchargement d'un exécutable via le proxy (réponse 200)</description>
+    <mitre><id>T1105</id></mitre>
+  </rule>
+  <rule id="130104" level="4">
+    <decoded_as>helios-squid</decoded_as>
+    <field name="http_url" type="pcre2">(?i)(cdn-svc-update|api-telemetry-eu|mail-secure-login|static-assets-cache|helios-energy-portal|update-win-msft)\.test</field>
+    <description>[CHALLENGE FICTIF] DET-004 IOC : requête proxy vers un domaine du dossier</description>
+  </rule>
+  <rule id="130105" level="5">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="task_name">^MicrosoftEdgeUpdateTaskMachine$</field>
+    <description>[CHALLENGE FICTIF] DET-005 Tâche planifiée imitant la mise à jour Edge (nom exact sans suffixe)</description>
+    <mitre><id>T1053.005</id></mitre>
+  </rule>
+  <rule id="130112" level="7">
+    <decoded_as>helios-zeek</decoded_as>
+    <field name="orig_bytes" type="pcre2">^\d{10,}$</field>
+    <description>[CHALLENGE FICTIF] DET-012 Sortie réseau d'au moins 1 000 000 000 octets (10 chiffres ou plus)</description>
+    <mitre><id>T1048.003</id></mitre>
+  </rule>
+  <rule id="130106" level="4">
+    <decoded_as>helios-zeek</decoded_as>
+    <field name="dst_ip" type="pcre2">^(198\.51\.100\.24|203\.0\.113\.14|203\.0\.113\.15|203\.0\.113\.28)$</field>
+    <description>[CHALLENGE FICTIF] DET-006 IOC : connexion vers une IP du dossier</description>
+  </rule>
+  <rule id="130107" level="7">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="target_image" type="pcre2">(?i)lsass\.exe$</field>
+    <field name="granted_access" type="pcre2">(?i)^0x(1010|1410)$</field>
+    <field name="source_image" negate="yes" type="pcre2">(?i)^(C:\\Windows\\System32\\|C:\\Program Files\\Windows Defender\\)</field>
+    <description>[CHALLENGE FICTIF] DET-007 Accès à LSASS avec droits de lecture mémoire</description>
+    <mitre><id>T1003.001</id></mitre>
+  </rule>
+  <rule id="130108" level="5">
+    <decoded_as>helios-zeek</decoded_as>
+    <field name="dports" type="pcre2">(445|3389)</field>
+    <description>[CHALLENGE FICTIF] DET-008 Balayage détecté sur SMB ou RDP</description>
+    <mitre><id>T1046</id></mitre>
+  </rule>
+  <rule id="130109" level="5">
+    <decoded_as>helios-security</decoded_as>
+    <field name="logon_type">^10$</field>
+    <field name="win_user" type="pcre2">(?i)^svc-</field>
+    <description>[CHALLENGE FICTIF] DET-009 Connexion RDP d'un compte de service</description>
+    <mitre><id>T1021.001</id><id>T1078</id></mitre>
+  </rule>
+  <rule id="130110" level="7">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="target_image" type="pcre2">(?i)explorer\.exe$</field>
+    <description>[CHALLENGE FICTIF] DET-010 Thread distant créé dans explorer.exe (source non décodée dans ce format)</description>
+    <mitre><id>T1055</id></mitre>
+  </rule>
+  <rule id="130111" level="5">
+    <decoded_as>helios-security</decoded_as>
+    <field name="event_id">^4720$</field>
+    <field name="win_user" type="pcre2">(?i)-temp$</field>
+    <description>[CHALLENGE FICTIF] DET-011 Création d'un compte dont le nom finit par -temp</description>
+    <mitre><id>T1136.002</id></mitre>
+  </rule>
+  <rule id="130113" level="7">
+    <decoded_as>helios-security</decoded_as>
+    <field name="event_id">^1102$</field>
+    <description>[CHALLENGE FICTIF] DET-013 Journal Security effacé (1102)</description>
+    <mitre><id>T1685.005</id></mitre>
+  </rule>
+  <rule id="130114" level="7">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="image" type="pcre2">(?i)wevtutil(\.exe)?$</field>
+    <field name="command_line" type="pcre2">(?i)\bcl\b.*security</field>
+    <description>[CHALLENGE FICTIF] DET-014 Commande wevtutil cl Security</description>
+    <mitre><id>T1685.005</id></mitre>
+  </rule>
+  <rule id="130115" level="4">
+    <decoded_as>helios-sysmon</decoded_as>
+    <field name="image" type="pcre2">(?i)(svchost_update\.exe|rundll32_helper\.dll)$</field>
+    <description>[CHALLENGE FICTIF] DET-015 IOC : nom de fichier issu des fiches binaires</description>
+  </rule>
+</group>

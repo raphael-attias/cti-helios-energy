@@ -1,0 +1,25 @@
+title: Connexion RDP (type 10) d'un compte de service
+id: a33b8949-9c88-5420-9cc5-a46d8741c745
+status: experimental
+description: 'Observé : 4624 type 10 pour svc-backup-temp. Chronologie du compte contradictoire (I-03). [DET-009 | fondement : DIRECTE | artefacts
+  : ALERT-007, journal l.6]'
+references:
+- alerte ALERT-007
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.lateral-movement
+- attack.t1021.001
+- attack.t1078
+logsource:
+  product: windows
+  service: security
+detection:
+  sel:
+    EventID: 4624
+    LogonType: 10
+    TargetUserName|startswith: svc-
+  condition: sel
+falsepositives:
+- Comptes de service d'administration utilisant RDP légitimement
+level: medium

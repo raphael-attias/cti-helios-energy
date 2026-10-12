@@ -1,0 +1,623 @@
+{
+  "statut": "PROPOSITION : NON APPROUVE, NON EXECUTE",
+  "genere_depuis": "02-Artefacts/Inventaire-IoC.csv",
+  "sha256_inventaire": "1ac5ad23970b05331c1b767799501c21f69c2cfc16c48218b999b18f46f1603e",
+  "cible": {
+    "plateforme": "MISP",
+    "url": "https://172.16.208.253",
+    "instance_verifiee_en_ecriture": false,
+    "compte": "A DEFINIR (B-02)",
+    "organisation": "A DEFINIR (B-03)"
+  },
+  "evenement": {
+    "info": "[CHALLENGE FICTIF] Helios Energy INC-2026-0302",
+    "distribution": "0 (cette organisation seulement)",
+    "sharing_group": null,
+    "published": false,
+    "analysis": "0 (initial)",
+    "threat_level_id": "2 (moyen) à confirmer",
+    "date": "2026-03-02",
+    "tags_proposes": [
+      "tlp:amber",
+      "challenge:helios-energy (étiquette locale à créer, à vérifier avant)"
+    ],
+    "galaxies": "AUCUNE à ce stade : pas de galaxie d'acteur (attribution = hypothèse non établie). Les galaxies ATT&CK 'attack-pattern' ne seront ajoutées qu'après vérification des techniques sur la source officielle (REQ-17)."
+  },
+  "regles": [
+    "to_ids=false pour tous les attributs : les valeurs sont fictives et ne doivent pas nourrir des exports de détection",
+    "aucun attribut ne doit être publié ; pas de synchronisation vers un autre MISP",
+    "anti-doublon : avant écriture, recherche par valeur dans l'événement cible ; en cas de relance, ne créer que ce qui manque",
+    "ISOLATION NON PROUVEE : distribution 0 et événement non publié ne garantissent pas l'absence d'import par les connecteurs (OpenCTI, TheHive). Écriture suspendue tant que la configuration réelle des filtres n'a pas été lue (B-03, Q2)",
+    "après écriture éventuelle : relecture d'OpenCTI sur deux cycles de synchronisation pour constater l'absence d'importation",
+    "après écriture : relecture de chaque attribut via l'API et comparaison à ce manifeste (Verification-MISP.md)"
+  ],
+  "objets_proposes": [
+    {
+      "template": "file",
+      "pour": [
+        "BIN-001",
+        "BIN-002",
+        "BIN-003"
+      ],
+      "champs": [
+        "filename",
+        "md5",
+        "sha1",
+        "sha256",
+        "size-in-bytes"
+      ],
+      "remarque": "relation 'drops' / 'downloads' à ne poser que si la fiche l'établit ; échantillons non fournis"
+    },
+    {
+      "template": "domain-ip",
+      "pour": "paires domaine/IP dont la résolution est écrite dans le contexte source (IOC-013/019, IOC-014/020)",
+      "remarque": "la résolution est une affirmation de la source, pas une vérification"
+    }
+  ],
+  "attributs": [
+    {
+      "id_local": "IOC-001",
+      "type": "sha256",
+      "category": "Payload delivery",
+      "value": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5",
+      "to_ids": false,
+      "comment": "IOC-001 | source SOC | première vue 2026-03-02T08:30:00Z | BIN-01 facture_mars_2026.xlsm | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:30:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-002",
+      "type": "sha1",
+      "category": "Payload delivery",
+      "value": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+      "to_ids": false,
+      "comment": "IOC-002 | source SOC | première vue 2026-03-02T08:30:00Z | BIN-01 facture_mars_2026.xlsm (SHA-1) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:30:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-003",
+      "type": "md5",
+      "category": "Payload delivery",
+      "value": "8ba35251cca8daa4a05331bba8f95b05",
+      "to_ids": false,
+      "comment": "IOC-003 | source SOC | première vue 2026-03-02T08:30:00Z | BIN-01 facture_mars_2026.xlsm (empreinte faible, pour antivirus hérités) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:30:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-004",
+      "type": "sha256",
+      "category": "Payload delivery",
+      "value": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9",
+      "to_ids": false,
+      "comment": "IOC-004 | source SOC | première vue 2026-03-02T08:41:00Z | BIN-02 svchost_update.exe | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-005",
+      "type": "sha1",
+      "category": "Payload delivery",
+      "value": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+      "to_ids": false,
+      "comment": "IOC-005 | source SOC | première vue 2026-03-02T08:41:00Z | BIN-02 svchost_update.exe (SHA-1) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-006",
+      "type": "md5",
+      "category": "Payload delivery",
+      "value": "91678506a5474354f1ceb4c12c3c56dd",
+      "to_ids": false,
+      "comment": "IOC-006 | source SOC | première vue 2026-03-02T08:41:00Z | BIN-02 svchost_update.exe (empreinte faible, pour antivirus hérités) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-007",
+      "type": "sha256",
+      "category": "Payload delivery",
+      "value": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0",
+      "to_ids": false,
+      "comment": "IOC-007 | source SOC | première vue 2026-03-05T14:05:00Z | BIN-03 rundll32_helper.dll | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-05T14:05:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-008",
+      "type": "sha1",
+      "category": "Payload delivery",
+      "value": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+      "to_ids": false,
+      "comment": "IOC-008 | source SOC | première vue 2026-03-05T14:05:00Z | BIN-03 rundll32_helper.dll (SHA-1) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-05T14:05:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-009",
+      "type": "md5",
+      "category": "Payload delivery",
+      "value": "3435016f3f2aacce36b71abb636cfc64",
+      "to_ids": false,
+      "comment": "IOC-009 | source SOC | première vue 2026-03-05T14:05:00Z | BIN-03 rundll32_helper.dll (empreinte faible, pour antivirus hérités) | empreinte déclarée par la fiche, échantillon non fourni",
+      "first_seen": "2026-03-05T14:05:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-010",
+      "type": "sha256",
+      "category": "Artifacts dropped",
+      "value": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f",
+      "to_ids": false,
+      "comment": "IOC-010 | source SOC | première vue 2026-03-02T08:32:00Z | Charge PowerShell déchiffrée par BIN-01 (en mémoire) | empreinte dérivée (charge en mémoire/archive), pas un fichier fourni",
+      "first_seen": "2026-03-02T08:32:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-011",
+      "type": "sha256",
+      "category": "Artifacts dropped",
+      "value": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171",
+      "to_ids": false,
+      "comment": "IOC-011 | source SOC | première vue 2026-03-04T11:06:00Z | Module injecté par BIN-02 dans explorer.exe | empreinte dérivée (charge en mémoire/archive), pas un fichier fourni",
+      "first_seen": "2026-03-04T11:06:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-012",
+      "type": "sha256",
+      "category": "Artifacts dropped",
+      "value": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730",
+      "to_ids": false,
+      "comment": "IOC-012 | source SOC | première vue 2026-03-05T14:45:00Z | Archive chiffrée préparée avant exfiltration (BIN-03) | empreinte dérivée (charge en mémoire/archive), pas un fichier fourni",
+      "first_seen": "2026-03-05T14:45:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-013",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "cdn-svc-update.test",
+      "to_ids": false,
+      "comment": "IOC-013 | source SOC | première vue 2026-03-02T08:41:00Z | Téléchargement de la charge BIN-02 | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-014",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "api-telemetry-eu.test",
+      "to_ids": false,
+      "comment": "IOC-014 | source SOC | première vue 2026-03-02T09:15:00Z | Commande et contrôle de BIN-02 | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-02T09:15:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-015",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "mail-secure-login.test",
+      "to_ids": false,
+      "comment": "IOC-015 | source SOC | première vue 2026-03-02T07:58:00Z | Page d'hameçonnage liée au courriel initial | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-02T07:58:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-016",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "static-assets-cache.test",
+      "to_ids": false,
+      "comment": "IOC-016 | source SOC | première vue 2026-03-03T03:22:00Z | Second domaine de repli, même certificat | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-03T03:22:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-017",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "helios-energy-portal.test",
+      "to_ids": false,
+      "comment": "IOC-017 | source SOC | première vue 2026-03-02T06:40:00Z | Domaine d'usurpation imitant la victime | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-02T06:40:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-018",
+      "type": "domain",
+      "category": "Network activity",
+      "value": "update-win-msft.test",
+      "to_ids": false,
+      "comment": "IOC-018 | source SOC | première vue 2026-03-04T11:04:00Z | Nom de tâche planifiée associé | domaine de la plage .test, non résolvable",
+      "first_seen": "2026-03-04T11:04:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-019",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "198.51.100.23",
+      "to_ids": false,
+      "comment": "IOC-019 | source SOC | première vue 2026-03-02T08:41:00Z | Résolution de cdn-svc-update[.]test | plage de documentation RFC 5737",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-020",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "198.51.100.24",
+      "to_ids": false,
+      "comment": "IOC-020 | source SOC | première vue 2026-03-02T09:15:00Z | Résolution de api-telemetry-eu[.]test | plage de documentation RFC 5737",
+      "first_seen": "2026-03-02T09:15:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-021",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "203.0.113.14",
+      "to_ids": false,
+      "comment": "IOC-021 | source SOC | première vue 2026-03-02T09:20:00Z | Serveur de commande principal (BIN-02) | plage de documentation RFC 5737",
+      "first_seen": "2026-03-02T09:20:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-022",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "203.0.113.15",
+      "to_ids": false,
+      "comment": "IOC-022 | source SOC | première vue 2026-03-03T02:00:00Z | Serveur de commande de repli | plage de documentation RFC 5737",
+      "first_seen": "2026-03-03T02:00:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-023",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "198.51.100.40",
+      "to_ids": false,
+      "comment": "IOC-023 | source SOC | première vue 2026-03-02T07:58:00Z | Hébergement de la page d'hameçonnage | plage de documentation RFC 5737",
+      "first_seen": "2026-03-02T07:58:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-024",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "203.0.113.28",
+      "to_ids": false,
+      "comment": "IOC-024 | source SOC | première vue 2026-03-05T15:30:00Z | Exfiltration, volume anormal sortant (BIN-03) | plage de documentation RFC 5737",
+      "first_seen": "2026-03-05T15:30:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-025",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "198.51.100.55",
+      "to_ids": false,
+      "comment": "IOC-025 | source SOC | première vue 2026-03-03T10:12:00Z | Balayage interne observé depuis poste compromis | plage de documentation RFC 5737",
+      "first_seen": "2026-03-03T10:12:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-026",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "203.0.113.44",
+      "to_ids": false,
+      "comment": "IOC-026 | source SOC | première vue 2026-03-04T01:47:00Z | Connexion RDP entrante hors horaires | plage de documentation RFC 5737",
+      "first_seen": "2026-03-04T01:47:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-027",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "198.51.100.61",
+      "to_ids": false,
+      "comment": "IOC-027 | source SOC | première vue 2026-03-03T03:22:00Z | Nœud intermédiaire, passive DNS partagé avec D-04 | plage de documentation RFC 5737",
+      "first_seen": "2026-03-03T03:22:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"4\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-028",
+      "type": "ip-dst",
+      "category": "Network activity",
+      "value": "203.0.113.60",
+      "to_ids": false,
+      "comment": "IOC-028 | source SOC | première vue 2026-03-06T09:00:00Z | IP mentionnée dans un rapport public sur un cluster proche — à corréler, non confirmée | plage de documentation RFC 5737",
+      "first_seen": "2026-03-06T09:00:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"d\"",
+        "admiralty-scale:information-credibility=\"4\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-029",
+      "type": "url",
+      "category": "Network activity",
+      "value": "https://cdn-svc-update.test/win/svchost_update.exe",
+      "to_ids": false,
+      "comment": "IOC-029 | source SOC | première vue 2026-03-02T08:41:00Z | URL de la seconde charge | URL en .test",
+      "first_seen": "2026-03-02T08:41:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-030",
+      "type": "url",
+      "category": "Network activity",
+      "value": "https://mail-secure-login.test/owa/auth",
+      "to_ids": false,
+      "comment": "IOC-030 | source SOC | première vue 2026-03-02T07:58:00Z | Page de collecte d'identifiants | URL en .test",
+      "first_seen": "2026-03-02T07:58:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-031",
+      "type": "url",
+      "category": "Network activity",
+      "value": "https://api-telemetry-eu.test/v2/beacon",
+      "to_ids": false,
+      "comment": "IOC-031 | source SOC | première vue 2026-03-02T09:15:00Z | Point de contact de la balise | URL en .test",
+      "first_seen": "2026-03-02T09:15:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-032",
+      "type": "url",
+      "category": "Network activity",
+      "value": "https://helios-energy-portal.test/hr/doc",
+      "to_ids": false,
+      "comment": "IOC-032 | source SOC | première vue 2026-03-02T06:40:00Z | Leurre imitant le portail RH de la victime | URL en .test",
+      "first_seen": "2026-03-02T06:40:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-033",
+      "type": "x509-fingerprint-sha1",
+      "category": "Network activity",
+      "value": "bda5d6c36e3ff362f9ce0957370a429fff58eb37",
+      "to_ids": false,
+      "comment": "IOC-033 | source SOC | première vue 2026-03-02T09:20:00Z | Certificat auto-signé partagé par les serveurs de commande, sujet CN=update-service | empreinte de certificat",
+      "first_seen": "2026-03-02T09:20:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-034",
+      "type": "x509-fingerprint-sha1",
+      "category": "Network activity",
+      "value": "0315d14dd4b9095a10e359cbaf4129f0a6322a59",
+      "to_ids": false,
+      "comment": "IOC-034 | source SOC | première vue 2026-03-02T07:58:00Z | Certificat de la page d'hameçonnage | empreinte de certificat",
+      "first_seen": "2026-03-02T07:58:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"3\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-035",
+      "type": "x509-fingerprint-sha1",
+      "category": "Network activity",
+      "value": "1e8bd87af841cda6441306558f11d973eb0a5601",
+      "to_ids": false,
+      "comment": "IOC-035 | source SOC | première vue 2026-03-06T10:00:00Z | Certificat révélant par pivot une campagne antérieure (janvier 2026) | empreinte de certificat",
+      "first_seen": "2026-03-06T10:00:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"c\"",
+        "admiralty-scale:information-credibility=\"4\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-036",
+      "type": "other",
+      "category": "Persistence mechanism",
+      "value": "MicrosoftEdgeUpdateTaskMachine",
+      "to_ids": false,
+      "comment": "IOC-036 | source SOC | première vue 2026-03-02T08:45:00Z | Tâche planifiée de persistance (BIN-02) | nom de tâche planifiée",
+      "first_seen": "2026-03-02T08:45:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-037",
+      "type": "other",
+      "category": "Persistence mechanism",
+      "value": "svc-backup-temp",
+      "to_ids": false,
+      "comment": "IOC-037 | source SOC | première vue 2026-03-05T14:10:00Z | Compte de service créé puis supprimé sur le contrôleur de domaine | compte de service créé puis supprimé (chronologie incohérente, voir I-03)",
+      "first_seen": "2026-03-05T14:10:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-038",
+      "type": "regkey",
+      "category": "Persistence mechanism",
+      "value": "HKCU\\...\\Run\\WinTelemetry",
+      "to_ids": false,
+      "comment": "IOC-038 | source SOC | première vue 2026-03-02T08:44:00Z | Clé de registre de persistance | clé du registre (valeur tronquée dans la source : '...')",
+      "first_seen": "2026-03-02T08:44:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-039",
+      "type": "filename",
+      "category": "Artifacts dropped",
+      "value": "C:\\Windows\\Temp\\~df3a9.tmp",
+      "to_ids": false,
+      "comment": "IOC-039 | source SOC | première vue 2026-03-05T14:40:00Z | Fichier de collecte chiffré avant exfiltration | chemin de fichier temporaire",
+      "first_seen": "2026-03-05T14:40:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"b\"",
+        "admiralty-scale:information-credibility=\"2\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    },
+    {
+      "id_local": "IOC-040",
+      "type": "hostname",
+      "category": "Targeting data",
+      "value": "comptabilite-07",
+      "to_ids": false,
+      "comment": "IOC-040 | source SOC | première vue 2026-03-02T08:30:00Z | Poste d'entrée initial (patient zéro) | actif VICTIME, pas un IoC : ne doit pas alimenter de détection",
+      "first_seen": "2026-03-02T08:30:00Z",
+      "tags_proposes": [
+        "admiralty-scale:source-reliability=\"a\"",
+        "admiralty-scale:information-credibility=\"1\""
+      ],
+      "note_cotation": "cote reprise telle que fournie par le SOC ; évaluation propre à produire (REQ-19)"
+    }
+  ],
+  "hors_perimetre_mis_en_attente": [
+    "IOC-028 et IOC-035 : renvoient à des sources non fournies (cotes D4 et C4) ; ingérer avec commentaire 'non confirmé'",
+    "alertes SIEM, chronologie, techniques ATT&CK : à apporter plus tard sous forme de commentaires/objets, pas d'IoC"
+  ]
+}

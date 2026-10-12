@@ -1,0 +1,24 @@
+title: Téléchargement d'un exécutable par GET avec réponse 200 via le proxy
+id: 0e79e9fb-1ec2-5f83-b448-b4da71ef4c1c
+status: experimental
+description: 'Observé : GET d''un .exe, réponse 200, 421376 octets. Règle large : exige une liste d''autorisation des domaines de mise à jour.
+  [DET-003 | fondement : DIRECTE | artefacts : ALERT-002, journal l.2]'
+references:
+- alerte ALERT-002
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.command-and-control
+- attack.t1105
+logsource:
+  category: proxy
+detection:
+  sel:
+    cs-method: GET
+    c-uri|endswith: .exe
+    sc-status: 200
+  condition: sel
+falsepositives:
+- Mises à jour logicielles légitimes
+- Téléchargements d'outils d'administration
+level: medium

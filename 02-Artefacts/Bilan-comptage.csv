@@ -1,0 +1,12 @@
+mesure,valeur
+IoC lignes CSV d'origine,40
+IoC lignes JSON,40
+IoC valeurs uniques (type+valeur normalisée),40
+IoC doublons,0
+IoC valeurs invalides,0
+Alertes,12
+Fiches binaires,3
+Échantillons binaires fournis,0
+Lignes journal brut,372
+Lignes journal ISO (corrélées aux alertes),12
+Lignes journal syslog (bruit),360

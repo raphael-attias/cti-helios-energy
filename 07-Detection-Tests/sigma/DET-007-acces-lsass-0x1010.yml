@@ -1,0 +1,29 @@
+title: Accès à LSASS avec droits de lecture mémoire (0x1010)
+id: ecf5e274-a2b3-52a2-a6b1-1278204c22a2
+status: experimental
+description: 'Observé : target=lsass.exe granted=0x1010 par rundll32_helper.dll. Le masque 0x1010 = PROCESS_QUERY_LIMITED_INFORMATION + PROCESS_VM_READ.
+  [DET-007 | fondement : DIRECTE | artefacts : ALERT-005, journal l.8]'
+references:
+- alerte ALERT-005
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.credential-access
+- attack.t1003.001
+logsource:
+  category: process_access
+  product: windows
+detection:
+  sel:
+    TargetImage|endswith: lsass.exe
+    GrantedAccess:
+    - '0x1010'
+    - '0x1410'
+  legit:
+    SourceImage|startswith:
+    - C:\Windows\System32\
+    - C:\Program Files\Windows Defender\
+  condition: sel and not legit
+falsepositives:
+- Outils de sécurité, EDR, antivirus lisant LSASS (à placer dans la liste d'exclusion)
+level: high

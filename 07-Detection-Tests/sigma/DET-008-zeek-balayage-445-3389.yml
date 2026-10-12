@@ -1,0 +1,26 @@
+title: Balayage détecté par Zeek sur SMB et RDP
+id: 6a3a5319-851c-59a8-b693-b8469e0eea07
+status: experimental
+description: 'Observé : scan detected 198.51.100.55 -> 10.20.0.0/16 dports=445,3389. La nature de l''IP source est inconnue (I-05). [DET-008 |
+  fondement : DIRECTE | artefacts : ALERT-006, journal l.5]'
+references:
+- alerte ALERT-006
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.discovery
+- attack.t1046
+logsource:
+  product: zeek
+  service: notice
+detection:
+  sel:
+    msg|contains: scan detected
+  ports:
+    msg|contains:
+    - dports=445
+    - '3389'
+  condition: sel and ports
+falsepositives:
+- Scanners de vulnérabilités internes autorisés
+level: medium

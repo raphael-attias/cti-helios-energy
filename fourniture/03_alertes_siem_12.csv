@@ -1,0 +1,13 @@
+alerte,horodatage,source,hote,intitule,technique_attck,severite,detail
+1,2026-03-02T08:31:00Z,Endpoint,comptabilite-07,Macro Office lançant PowerShell,T1059.001,Haute,winword.exe engendre powershell.exe -enc <base64> -w hidden
+2,2026-03-02T08:42:00Z,Proxy,comptabilite-07,Téléchargement d'exécutable depuis domaine jamais vu,T1105,Haute,GET hxxps://cdn-svc-update[.]test/win/svchost_update.exe
+3,2026-03-02T08:46:00Z,Endpoint,comptabilite-07,Création d'une tâche planifiée suspecte,T1053.005,Moyenne,schtasks /create /tn MicrosoftEdgeUpdateTaskMachine
+4,2026-03-02T09:16:00Z,Réseau,comptabilite-07,Balise périodique vers domaine externe,T1071.001,Moyenne,Connexions régulières toutes les ~300 s vers api-telemetry-eu[.]test
+5,2026-03-05T14:07:00Z,Endpoint,dc-01,Accès en mémoire au processus LSASS,T1003.001,Critique,Handle en lecture sur lsass.exe par un processus non signé
+6,2026-03-03T10:13:00Z,Réseau,comptabilite-07,Balayage de ports interne,T1046,Moyenne,"198.51.100.55 scanne le sous-réseau 10.20.0.0/16 sur 445, 3389"
+7,2026-03-04T01:48:00Z,Authentification,srv-fichiers-02,Connexion RDP hors horaires ouvrés,T1021.001,Moyenne,"Ouverture de session RDP à 01:47, source interne inhabituelle"
+8,2026-03-04T11:05:00Z,Endpoint,srv-fichiers-02,Injection de code dans un processus légitime,T1055.012,Haute,explorer.exe présente une région mémoire exécutable anormale
+9,2026-03-05T14:12:00Z,Active Directory,dc-01,Création puis suppression rapide d'un compte de service,T1543.003,Haute,"svc-backup-temp créé à 14:10, supprimé à 14:55"
+10,2026-03-05T15:31:00Z,Réseau,dc-01,Exfiltration : volume sortant anormal,T1048.003,Critique,"2,3 Go sortants vers 203.0.113.28 en clair, port 8080"
+11,2026-03-06T03:10:00Z,Proxy,srv-fichiers-02,Contact d'un domaine de repli,T1008,Basse,Bascule vers static-assets-cache[.]test après perte du C2 principal
+12,2026-03-07T09:02:00Z,Endpoint,comptabilite-07,Tentative d'effacement des journaux,T1070.001,Haute,wevtutil cl Security observé sur le poste d'entrée

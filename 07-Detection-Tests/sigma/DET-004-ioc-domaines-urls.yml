@@ -1,0 +1,26 @@
+title: Requête proxy vers un domaine du dossier (IoC non vérifiés)
+id: f1ea9344-0e77-5e30-a995-9185c1756cc8
+status: experimental
+description: 'Domaines en .test du dossier pédagogique (non résolvables). Règle IOC : à retirer après l''exercice ; ne démontre pas un comportement.
+  [DET-004 | fondement : IOC | artefacts : IOC-013..018, IOC-029..032, journal l.2, l.11]'
+references:
+- IOC-013 à 018
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.command-and-control
+logsource:
+  category: proxy
+detection:
+  sel:
+    c-uri|contains:
+    - cdn-svc-update.test
+    - api-telemetry-eu.test
+    - mail-secure-login.test
+    - static-assets-cache.test
+    - helios-energy-portal.test
+    - update-win-msft.test
+  condition: sel
+falsepositives:
+- Aucun hors exercice (domaines fictifs)
+level: medium

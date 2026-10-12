@@ -1,0 +1,16 @@
+règles : 15 | événements en base : 410 (dossier/fiche 15, synthétiques positifs 13, négatifs 22, bruit 360) | tests détaillés : 162 | écarts : 0
+  {'det': 'DET-001', 'logsource': 'windows/process_creation', 'evenements_logsource': 16, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 14, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-002', 'logsource': 'windows/process_creation', 'evenements_logsource': 16, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 14, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-003', 'logsource': 'proxy', 'evenements_logsource': 7, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 5, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-004', 'logsource': 'proxy', 'evenements_logsource': 7, 'tp': 3, 'fn': 0, 'fp': 0, 'tn': 4, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-005', 'logsource': 'windows/process_creation', 'evenements_logsource': 16, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 14, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-006', 'logsource': 'zeek/conn', 'evenements_logsource': 6, 'tp': 3, 'fn': 0, 'fp': 0, 'tn': 3, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-007', 'logsource': 'windows/process_access', 'evenements_logsource': 4, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 2, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-008', 'logsource': 'zeek/notice', 'evenements_logsource': 3, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 1, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-009', 'logsource': 'windows/security', 'evenements_logsource': 10, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 8, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-010', 'logsource': 'windows/create_remote_thread', 'evenements_logsource': 4, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 2, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-011', 'logsource': 'windows/security', 'evenements_logsource': 10, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 8, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-012', 'logsource': 'zeek/conn', 'evenements_logsource': 6, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 4, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-013', 'logsource': 'windows/security', 'evenements_logsource': 10, 'tp': 1, 'fn': 0, 'fp': 0, 'tn': 9, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-014', 'logsource': 'windows/process_creation', 'evenements_logsource': 16, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 14, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}
+  {'det': 'DET-015', 'logsource': 'windows/process_creation', 'evenements_logsource': 16, 'tp': 2, 'fn': 0, 'fp': 0, 'tn': 14, 'croise': 0, 'bruit': 0, 'total_parcourus': 410}

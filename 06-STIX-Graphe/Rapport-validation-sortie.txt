@@ -1,0 +1,238 @@
+=== 1. stix2-validator 3.3.1
+    [!] Warning: bundle--11a140b3-be97-5b24-b283-255ce45a621a: {103} Given ID value bundle--11a140b3-be97-5b24-b283-255ce45a621a is not a valid UUIDv4 ID.
+    [!] Warning: identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f: {103} Given ID value identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f is not a valid UUIDv4 ID.
+    [!] Warning: file--6f2536f6-fe34-554d-b1b7-be0601158b28: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--6f2536f6-fe34-554d-b1b7-be0601158b28: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--6f2536f6-fe34-554d-b1b7-be0601158b28: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--8158819a-4d72-5660-b804-bc899c7d77be: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--8158819a-4d72-5660-b804-bc899c7d77be: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--8158819a-4d72-5660-b804-bc899c7d77be: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--f79ec794-1673-5e7b-80da-7a61697f242a: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--f79ec794-1673-5e7b-80da-7a61697f242a: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--f79ec794-1673-5e7b-80da-7a61697f242a: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013: {301} The Network Traffic object 'network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa: {301} The Network Traffic object 'network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9: {301} The Network Traffic object 'network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--46e66c73-8652-510b-9f35-56259d8432b9: {301} The Network Traffic object 'network-traffic--46e66c73-8652-510b-9f35-56259d8432b9' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--46e66c73-8652-510b-9f35-56259d8432b9: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--46e66c73-8652-510b-9f35-56259d8432b9: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--46e66c73-8652-510b-9f35-56259d8432b9: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c: {301} The Network Traffic object 'network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c: {301} The Network Traffic object 'network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--4557854c-6214-5885-976b-7e129f29d429: {301} The Network Traffic object 'network-traffic--4557854c-6214-5885-976b-7e129f29d429' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--4557854c-6214-5885-976b-7e129f29d429: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--4557854c-6214-5885-976b-7e129f29d429: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--4557854c-6214-5885-976b-7e129f29d429: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773: {301} The Network Traffic object 'network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773' should contain both the 'src_port' and 'dst_port' properties.
+    [!] Warning: network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--fd3e3b03-7616-57b8-9c18-dfdc93515f25: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--fd3e3b03-7616-57b8-9c18-dfdc93515f25: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--fd3e3b03-7616-57b8-9c18-dfdc93515f25: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--d09d25c1-a894-5c60-971c-4c95e7b653b4: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--d09d25c1-a894-5c60-971c-4c95e7b653b4: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--d09d25c1-a894-5c60-971c-4c95e7b653b4: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b42c2559-1040-583c-a389-8d5517003f96: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b42c2559-1040-583c-a389-8d5517003f96: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b42c2559-1040-583c-a389-8d5517003f96: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--de819979-c539-5789-93b0-b854225116a7: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--de819979-c539-5789-93b0-b854225116a7: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--de819979-c539-5789-93b0-b854225116a7: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--cb105689-9711-5632-b3ed-90174227038b: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--cb105689-9711-5632-b3ed-90174227038b: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--cb105689-9711-5632-b3ed-90174227038b: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--48d4206a-fd5b-55fd-a195-3986a461309f: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--48d4206a-fd5b-55fd-a195-3986a461309f: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--48d4206a-fd5b-55fd-a195-3986a461309f: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--4a6185da-a712-5bc9-be00-bc689787d5e7: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--4a6185da-a712-5bc9-be00-bc689787d5e7: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--4a6185da-a712-5bc9-be00-bc689787d5e7: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8968289e-0006-5e21-b130-b953237dfd0c: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8968289e-0006-5e21-b130-b953237dfd0c: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--8968289e-0006-5e21-b130-b953237dfd0c: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: user-account--41676b5a-3cda-57ac-a085-48839255dcc6: {401} Custom property 'x_helios_source' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: user-account--41676b5a-3cda-57ac-a085-48839255dcc6: {401} Custom property 'x_helios_collected_at' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: user-account--41676b5a-3cda-57ac-a085-48839255dcc6: {401} Custom property 'x_helios_admiralty' should be implemented using an extension with an 'extension_type' of 'property-extension' or 'toplevel-property-extension'.
+    [!] Warning: identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6: {103} Given ID value identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6 is not a valid UUIDv4 ID.
+    [!] Warning: identity--9ecaad58-3b65-597f-aa5d-200da8c3773b: {103} Given ID value identity--9ecaad58-3b65-597f-aa5d-200da8c3773b is not a valid UUIDv4 ID.
+    [!] Warning: identity--fc4c54fc-d124-5406-ae15-1ab120da7c04: {103} Given ID value identity--fc4c54fc-d124-5406-ae15-1ab120da7c04 is not a valid UUIDv4 ID.
+    [!] Warning: identity--a39cef96-0c30-5f2d-a5dd-955164152a77: {103} Given ID value identity--a39cef96-0c30-5f2d-a5dd-955164152a77 is not a valid UUIDv4 ID.
+    [!] Warning: identity--ddc7687d-6771-570e-9d38-5a671b23683d: {103} Given ID value identity--ddc7687d-6771-570e-9d38-5a671b23683d is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068: {103} Given ID value attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712: {103} Given ID value attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df: {103} Given ID value attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1: {103} Given ID value attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4: {103} Given ID value attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238: {103} Given ID value attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238 is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c: {103} Given ID value attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b: {103} Given ID value attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b is not a valid UUIDv4 ID.
+    [!] Warning: attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b: {302} External reference 'mitre-attack' has a URL but no hash.
+    [!] Warning: campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9: {103} Given ID value campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9 is not a valid UUIDv4 ID.
+    [!] Warning: malware--217f1232-8d80-517d-8dd9-72c6542ec749: {103} Given ID value malware--217f1232-8d80-517d-8dd9-72c6542ec749 is not a valid UUIDv4 ID.
+    [!] Warning: malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a: {103} Given ID value malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a is not a valid UUIDv4 ID.
+    [!] Warning: malware--fd879985-6c14-58b0-9c60-0a115d99b91a: {103} Given ID value malware--fd879985-6c14-58b0-9c60-0a115d99b91a is not a valid UUIDv4 ID.
+    [!] Warning: indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914: {103} Given ID value indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85: {103} Given ID value indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690: {103} Given ID value indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917: {103} Given ID value indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6: {103} Given ID value indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1: {103} Given ID value indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29: {103} Given ID value indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29 is not a valid UUIDv4 ID.
+    [!] Warning: indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8: {103} Given ID value indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8 is not a valid UUIDv4 ID.
+    [!] Warning: tool--aaa894f0-e340-5243-9757-432871928c2e: {103} Given ID value tool--aaa894f0-e340-5243-9757-432871928c2e is not a valid UUIDv4 ID.
+    [!] Warning: tool--49a696f7-0695-5a3f-bd59-b9beec7e1496: {103} Given ID value tool--49a696f7-0695-5a3f-bd59-b9beec7e1496 is not a valid UUIDv4 ID.
+    [!] Warning: tool--09560a4d-4ab5-5a9a-819b-39ac6b108490: {103} Given ID value tool--09560a4d-4ab5-5a9a-819b-39ac6b108490 is not a valid UUIDv4 ID.
+    [!] Warning: infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425: {103} Given ID value infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425 is not a valid UUIDv4 ID.
+    [!] Warning: infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0: {103} Given ID value infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0 is not a valid UUIDv4 ID.
+    [!] Warning: infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a: {103} Given ID value infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a is not a valid UUIDv4 ID.
+    [!] Warning: infrastructure--36b67c60-cdbd-5e21-85ed-741795271706: {103} Given ID value infrastructure--36b67c60-cdbd-5e21-85ed-741795271706 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--46969d46-dfdc-5938-9c24-4ddc4da09cb6: {103} Given ID value relationship--46969d46-dfdc-5938-9c24-4ddc4da09cb6 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--25a9c579-d9f8-5e84-87dc-4e976c1f12b6: {103} Given ID value relationship--25a9c579-d9f8-5e84-87dc-4e976c1f12b6 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--044f0e9b-7d49-592e-927d-753ceacdb5f2: {103} Given ID value relationship--044f0e9b-7d49-592e-927d-753ceacdb5f2 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--50a2f6b7-56b9-5d21-9296-54a9d663e76a: {103} Given ID value relationship--50a2f6b7-56b9-5d21-9296-54a9d663e76a is not a valid UUIDv4 ID.
+    [!] Warning: relationship--adb4a9ce-a4cb-5d1e-b897-3d7ad9810b26: {103} Given ID value relationship--adb4a9ce-a4cb-5d1e-b897-3d7ad9810b26 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--c6624f3a-6dc3-5bca-b405-27a157b6054f: {103} Given ID value relationship--c6624f3a-6dc3-5bca-b405-27a157b6054f is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465: {103} Given ID value relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465: {202} 'domain-name' is permitted, but not a suggested relationship target object for 'indicator' objects with the 'based-on' relationship.
+    [!] Warning: relationship--9671f99b-87bd-5ac7-ba1e-fa25b4884cee: {103} Given ID value relationship--9671f99b-87bd-5ac7-ba1e-fa25b4884cee is not a valid UUIDv4 ID.
+    [!] Warning: relationship--96ca0128-8833-5548-b6fc-9acc58aa19f2: {103} Given ID value relationship--96ca0128-8833-5548-b6fc-9acc58aa19f2 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--d4be121c-3734-53ea-91fb-96bddac8d8d6: {103} Given ID value relationship--d4be121c-3734-53ea-91fb-96bddac8d8d6 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--9da50369-0df4-5c02-ac93-1181b645c6b5: {103} Given ID value relationship--9da50369-0df4-5c02-ac93-1181b645c6b5 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--9da50369-0df4-5c02-ac93-1181b645c6b5: {202} 'ipv4-addr' is permitted, but not a suggested relationship target object for 'indicator' objects with the 'based-on' relationship.
+    [!] Warning: relationship--d9726873-b6f1-58d3-8312-7cfb940b873e: {103} Given ID value relationship--d9726873-b6f1-58d3-8312-7cfb940b873e is not a valid UUIDv4 ID.
+    [!] Warning: relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b: {103} Given ID value relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b: {202} 'ipv4-addr' is permitted, but not a suggested relationship target object for 'indicator' objects with the 'based-on' relationship.
+    [!] Warning: relationship--1e2cc0ce-b6f0-54c0-9acb-3adf78f9f5e7: {103} Given ID value relationship--1e2cc0ce-b6f0-54c0-9acb-3adf78f9f5e7 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--79eaec38-1551-5748-aa2e-8d8b24b08ff5: {103} Given ID value relationship--79eaec38-1551-5748-aa2e-8d8b24b08ff5 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--896b48fe-344e-5151-8f5c-aa251ecd490b: {103} Given ID value relationship--896b48fe-344e-5151-8f5c-aa251ecd490b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--011a3da1-431c-57c1-bca5-4b8faa09ac2d: {103} Given ID value relationship--011a3da1-431c-57c1-bca5-4b8faa09ac2d is not a valid UUIDv4 ID.
+    [!] Warning: relationship--b50b8329-fd30-5164-8fb4-e5328bfd7324: {103} Given ID value relationship--b50b8329-fd30-5164-8fb4-e5328bfd7324 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--dcc3d856-0a0c-5da7-b984-051ac04449be: {103} Given ID value relationship--dcc3d856-0a0c-5da7-b984-051ac04449be is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f3af3314-c3f8-554e-8219-0b356ccd751c: {103} Given ID value relationship--f3af3314-c3f8-554e-8219-0b356ccd751c is not a valid UUIDv4 ID.
+    [!] Warning: relationship--58373742-a72f-571f-b16b-acffcd08e9c4: {103} Given ID value relationship--58373742-a72f-571f-b16b-acffcd08e9c4 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--74f6d4bc-d81c-56a6-952a-af67b49d02e2: {103} Given ID value relationship--74f6d4bc-d81c-56a6-952a-af67b49d02e2 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--8cad1f14-b287-5b45-8c83-84e1152504bc: {103} Given ID value relationship--8cad1f14-b287-5b45-8c83-84e1152504bc is not a valid UUIDv4 ID.
+    [!] Warning: relationship--297efbfb-7ad7-50ca-bb6d-fb5b8d33a87b: {103} Given ID value relationship--297efbfb-7ad7-50ca-bb6d-fb5b8d33a87b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--966545ad-b0fb-5718-bd49-f9c46b3caf39: {103} Given ID value relationship--966545ad-b0fb-5718-bd49-f9c46b3caf39 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--cbbea81c-345d-53ab-90e0-ae81d0626d42: {103} Given ID value relationship--cbbea81c-345d-53ab-90e0-ae81d0626d42 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--4965af79-e48a-5f4a-bfce-5900961c7565: {103} Given ID value relationship--4965af79-e48a-5f4a-bfce-5900961c7565 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--cf92acaa-993a-5c76-a765-6620d2387ea4: {103} Given ID value relationship--cf92acaa-993a-5c76-a765-6620d2387ea4 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f655934d-c354-5397-9bf1-dffad778430c: {103} Given ID value relationship--f655934d-c354-5397-9bf1-dffad778430c is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f8f4d561-6801-5bfc-a26f-beebf63b0cc9: {103} Given ID value relationship--f8f4d561-6801-5bfc-a26f-beebf63b0cc9 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--a9ab7018-f2f3-508c-a816-d1b83cd2905b: {103} Given ID value relationship--a9ab7018-f2f3-508c-a816-d1b83cd2905b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--f3c2f5ca-668d-5a09-ad3c-15d7acbaa062: {103} Given ID value relationship--f3c2f5ca-668d-5a09-ad3c-15d7acbaa062 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--35d8dcda-5ee3-5ac6-8c5e-0ab14e20db21: {103} Given ID value relationship--35d8dcda-5ee3-5ac6-8c5e-0ab14e20db21 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--fcc7c6f0-c293-502d-b7a8-dfc90dd047af: {103} Given ID value relationship--fcc7c6f0-c293-502d-b7a8-dfc90dd047af is not a valid UUIDv4 ID.
+    [!] Warning: relationship--43c4bc01-c2bc-57ca-bb50-c6009d72425b: {103} Given ID value relationship--43c4bc01-c2bc-57ca-bb50-c6009d72425b is not a valid UUIDv4 ID.
+    [!] Warning: relationship--5429855f-f3ed-5051-aa45-9c4c77e0b2f9: {103} Given ID value relationship--5429855f-f3ed-5051-aa45-9c4c77e0b2f9 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--abd2287d-4a4c-5bf0-bc0c-bede7283ee7d: {103} Given ID value relationship--abd2287d-4a4c-5bf0-bc0c-bede7283ee7d is not a valid UUIDv4 ID.
+    [!] Warning: relationship--e817fcbe-c754-5ff5-8275-ed6514b3e098: {103} Given ID value relationship--e817fcbe-c754-5ff5-8275-ed6514b3e098 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--519fbbc6-475b-59ee-be91-e54adbe85ef9: {103} Given ID value relationship--519fbbc6-475b-59ee-be91-e54adbe85ef9 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--48a30dc5-fc04-581c-98b0-63f4cff339e3: {103} Given ID value relationship--48a30dc5-fc04-581c-98b0-63f4cff339e3 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--b80e6507-e501-5f3f-8d33-c62d068d0820: {103} Given ID value relationship--b80e6507-e501-5f3f-8d33-c62d068d0820 is not a valid UUIDv4 ID.
+    [!] Warning: relationship--c7cc415f-618d-58e9-9e38-c0d8a2f77faf: {103} Given ID value relationship--c7cc415f-618d-58e9-9e38-c0d8a2f77faf is not a valid UUIDv4 ID.
+    [!] Warning: relationship--26611b5c-c840-5993-bb15-bb4a3db3ab11: {103} Given ID value relationship--26611b5c-c840-5993-bb15-bb4a3db3ab11 is not a valid UUIDv4 ID.
+    [!] Warning: note--f5d27372-c0ec-581a-8bef-769e225995cc: {103} Given ID value note--f5d27372-c0ec-581a-8bef-769e225995cc is not a valid UUIDv4 ID.
+    [!] Warning: note--5d601110-57be-5d7c-bcb3-d97afc925310: {103} Given ID value note--5d601110-57be-5d7c-bcb3-d97afc925310 is not a valid UUIDv4 ID.
+    [!] Warning: note--b14ea5bc-626a-5e5b-948f-62240f7a95f7: {103} Given ID value note--b14ea5bc-626a-5e5b-948f-62240f7a95f7 is not a valid UUIDv4 ID.
+    [!] Warning: note--f53c135f-35a0-5301-88a0-096e4297adf3: {103} Given ID value note--f53c135f-35a0-5301-88a0-096e4297adf3 is not a valid UUIDv4 ID.
+    [!] Warning: report--e7f0587f-6783-5605-88b1-ed849addb811: {103} Given ID value report--e7f0587f-6783-5605-88b1-ed849addb811 is not a valid UUIDv4 ID.
+valide : True | erreurs : 0 | avertissements : 218
+=== 2. stix2.parse (allow_custom pour x-misp-attribute)
+parse OK : 152 objets
+=== 3. patterns
+  [CHALLENGE FICTIF] IND-01 BIN-001 dropper (fiche) OK
+  [CHALLENGE FICTIF] IND-02 BIN-002 balise (fiche) OK
+  [CHALLENGE FICTIF] IND-03 BIN-003 outil d'identifiants (fich OK
+  [CHALLENGE FICTIF] IND-04 domaine de téléchargement de BIN-0 OK
+  [CHALLENGE FICTIF] IND-05 URL de la seconde charge OK
+  [CHALLENGE FICTIF] IND-06 destination de la connexion de bal OK
+  [CHALLENGE FICTIF] IND-07 destination de la sortie de 2 469  OK
+  [CHALLENGE FICTIF] IND-08 domaine du « repli C2 » (ALERT-011 OK
+=== 4. cohérence métier
+références vérifiées : 548 | non résolues : 0
+types d'objets : {'identity': 6, 'grouping': 1, 'observed-data': 28, 'file': 7, 'domain-name': 6, 'network-traffic': 8, 'ipv4-addr': 10, 'url': 4, 'x509-certificate': 3, 'note': 5, 'relationship': 44, 'marking-definition': 1, 'user-account': 1, 'attack-pattern': 8, 'campaign': 1, 'malware': 3, 'indicator': 8, 'tool': 3, 'infrastructure': 4, 'report': 1}
+comptage séparé : {'analytiques': 34, 'observables (SCO)': 39, "observed-data (conteneurs d'observation)": 28, 'relations': 44, 'identités': 6, 'techniques (marquage, x-misp-attribute)': 1} | total 152 | somme 152
+objets reliés (relation ou conteneur) : 149 | objets analytiques reliés par une RELATION : 31
+statut des relations ajoutées : {'declare': 8, 'hypothese': 15, 'observe': 21}
+COHÉRENCE MÉTIER : OK | patterns invalides : 0

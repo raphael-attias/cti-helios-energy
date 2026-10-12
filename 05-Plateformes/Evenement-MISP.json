@@ -1,0 +1,509 @@
+{
+  "Event": {
+    "info": "[CHALLENGE FICTIF] Helios Energy INC-2026-0302",
+    "date": "2026-03-02",
+    "distribution": "0",
+    "threat_level_id": "4",
+    "analysis": "1",
+    "published": false,
+    "Tag": [
+      {
+        "name": "tlp:amber"
+      },
+      {
+        "name": "challenge:helios-fictif"
+      },
+      {
+        "name": "challenge:source=dossier-pedagogique"
+      }
+    ],
+    "Attribute": [
+      {
+        "type": "sha256",
+        "category": "Artifacts dropped",
+        "value": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f",
+        "to_ids": false,
+        "comment": "IOC-010 | dossier fourniture/02_indicateurs_40.csv ligne 11 | première vue 2026-03-02T08:32:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Charge PowerShell déchiffrée par BIN-01 (en mémoire) | charge PowerShell déchiffrée DECLAREE, aucune capture | NON VERIFIE",
+        "first_seen": "2026-03-02T08:32:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "sha256",
+        "category": "Artifacts dropped",
+        "value": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171",
+        "to_ids": false,
+        "comment": "IOC-011 | dossier fourniture/02_indicateurs_40.csv ligne 12 | première vue 2026-03-04T11:06:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Module injecté par BIN-02 dans explorer.exe | module injecté DECLARE rattaché à BIN-002 par le SOC, non corroboré | NON VERIFIE",
+        "first_seen": "2026-03-04T11:06:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "sha256",
+        "category": "Artifacts dropped",
+        "value": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730",
+        "to_ids": false,
+        "comment": "IOC-012 | dossier fourniture/02_indicateurs_40.csv ligne 13 | première vue 2026-03-05T14:45:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Archive chiffrée préparée avant exfiltration (BIN-03) | archive chiffrée DECLAREE | NON VERIFIE",
+        "first_seen": "2026-03-05T14:45:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "domain",
+        "category": "Network activity",
+        "value": "mail-secure-login.test",
+        "to_ids": false,
+        "comment": "IOC-015 | dossier fourniture/02_indicateurs_40.csv ligne 16 | première vue 2026-03-02T07:58:00Z (date de découverte, pas heure d'événement) | cote SOC C2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Page d'hameçonnage liée au courriel initial | domaine en .test (non résolvable) | NON VERIFIE",
+        "first_seen": "2026-03-02T07:58:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "domain",
+        "category": "Network activity",
+        "value": "static-assets-cache.test",
+        "to_ids": false,
+        "comment": "IOC-016 | dossier fourniture/02_indicateurs_40.csv ligne 17 | première vue 2026-03-03T03:22:00Z (date de découverte, pas heure d'événement) | cote SOC C3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Second domaine de repli, même certificat | domaine en .test (non résolvable) | NON VERIFIE",
+        "first_seen": "2026-03-03T03:22:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "domain",
+        "category": "Network activity",
+        "value": "helios-energy-portal.test",
+        "to_ids": false,
+        "comment": "IOC-017 | dossier fourniture/02_indicateurs_40.csv ligne 18 | première vue 2026-03-02T06:40:00Z (date de découverte, pas heure d'événement) | cote SOC B3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Domaine d'usurpation imitant la victime | domaine en .test (non résolvable) | NON VERIFIE",
+        "first_seen": "2026-03-02T06:40:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "domain",
+        "category": "Network activity",
+        "value": "update-win-msft.test",
+        "to_ids": false,
+        "comment": "IOC-018 | dossier fourniture/02_indicateurs_40.csv ligne 19 | première vue 2026-03-04T11:04:00Z (date de découverte, pas heure d'événement) | cote SOC C3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=5 (C5) | contexte source : Nom de tâche planifiée associé | domaine en .test (non résolvable) | NON VERIFIE",
+        "first_seen": "2026-03-04T11:04:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "203.0.113.14",
+        "to_ids": false,
+        "comment": "IOC-021 | dossier fourniture/02_indicateurs_40.csv ligne 22 | première vue 2026-03-02T09:20:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Serveur de commande principal (BIN-02) | plage de documentation RFC 5737 | NON VERIFIE",
+        "first_seen": "2026-03-02T09:20:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "203.0.113.15",
+        "to_ids": false,
+        "comment": "IOC-022 | dossier fourniture/02_indicateurs_40.csv ligne 23 | première vue 2026-03-03T02:00:00Z (date de découverte, pas heure d'événement) | cote SOC C3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Serveur de commande de repli | plage de documentation RFC 5737 | NON VERIFIE",
+        "first_seen": "2026-03-03T02:00:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "198.51.100.40",
+        "to_ids": false,
+        "comment": "IOC-023 | dossier fourniture/02_indicateurs_40.csv ligne 24 | première vue 2026-03-02T07:58:00Z (date de découverte, pas heure d'événement) | cote SOC C2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Hébergement de la page d'hameçonnage | plage de documentation RFC 5737 | NON VERIFIE",
+        "first_seen": "2026-03-02T07:58:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "203.0.113.28",
+        "to_ids": false,
+        "comment": "IOC-024 | dossier fourniture/02_indicateurs_40.csv ligne 25 | première vue 2026-03-05T15:30:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3) | contexte source : Exfiltration, volume anormal sortant (BIN-03) | plage de documentation RFC 5737 | NON VERIFIE",
+        "first_seen": "2026-03-05T15:30:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "198.51.100.55",
+        "to_ids": false,
+        "comment": "IOC-025 | dossier fourniture/02_indicateurs_40.csv ligne 26 | première vue 2026-03-03T10:12:00Z (date de découverte, pas heure d'événement) | cote SOC B3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=5 (C5) | contexte source : Balayage interne observé depuis poste compromis | plage de documentation RFC 5737 | NATURE INCONNUE (IP publique source d'un balayage interne, I-05 ; hypothèse pseudonymisation HYP-003) | NON VERIFIE",
+        "first_seen": "2026-03-03T10:12:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "203.0.113.44",
+        "to_ids": false,
+        "comment": "IOC-026 | dossier fourniture/02_indicateurs_40.csv ligne 27 | première vue 2026-03-04T01:47:00Z (date de découverte, pas heure d'événement) | cote SOC C3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=5 (C5) | contexte source : Connexion RDP entrante hors horaires | plage de documentation RFC 5737 | SOURCE RDP INCONNUE (alerte : interne ; IoC : externe, I-04) | NON VERIFIE",
+        "first_seen": "2026-03-04T01:47:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "198.51.100.61",
+        "to_ids": false,
+        "comment": "IOC-027 | dossier fourniture/02_indicateurs_40.csv ligne 28 | première vue 2026-03-03T03:22:00Z (date de découverte, pas heure d'événement) | cote SOC C4 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=5 (C5) | contexte source : Nœud intermédiaire, passive DNS partagé avec D-04 | plage de documentation RFC 5737 | NON VERIFIE",
+        "first_seen": "2026-03-03T03:22:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "ip-dst",
+        "category": "Network activity",
+        "value": "203.0.113.60",
+        "to_ids": false,
+        "comment": "IOC-028 | dossier fourniture/02_indicateurs_40.csv ligne 29 | première vue 2026-03-06T09:00:00Z (date de découverte, pas heure d'événement) | cote SOC D4 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=6 (C6) | contexte source : IP mentionnée dans un rapport public sur un cluster proche — à corréler, non confirmée | plage de documentation RFC 5737 | non vérifiable (rapport public non fourni, cote D4) | NON VERIFIE",
+        "first_seen": "2026-03-06T09:00:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://cdn-svc-update.test/win/svchost_update.exe",
+        "to_ids": false,
+        "comment": "IOC-029 | dossier fourniture/02_indicateurs_40.csv ligne 30 | première vue 2026-03-02T08:41:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3) | contexte source : URL de la seconde charge | URL en .test | NON VERIFIE",
+        "first_seen": "2026-03-02T08:41:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://mail-secure-login.test/owa/auth",
+        "to_ids": false,
+        "comment": "IOC-030 | dossier fourniture/02_indicateurs_40.csv ligne 31 | première vue 2026-03-02T07:58:00Z (date de découverte, pas heure d'événement) | cote SOC C2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Page de collecte d'identifiants | URL en .test | NON VERIFIE",
+        "first_seen": "2026-03-02T07:58:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://api-telemetry-eu.test/v2/beacon",
+        "to_ids": false,
+        "comment": "IOC-031 | dossier fourniture/02_indicateurs_40.csv ligne 32 | première vue 2026-03-02T09:15:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Point de contact de la balise | URL en .test | NON VERIFIE",
+        "first_seen": "2026-03-02T09:15:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "url",
+        "category": "Network activity",
+        "value": "https://helios-energy-portal.test/hr/doc",
+        "to_ids": false,
+        "comment": "IOC-032 | dossier fourniture/02_indicateurs_40.csv ligne 33 | première vue 2026-03-02T06:40:00Z (date de découverte, pas heure d'événement) | cote SOC B3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Leurre imitant le portail RH de la victime | URL en .test | NON VERIFIE",
+        "first_seen": "2026-03-02T06:40:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "x509-fingerprint-sha1",
+        "category": "Network activity",
+        "value": "bda5d6c36e3ff362f9ce0957370a429fff58eb37",
+        "to_ids": false,
+        "comment": "IOC-033 | dossier fourniture/02_indicateurs_40.csv ligne 34 | première vue 2026-03-02T09:20:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Certificat auto-signé partagé par les serveurs de commande, sujet CN=update-service | empreinte seule, aucun certificat fourni | NON VERIFIE",
+        "first_seen": "2026-03-02T09:20:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "x509-fingerprint-sha1",
+        "category": "Network activity",
+        "value": "0315d14dd4b9095a10e359cbaf4129f0a6322a59",
+        "to_ids": false,
+        "comment": "IOC-034 | dossier fourniture/02_indicateurs_40.csv ligne 35 | première vue 2026-03-02T07:58:00Z (date de découverte, pas heure d'événement) | cote SOC C3 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Certificat de la page d'hameçonnage | empreinte seule, aucun certificat fourni | NON VERIFIE",
+        "first_seen": "2026-03-02T07:58:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "x509-fingerprint-sha1",
+        "category": "Network activity",
+        "value": "1e8bd87af841cda6441306558f11d973eb0a5601",
+        "to_ids": false,
+        "comment": "IOC-035 | dossier fourniture/02_indicateurs_40.csv ligne 36 | première vue 2026-03-06T10:00:00Z (date de découverte, pas heure d'événement) | cote SOC C4 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=6 (C6) | contexte source : Certificat révélant par pivot une campagne antérieure (janvier 2026) | empreinte seule, aucun certificat fourni | pivot vers une campagne antérieure non fournie (cote C4) | NON VERIFIE",
+        "first_seen": "2026-03-06T10:00:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "text",
+        "category": "Persistence mechanism",
+        "value": "MicrosoftEdgeUpdateTaskMachine",
+        "to_ids": false,
+        "comment": "IOC-036 | dossier fourniture/02_indicateurs_40.csv ligne 37 | première vue 2026-03-02T08:45:00Z (date de découverte, pas heure d'événement) | cote SOC A2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=B admiralty-scale:information-credibility=3 (B3) | contexte source : Tâche planifiée de persistance (BIN-02) | nom de tâche planifiée (aucun type MISP dédié) | NON VERIFIE",
+        "first_seen": "2026-03-02T08:45:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "text",
+        "category": "Persistence mechanism",
+        "value": "svc-backup-temp",
+        "to_ids": false,
+        "comment": "IOC-037 | dossier fourniture/02_indicateurs_40.csv ligne 38 | première vue 2026-03-05T14:10:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Compte de service créé puis supprimé sur le contrôleur de domaine | compte du SI victime ; créé selon 4720 le 2026-03-05 mais utilisé le 2026-03-04 (I-03) | NON VERIFIE",
+        "first_seen": "2026-03-05T14:10:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "text",
+        "category": "Persistence mechanism",
+        "value": "HKCU\\...\\Run\\WinTelemetry",
+        "to_ids": false,
+        "comment": "IOC-038 | dossier fourniture/02_indicateurs_40.csv ligne 39 | première vue 2026-03-02T08:44:00Z (date de découverte, pas heure d'événement) | cote SOC A2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=5 (C5) | contexte source : Clé de registre de persistance | clé de registre : valeur TRONQUEE dans la source, stockée en texte, pas en regkey | NON VERIFIE",
+        "first_seen": "2026-03-02T08:44:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "filename",
+        "category": "Artifacts dropped",
+        "value": "C:\\Windows\\Temp\\~df3a9.tmp",
+        "to_ids": false,
+        "comment": "IOC-039 | dossier fourniture/02_indicateurs_40.csv ligne 40 | première vue 2026-03-05T14:40:00Z (date de découverte, pas heure d'événement) | cote SOC B2 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4) | contexte source : Fichier de collecte chiffré avant exfiltration | chemin de fichier temporaire | NON VERIFIE",
+        "first_seen": "2026-03-05T14:40:00Z",
+        "distribution": "5"
+      },
+      {
+        "type": "hostname",
+        "category": "Targeting data",
+        "value": "comptabilite-07",
+        "to_ids": false,
+        "comment": "IOC-040 | dossier fourniture/02_indicateurs_40.csv ligne 41 | première vue 2026-03-02T08:30:00Z (date de découverte, pas heure d'événement) | cote SOC A1 (reprise telle quelle) | cote ÉQUIPE admiralty-scale:source-reliability=B admiralty-scale:information-credibility=2 (B2) | contexte source : Poste d'entrée initial (patient zéro) | ACTIF VICTIME, pas un IoC offensif | NON VERIFIE",
+        "first_seen": "2026-03-02T08:30:00Z",
+        "distribution": "5"
+      }
+    ],
+    "Object": [
+      {
+        "name": "file",
+        "meta-category": "file",
+        "comment": "BIN-001 : empreintes DECLAREES par la fiche ; échantillon NON FOURNI ; aucun contenu binaire",
+        "distribution": "5",
+        "Attribute": [
+          {
+            "object_relation": "filename",
+            "type": "filename",
+            "value": "facture_mars_2026.xlsm",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-001 (IOC-001, IOC-002, IOC-003) | fiche 01_fiches_analyse_binaires.md | dropper selon la fiche"
+          },
+          {
+            "object_relation": "size-in-bytes",
+            "type": "size-in-bytes",
+            "value": "68242",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-001 (IOC-001, IOC-002, IOC-003) | fiche 01_fiches_analyse_binaires.md | dropper selon la fiche"
+          },
+          {
+            "object_relation": "md5",
+            "type": "md5",
+            "value": "8ba35251cca8daa4a05331bba8f95b05",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-001 (IOC-001, IOC-002, IOC-003) | fiche 01_fiches_analyse_binaires.md | dropper selon la fiche | IOC-003 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          },
+          {
+            "object_relation": "sha1",
+            "type": "sha1",
+            "value": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-001 (IOC-001, IOC-002, IOC-003) | fiche 01_fiches_analyse_binaires.md | dropper selon la fiche | IOC-002 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          },
+          {
+            "object_relation": "sha256",
+            "type": "sha256",
+            "value": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-001 (IOC-001, IOC-002, IOC-003) | fiche 01_fiches_analyse_binaires.md | dropper selon la fiche | IOC-001 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          }
+        ],
+        "_ref_id": "BIN-001"
+      },
+      {
+        "name": "file",
+        "meta-category": "file",
+        "comment": "BIN-002 : empreintes DECLAREES par la fiche ; échantillon NON FOURNI ; aucun contenu binaire",
+        "distribution": "5",
+        "Attribute": [
+          {
+            "object_relation": "filename",
+            "type": "filename",
+            "value": "svchost_update.exe",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-002 (IOC-004, IOC-005, IOC-006) | fiche 01_fiches_analyse_binaires.md | balise selon la fiche ; taille corroborée par journal Squid ligne 2"
+          },
+          {
+            "object_relation": "size-in-bytes",
+            "type": "size-in-bytes",
+            "value": "421376",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-002 (IOC-004, IOC-005, IOC-006) | fiche 01_fiches_analyse_binaires.md | balise selon la fiche ; taille corroborée par journal Squid ligne 2"
+          },
+          {
+            "object_relation": "md5",
+            "type": "md5",
+            "value": "91678506a5474354f1ceb4c12c3c56dd",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-002 (IOC-004, IOC-005, IOC-006) | fiche 01_fiches_analyse_binaires.md | balise selon la fiche ; taille corroborée par journal Squid ligne 2 | IOC-006 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          },
+          {
+            "object_relation": "sha1",
+            "type": "sha1",
+            "value": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-002 (IOC-004, IOC-005, IOC-006) | fiche 01_fiches_analyse_binaires.md | balise selon la fiche ; taille corroborée par journal Squid ligne 2 | IOC-005 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          },
+          {
+            "object_relation": "sha256",
+            "type": "sha256",
+            "value": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-002 (IOC-004, IOC-005, IOC-006) | fiche 01_fiches_analyse_binaires.md | balise selon la fiche ; taille corroborée par journal Squid ligne 2 | IOC-004 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          }
+        ],
+        "_ref_id": "BIN-002"
+      },
+      {
+        "name": "file",
+        "meta-category": "file",
+        "comment": "BIN-003 : empreintes DECLAREES par la fiche ; échantillon NON FOURNI ; aucun contenu binaire",
+        "distribution": "5",
+        "Attribute": [
+          {
+            "object_relation": "filename",
+            "type": "filename",
+            "value": "rundll32_helper.dll",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-003 (IOC-007, IOC-008, IOC-009) | fiche 01_fiches_analyse_binaires.md | outil d'identifiants selon la fiche, outil générique"
+          },
+          {
+            "object_relation": "size-in-bytes",
+            "type": "size-in-bytes",
+            "value": "210944",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-003 (IOC-007, IOC-008, IOC-009) | fiche 01_fiches_analyse_binaires.md | outil d'identifiants selon la fiche, outil générique"
+          },
+          {
+            "object_relation": "md5",
+            "type": "md5",
+            "value": "3435016f3f2aacce36b71abb636cfc64",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-003 (IOC-007, IOC-008, IOC-009) | fiche 01_fiches_analyse_binaires.md | outil d'identifiants selon la fiche, outil générique | IOC-009 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          },
+          {
+            "object_relation": "sha1",
+            "type": "sha1",
+            "value": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-003 (IOC-007, IOC-008, IOC-009) | fiche 01_fiches_analyse_binaires.md | outil d'identifiants selon la fiche, outil générique | IOC-008 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          },
+          {
+            "object_relation": "sha256",
+            "type": "sha256",
+            "value": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "BIN-003 (IOC-007, IOC-008, IOC-009) | fiche 01_fiches_analyse_binaires.md | outil d'identifiants selon la fiche, outil générique | IOC-007 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          }
+        ],
+        "_ref_id": "BIN-003"
+      },
+      {
+        "name": "domain-ip",
+        "meta-category": "network",
+        "comment": "résolution DECLAREE par le SOC, non vérifiée",
+        "distribution": "5",
+        "Attribute": [
+          {
+            "object_relation": "domain",
+            "type": "domain",
+            "value": "cdn-svc-update.test",
+            "category": "Network activity",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "IOC-013 | Téléchargement de la charge BIN-02 | domaine de téléchargement | IOC-013 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          },
+          {
+            "object_relation": "ip",
+            "type": "ip-dst",
+            "value": "198.51.100.23",
+            "category": "Network activity",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "IOC-019 | Résolution de cdn-svc-update[.]test | domaine de téléchargement | IOC-019 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=4 (C4)"
+          }
+        ]
+      },
+      {
+        "name": "domain-ip",
+        "meta-category": "network",
+        "comment": "résolution DECLAREE par le SOC, non vérifiée",
+        "distribution": "5",
+        "Attribute": [
+          {
+            "object_relation": "domain",
+            "type": "domain",
+            "value": "api-telemetry-eu.test",
+            "category": "Network activity",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "IOC-014 | Commande et contrôle de BIN-02 | domaine de commande déclaré | IOC-014 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          },
+          {
+            "object_relation": "ip",
+            "type": "ip-dst",
+            "value": "198.51.100.24",
+            "category": "Network activity",
+            "to_ids": false,
+            "distribution": "5",
+            "comment": "IOC-020 | Résolution de api-telemetry-eu[.]test | domaine de commande déclaré | IOC-020 cote ÉQUIPE admiralty-scale:source-reliability=C admiralty-scale:information-credibility=3 (C3)"
+          }
+        ]
+      }
+    ]
+  },
+  "_hors_api": {
+    "relations": [
+      {
+        "de": "BIN-002",
+        "type": "downloaded-from",
+        "vers_valeur": "https://cdn-svc-update.test/win/svchost_update.exe",
+        "commentaire": "taille 421376 identique entre fiche et journal Squid (corroboration), pas de lien de hash"
+      }
+    ],
+    "galaxies_attack_observees": [
+      "T1059.001",
+      "T1564.003",
+      "T1105",
+      "T1053.005",
+      "T1046",
+      "T1021.001",
+      "T1055",
+      "T1070.001"
+    ],
+    "galaxies_exclues": {
+      "T1055.012": "contestée (hollowing non démontré)",
+      "T1543.003": "écartée (compte, pas service)",
+      "T1003.001, T1071.001, T1008, T1048.003, T1136.002, T1078": "probables seulement : décrites, non étiquetées",
+      "acteur/groupe": "aucune galaxie d'acteur : attribution non établie"
+    },
+    "rapport_evenement": "Synthèse provisoire : voir 08-Rapports et 04-Analyse (aucune attribution)"
+  }
+}

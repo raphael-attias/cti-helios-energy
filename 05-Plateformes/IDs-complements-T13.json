@@ -1,0 +1,15 @@
+{
+ "infra": {
+  "telechargement": "a8d159ec-7c7f-4fe6-ae7d-a7a0060f3e19",
+  "balise": "7e51ee84-ad99-4394-b694-cf469c321a1b",
+  "sortie": "7e482a5e-6bf0-46fc-8a93-314f85c585c0",
+  "repli": "d278b2c6-f94e-42ba-8080-30305c11875c"
+ },
+ "tools": {
+  "powershell": "0c7074d4-b3d4-4e7d-9527-049574dd9373",
+  "schtasks": "f7b894eb-f055-43f9-a23d-aa140d99f05d",
+  "wevtutil": "d0acf504-257b-40a9-a509-370fcf7968bc"
+ },
+ "note": "tools schtasks et wevtutil sont des entités MITRE de production (non créées par la mission) ; powershell et les 4 infrastructures ont été créés le 2026-10-07 (approbation explicite)",
+ "rapport_objets_apres": 103
+}

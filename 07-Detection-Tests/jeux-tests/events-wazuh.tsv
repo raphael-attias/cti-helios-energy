@@ -1,0 +1,45 @@
+W01	dossier:journal l.1	130101	2026-03-02T08:31:00Z comptabilite-07 Sysmon: Process Create: winword.exe -> powershell.exe -enc SQBFAFgA... -w hidden
+W02	dossier:journal l.2	130103	2026-03-02T08:42:00Z comptabilite-07 Squid: GET https://cdn-svc-update.test/win/svchost_update.exe 200 421376
+W03	dossier:journal l.3	130105	2026-03-02T08:46:00Z comptabilite-07 Sysmon: Scheduled Task Created: MicrosoftEdgeUpdateTaskMachine
+W04	dossier:journal l.4	130106	2026-03-02T09:16:00Z comptabilite-07 Zeek: conn 198.51.100.24:443 duration=0.4 orig_bytes=812 (beacon)
+W05	dossier:journal l.5	130108	2026-03-03T10:13:00Z comptabilite-07 Zeek: scan detected 198.51.100.55 -> 10.20.0.0/16 dports=445,3389
+W06	dossier:journal l.6	130109	2026-03-04T01:48:00Z srv-fichiers-02 Security: 4624 Logon type=10 RDP account=svc-backup-temp time=01:47
+W07	dossier:journal l.7	130110	2026-03-04T11:05:00Z srv-fichiers-02 Sysmon: CreateRemoteThread into explorer.exe RWX region
+W08	dossier:journal l.8	130107	2026-03-05T14:07:00Z dc-01 Sysmon: Process Access: target=lsass.exe granted=0x1010 by rundll32_helper.dll
+W09	dossier:journal l.9	130111	2026-03-05T14:12:00Z dc-01 Security: 4720 User created svc-backup-temp / 4726 deleted 45m later
+W10	dossier:journal l.10	130112	2026-03-05T15:31:00Z dc-01 Zeek: large outbound 203.0.113.28:8080 bytes=2469135790 cleartext
+W11	dossier:journal l.11	130104	2026-03-06T03:10:00Z srv-fichiers-02 Squid: GET https://static-assets-cache.test/ 200 (failover C2)
+W12	dossier:journal l.12	130113	2026-03-07T09:02:00Z comptabilite-07 Security: 1102 audit log cleared / wevtutil cl Security
+SP01	synthétique positif	130101	2026-03-09T10:00:00Z poste-test Sysmon: Process Create: EXCEL.EXE -> powershell.exe -EncodedCommand AAAA -WindowStyle hidden
+SP02	synthétique positif	130102	2026-03-09T10:00:00Z poste-test Sysmon: Process Create: cmd.exe -> powershell.exe -enc SQBFAFgAIAAoAA==
+SP03	synthétique positif	130103	2026-03-09T10:00:00Z poste-test Squid: GET http://exemple.test/outils/a.exe 200 1024
+SP04	synthétique positif	130104	2026-03-09T10:00:00Z poste-test Squid: GET https://api-telemetry-eu.test/v2/beacon 200 10
+SP05	synthétique positif	130105	2026-03-09T10:00:00Z poste-test Sysmon: Scheduled Task Created: MicrosoftEdgeUpdateTaskMachine
+SP06	synthétique positif	130106	2026-03-09T10:00:00Z poste-test Zeek: conn 203.0.113.14:443 duration=0.3 orig_bytes=500 (beacon)
+SP07	synthétique positif	130107	2026-03-09T10:00:00Z poste-test Sysmon: Process Access: target=lsass.exe granted=0x1410 by C:\Temp\x.exe
+SP08	synthétique positif	130108	2026-03-09T10:00:00Z poste-test Zeek: scan detected 192.0.2.77 -> 10.20.1.0/24 dports=3389,445
+SP09	synthétique positif	130109	2026-03-09T10:00:00Z srv-test Security: 4624 Logon type=10 RDP account=svc-sql time=02:10
+SP10	synthétique positif	130110	2026-03-09T10:00:00Z srv-test Sysmon: CreateRemoteThread into explorer.exe RWX region
+SP11	synthétique positif	130111	2026-03-09T10:00:00Z dc-test Security: 4720 User created svc-test-temp / 4726 deleted 5m later
+SP12	synthétique positif	130112	2026-03-09T10:00:00Z dc-test Zeek: large outbound 192.0.2.50:443 bytes=1500000000 cleartext
+SP13	synthétique positif	130113	2026-03-09T10:00:00Z poste-test Security: 1102 audit log cleared / wevtutil cl Security
+SP14	synthétique positif	130114	2026-03-09T10:00:00Z poste-test Sysmon: Process Create: cmd.exe -> wevtutil.exe cl Security
+SP15	synthétique positif	130115	2026-03-09T10:00:00Z poste-test Sysmon: Process Create: services.exe -> svchost_update.exe -k x
+SN01	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Create: winword.exe -> powershell.exe -File c:\scripts\rapport.ps1
+SN02	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Create: excel.exe -> powershell.exe -enc AAAA
+SN03	synthétique négatif		2026-03-09T10:00:00Z poste-test Squid: GET https://exemple.test/doc/rapport.pdf 200 1024
+SN04	synthétique négatif		2026-03-09T10:00:00Z poste-test Squid: GET https://exemple.test/outils/b.exe 404 0
+SN05	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Scheduled Task Created: MicrosoftEdgeUpdateTaskMachineCore
+SN06	synthétique négatif		2026-03-09T10:00:00Z poste-test Zeek: conn 192.0.2.1:443 duration=0.1 orig_bytes=900
+SN07	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Access: target=lsass.exe granted=0x1010 by C:\Windows\System32\csrss.exe
+SN08	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Access: target=lsass.exe granted=0x0400 by C:\Temp\y.exe
+SN09	synthétique négatif		2026-03-09T10:00:00Z srv-test Security: 4624 Logon type=3 RDP account=svc-sql time=02:10
+SN10	synthétique négatif		2026-03-09T10:00:00Z srv-test Security: 4624 Logon type=10 RDP account=jdupont time=02:10
+SN11	synthétique négatif		2026-03-09T10:00:00Z srv-test Sysmon: CreateRemoteThread into notepad.exe RWX region
+SN12	synthétique négatif		2026-03-09T10:00:00Z dc-test Security: 4720 User created jdupont / 4726 deleted 5m later
+SN13	synthétique négatif		2026-03-09T10:00:00Z dc-test Zeek: large outbound 192.0.2.60:443 bytes=50000000 cleartext
+SN14	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Create: cmd.exe -> wevtutil.exe qe Security /c:5
+SN15	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Create: cmd.exe -> wevtutil.exe cl application
+SN16	synthétique négatif		2026-03-09T10:00:00Z poste-test Zeek: weird activity unknown_protocol
+SN17	synthétique négatif		2026-03-09T10:00:00Z poste-test Squid: GET https://update.exemple.test/patch.zip 200 4096
+SN18	synthétique négatif		2026-03-09T10:00:00Z poste-test Sysmon: Process Create: services.exe -> svchost.exe -k netsvcs

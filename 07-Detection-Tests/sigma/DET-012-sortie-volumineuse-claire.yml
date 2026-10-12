@@ -1,0 +1,22 @@
+title: Sortie réseau supérieure à 1 Go
+id: c6ba24ea-8938-51ae-8e65-d5727e04d742
+status: experimental
+description: 'Observé : 2 469 135 790 octets vers 203.0.113.28:8080. Le champ du journal est « bytes » (direction non précisée) : orig_bytes est
+  supposé. [DET-012 | fondement : DIRECTE | artefacts : ALERT-010, journal l.10]'
+references:
+- alerte ALERT-010
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.exfiltration
+- attack.t1048.003
+logsource:
+  product: zeek
+  service: conn
+detection:
+  sel:
+    orig_bytes|gte: 1000000000
+  condition: sel
+falsepositives:
+- Sauvegardes et synchronisations légitimes vers l'extérieur
+level: high

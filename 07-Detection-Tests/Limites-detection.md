@@ -1,0 +1,11 @@
+# Limites de la détection
+
+1. **Fondement** : 11 règles sur 15 s'appuient sur une observation du dossier (une ligne chacune) ; 3 règles IOC reposent sur des valeurs non vérifiées ; 1 règle de chasse ne prouve aucune technique observée. Aucune règle n'a été conçue d'après le code des échantillons (absents).
+2. **Chemins** : les journaux du dossier ne portent souvent que des noms d'images (`winword.exe`) et non des chemins complets : les règles n'imposent pas de séparateur initial, ce qui élargit la correspondance (faux positifs possibles sur des noms voisins).
+3. **Champs inventés par le format du dossier** : `Sysmon: Scheduled Task Created`, `RWX region`, `bytes=` (direction non précisée) ne sont pas des champs standard ; DET-005, DET-010 et DET-012 reposent sur des hypothèses de format non confirmées (aucun vrai journal disponible : limite définitive).
+4. **Jeux de test** écrits par l'équipe ; 28 positifs et 40 négatifs ne mesurent pas un taux de faux positifs de production. Le bruit du dossier ne couvre qu'une journée et un autre système (syslog Linux).
+5. **Wazuh** : décodeurs écrits pour 12 formats pseudo-syslog ; en production réelle les événements Windows arrivent au format `eventchannel` : une adaptation des règles sur les champs `win.eventdata.*` serait nécessaire. Un événement ne produit qu'une alerte (ombrage). La base MITRE de Wazuh 4.14.7 ne connaît pas T1685.005 (avertissement au chargement, non bloquant).
+6. **Automatisations** : les niveaux de production (4 à 7) ont été choisis pour rester sous le seuil 10 de l'intégration TheHive et sous le niveau 12 d'e-mail ; ce n'est pas un niveau de gravité réel (une règle DET-001 mériterait un niveau supérieur après validation et revue des intégrations).
+7. **Déploiement** : les deux fichiers de production (`helios_decoders.xml`, `helios_rules.xml`) restent en place ; retrait par suppression des deux fichiers puis redémarrage (accord requis).
+8. **Dashboard** : contrôlé le 2026-10-06 (27 alertes visibles) ; les heures affichées sont l'heure de traitement, pas l'heure d'origine des lignes.
+9. **ATT&CK** : les règles utilisent l'identifiant courant (v19, publiée le 28 avril 2026 ; l'incident de mars 2026 relève de la v18.1, voir `04-Analyse/Version-ATTACK.md`) ; les plateformes plus anciennes peuvent étiqueter différemment.

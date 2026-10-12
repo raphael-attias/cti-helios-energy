@@ -1,0 +1,41 @@
+#,type,valeur,contexte,premiere_vue,confiance_admiralty
+1,sha256,2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5,BIN-01 facture_mars_2026.xlsm,2026-03-02T08:30:00Z,A1
+2,sha1,4911bfb2fa8f76909de149299ef05e6b1455ea24,BIN-01 facture_mars_2026.xlsm (SHA-1),2026-03-02T08:30:00Z,A1
+3,md5,8ba35251cca8daa4a05331bba8f95b05,"BIN-01 facture_mars_2026.xlsm (empreinte faible, pour antivirus hérités)",2026-03-02T08:30:00Z,A2
+4,sha256,cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9,BIN-02 svchost_update.exe,2026-03-02T08:41:00Z,A1
+5,sha1,ca91f74f2438d710e130a5a413b2c75219c9d5a9,BIN-02 svchost_update.exe (SHA-1),2026-03-02T08:41:00Z,A1
+6,md5,91678506a5474354f1ceb4c12c3c56dd,"BIN-02 svchost_update.exe (empreinte faible, pour antivirus hérités)",2026-03-02T08:41:00Z,A2
+7,sha256,f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0,BIN-03 rundll32_helper.dll,2026-03-05T14:05:00Z,A1
+8,sha1,d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8,BIN-03 rundll32_helper.dll (SHA-1),2026-03-05T14:05:00Z,A1
+9,md5,3435016f3f2aacce36b71abb636cfc64,"BIN-03 rundll32_helper.dll (empreinte faible, pour antivirus hérités)",2026-03-05T14:05:00Z,A2
+10,sha256,81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f,Charge PowerShell déchiffrée par BIN-01 (en mémoire),2026-03-02T08:32:00Z,B2
+11,sha256,8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171,Module injecté par BIN-02 dans explorer.exe,2026-03-04T11:06:00Z,B2
+12,sha256,a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730,Archive chiffrée préparée avant exfiltration (BIN-03),2026-03-05T14:45:00Z,B2
+13,domain,cdn-svc-update[.]test,Téléchargement de la charge BIN-02,2026-03-02T08:41:00Z,B2
+14,domain,api-telemetry-eu[.]test,Commande et contrôle de BIN-02,2026-03-02T09:15:00Z,B2
+15,domain,mail-secure-login[.]test,Page d'hameçonnage liée au courriel initial,2026-03-02T07:58:00Z,C2
+16,domain,static-assets-cache[.]test,"Second domaine de repli, même certificat",2026-03-03T03:22:00Z,C3
+17,domain,helios-energy-portal[.]test,Domaine d'usurpation imitant la victime,2026-03-02T06:40:00Z,B3
+18,domain,update-win-msft[.]test,Nom de tâche planifiée associé,2026-03-04T11:04:00Z,C3
+19,ipv4,198.51.100.23,Résolution de cdn-svc-update[.]test,2026-03-02T08:41:00Z,B2
+20,ipv4,198.51.100.24,Résolution de api-telemetry-eu[.]test,2026-03-02T09:15:00Z,B2
+21,ipv4,203.0.113.14,Serveur de commande principal (BIN-02),2026-03-02T09:20:00Z,B2
+22,ipv4,203.0.113.15,Serveur de commande de repli,2026-03-03T02:00:00Z,C3
+23,ipv4,198.51.100.40,Hébergement de la page d'hameçonnage,2026-03-02T07:58:00Z,C2
+24,ipv4,203.0.113.28,"Exfiltration, volume anormal sortant (BIN-03)",2026-03-05T15:30:00Z,B2
+25,ipv4,198.51.100.55,Balayage interne observé depuis poste compromis,2026-03-03T10:12:00Z,B3
+26,ipv4,203.0.113.44,Connexion RDP entrante hors horaires,2026-03-04T01:47:00Z,C3
+27,ipv4,198.51.100.61,"Nœud intermédiaire, passive DNS partagé avec D-04",2026-03-03T03:22:00Z,C4
+28,ipv4,203.0.113.60,"IP mentionnée dans un rapport public sur un cluster proche — à corréler, non confirmée",2026-03-06T09:00:00Z,D4
+29,url,hxxps://cdn-svc-update[.]test/win/svchost_update.exe,URL de la seconde charge,2026-03-02T08:41:00Z,B2
+30,url,hxxps://mail-secure-login[.]test/owa/auth,Page de collecte d'identifiants,2026-03-02T07:58:00Z,C2
+31,url,hxxps://api-telemetry-eu[.]test/v2/beacon,Point de contact de la balise,2026-03-02T09:15:00Z,B2
+32,url,hxxps://helios-energy-portal[.]test/hr/doc,Leurre imitant le portail RH de la victime,2026-03-02T06:40:00Z,B3
+33,sha1-cert,BDA5D6C36E3FF362F9CE0957370A429FFF58EB37,"Certificat auto-signé partagé par les serveurs de commande, sujet CN=update-service",2026-03-02T09:20:00Z,B2
+34,sha1-cert,0315D14DD4B9095A10E359CBAF4129F0A6322A59,Certificat de la page d'hameçonnage,2026-03-02T07:58:00Z,C3
+35,sha1-cert,1E8BD87AF841CDA6441306558F11D973EB0A5601,Certificat révélant par pivot une campagne antérieure (janvier 2026),2026-03-06T10:00:00Z,C4
+36,host,MicrosoftEdgeUpdateTaskMachine,Tâche planifiée de persistance (BIN-02),2026-03-02T08:45:00Z,A2
+37,host,svc-backup-temp,Compte de service créé puis supprimé sur le contrôleur de domaine,2026-03-05T14:10:00Z,B2
+38,host,HKCU\...\Run\WinTelemetry,Clé de registre de persistance,2026-03-02T08:44:00Z,A2
+39,host,C:\Windows\Temp\~df3a9.tmp,Fichier de collecte chiffré avant exfiltration,2026-03-05T14:40:00Z,B2
+40,host,comptabilite-07,Poste d'entrée initial (patient zéro),2026-03-02T08:30:00Z,A1

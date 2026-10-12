@@ -1,0 +1,16 @@
+id,type,valeur,source_et_ligne,statut,remarque
+EXT-001,url,https://static-assets-cache.test/,journal l.11 (alerte 11),OBSERVE,"URL complète du « repli C2 », absente des 40 IoC"
+EXT-002,cidr,10.20.0.0/16,journal l.5 (alerte 6) ; bruit du journal (adresses 10.20.x.x),OBSERVE,réseau interne ciblé par le balayage ; plan d'adressage interne présumé
+EXT-003,port,8080/tcp,journal l.10,OBSERVE,"port de sortie de l'exfiltration, en clair selon la source"
+EXT-004,port,443/tcp,journal l.4,OBSERVE,port de la connexion de balise
+EXT-005,ports,"445,3389",journal l.5,OBSERVE,ports balayés
+EXT-006,bytes,2469135790,journal l.10,OBSERVE,"volume de la sortie (2,47 Go décimal, 2,30 Gio)"
+EXT-007,process,winword.exe -> powershell.exe -enc ... -w hidden,journal l.1,OBSERVE,"chaîne de processus, commande tronquée"
+EXT-008,process,explorer.exe (cible d'un CreateRemoteThread),journal l.7,OBSERVE,"injection, initiateur inconnu"
+EXT-009,process,lsass.exe (accès 0x1010 par rundll32_helper.dll),journal l.8,OBSERVE,lecture mémoire
+EXT-010,process,wevtutil cl Security,journal l.12,OBSERVE,effacement de journal
+EXT-011,command,schtasks /create /tn MicrosoftEdgeUpdateTaskMachine,détail de l'alerte 3 (absent du journal),ALERTE SEULE,ligne de commande non reprise dans le journal brut (I-20)
+EXT-012,base64,SQBFAFgA = IEX (UTF-16LE),journal l.1,OBSERVE (décodage reproduit),préfixe de la commande encodée
+EXT-013,event_id,4624 type 10 ; 4720 ; 4726 ; 1102,"journal l.6, 9, 12",OBSERVE,événements Windows Security cités
+EXT-014,account,"m.durand, s.leroy, j.moreau, a.petit, admin.sys",bruit du journal (sessions),OBSERVE (bruit),comptes du bruit ; aucun lien avec l'attaque démontré
+EXT-015,mask,0x1010,journal l.8,OBSERVE,PROCESS_QUERY_LIMITED_INFORMATION + PROCESS_VM_READ

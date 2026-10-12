@@ -1,0 +1,25 @@
+title: Thread distant créé dans explorer.exe
+id: 7cf1134d-bee8-5df1-ad23-5df97abf534d
+status: experimental
+description: 'Observé : CreateRemoteThread into explorer.exe RWX region. Détecte une injection (T1055 parent) ; ne démontre pas le Process Hollowing.
+  [DET-010 | fondement : DIRECTE | artefacts : ALERT-008, journal l.7]'
+references:
+- alerte ALERT-008
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.stealth
+- attack.privilege-escalation
+- attack.t1055
+logsource:
+  category: create_remote_thread
+  product: windows
+detection:
+  sel:
+    TargetImage|endswith: explorer.exe
+  legit:
+    SourceImage|startswith: C:\Windows\System32\
+  condition: sel and not legit
+falsepositives:
+- Logiciels d'accessibilité ou d'automatisation injectant dans le shell
+level: high

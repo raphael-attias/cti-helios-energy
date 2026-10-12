@@ -1,0 +1,320 @@
+{
+ "label_mission": "bf06ad75-560f-400e-82e3-46ffaa771ab5",
+ "objets_etiquetes_total": 47,
+ "objets_par_type": {
+  "Directory": 1,
+  "StixFile": 7,
+  "System": 3,
+  "Incident": 1,
+  "Indicator": 8,
+  "IPv4-Addr": 10,
+  "Note": 3,
+  "Observed-Data": 4,
+  "Report": 1,
+  "Url": 5,
+  "User-Account": 1,
+  "X509-Certificate": 3
+ },
+ "objets": [
+  {
+   "id": "b79e9783-693f-4dab-88a6-c110a4761040",
+   "type": "Directory",
+   "standard_id": "directory--65bf9886-c2fc-5ab1-b872-66a740617647"
+  },
+  {
+   "id": "1c2b4cb4-9dc6-4482-81d9-9f9764f014ca",
+   "type": "StixFile",
+   "standard_id": "file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad"
+  },
+  {
+   "id": "4b6b2038-5ca2-40c8-bf0e-22fcb275a729",
+   "type": "StixFile",
+   "standard_id": "file--6f2536f6-fe34-554d-b1b7-be0601158b28"
+  },
+  {
+   "id": "b9bdb09b-ffae-470a-9556-36844ff68ebf",
+   "type": "StixFile",
+   "standard_id": "file--753806d5-653d-5a1a-81dc-97e4084b2c59"
+  },
+  {
+   "id": "c77ca4ee-a3fa-4377-b619-1bc711a7f09b",
+   "type": "StixFile",
+   "standard_id": "file--8158819a-4d72-5660-b804-bc899c7d77be"
+  },
+  {
+   "id": "cacccf65-ff3a-4e6e-ac96-a8db542a9196",
+   "type": "StixFile",
+   "standard_id": "file--85b0bf21-a544-58e1-b60b-d9215a7713a9"
+  },
+  {
+   "id": "998d4bfb-1e19-4009-ab8d-02e34bc70327",
+   "type": "StixFile",
+   "standard_id": "file--8a1bb031-a8ca-526d-9eaf-10385dfe8307"
+  },
+  {
+   "id": "22e25b8f-f76a-4871-baba-f9536749e690",
+   "type": "StixFile",
+   "standard_id": "file--98c8e19a-33ba-5a83-8803-3afee079dc43"
+  },
+  {
+   "id": "034a43d3-540f-427b-8944-a9c5b6589732",
+   "type": "System",
+   "standard_id": "identity--8ae8e2fb-64a1-5bb3-952c-c4e8eacb6510"
+  },
+  {
+   "id": "676e1ee3-83d1-45d5-8a22-96fffb4017d9",
+   "type": "System",
+   "standard_id": "identity--96a321b9-ae7e-58b6-a8e1-09b29e1e8b1d"
+  },
+  {
+   "id": "daeda9ae-1ee9-4145-afbd-76172ddaa5b5",
+   "type": "System",
+   "standard_id": "identity--c28921f1-d5d9-5d3b-8675-8ccbaf0b7d4b"
+  },
+  {
+   "id": "a2f66075-be6c-42a9-9524-d428833fd4c1",
+   "type": "Incident",
+   "standard_id": "incident--3bc097c2-5a81-5a96-8aaf-1d3c9e220e3a"
+  },
+  {
+   "id": "b3facd82-edc9-4963-949b-dc59881de8c1",
+   "type": "Indicator",
+   "standard_id": "indicator--18c98345-e346-5558-a0d2-ad528d430f7b"
+  },
+  {
+   "id": "e61c6594-743e-42f9-a519-11dbb50dc7f5",
+   "type": "Indicator",
+   "standard_id": "indicator--301e56fd-2720-5e3f-99e9-cfb9ed2d892f"
+  },
+  {
+   "id": "7433779e-d3d5-4cad-9754-b56e63e807b4",
+   "type": "Indicator",
+   "standard_id": "indicator--3d6109c7-91d6-5c67-adf7-c2d36ef0e4be"
+  },
+  {
+   "id": "b244f0ff-832d-4040-b8d1-87719f3226a2",
+   "type": "Indicator",
+   "standard_id": "indicator--51203ff0-40ad-5552-af9c-482a44852f3a"
+  },
+  {
+   "id": "17b79173-6249-436e-823a-115fbc1c77ba",
+   "type": "Indicator",
+   "standard_id": "indicator--9ca0e396-f5e5-58c6-872e-124d187915fc"
+  },
+  {
+   "id": "31040b7f-ec76-4735-8ddc-341a4725f1e3",
+   "type": "Indicator",
+   "standard_id": "indicator--9ebfa4f5-5c34-5b4b-9ed3-f11d1c5d4a87"
+  },
+  {
+   "id": "cb13c885-fbcd-4df8-a9f9-2a93e4e9d9fe",
+   "type": "Indicator",
+   "standard_id": "indicator--a950acfd-83fd-52a4-a11b-acc4e6deda8d"
+  },
+  {
+   "id": "889c1a58-bcfe-4731-bc0c-a2db981eab36",
+   "type": "Indicator",
+   "standard_id": "indicator--baff7e49-478b-5ac4-878c-6b04a4b5e9a4"
+  },
+  {
+   "id": "ca48bc76-5cb9-4589-a9e2-fbc8e5096c09",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b"
+  },
+  {
+   "id": "5c32ae19-8dfb-4839-824f-73d30bcb8936",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a"
+  },
+  {
+   "id": "b5adf766-9f7e-4c73-bfed-dfd2cb2e625f",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628"
+  },
+  {
+   "id": "de25be27-12e7-4c52-9b58-56e66ec1657a",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060"
+  },
+  {
+   "id": "b350974c-721e-474e-91f7-cd04f3d19126",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578"
+  },
+  {
+   "id": "01f83a9f-77fa-4a97-8b0f-f2c207336277",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249"
+  },
+  {
+   "id": "3d6f746e-9b95-4a2f-bae3-c0e905347e4f",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f"
+  },
+  {
+   "id": "24ec5336-ba19-4e65-9b0a-86194be4034c",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559"
+  },
+  {
+   "id": "dc8cd02d-674a-4a94-8aeb-834cce253263",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df"
+  },
+  {
+   "id": "ed4e0420-67c3-429e-bc53-e8c8357c3060",
+   "type": "IPv4-Addr",
+   "standard_id": "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b"
+  },
+  {
+   "id": "51515b48-622c-46bb-a33c-653d21a00f99",
+   "type": "Note",
+   "standard_id": "note--234df63e-a726-5a59-a13b-f7488926c995"
+  },
+  {
+   "id": "c452ee0b-cfaf-4e48-8587-f868019832e1",
+   "type": "Note",
+   "standard_id": "note--8520d990-8818-5341-b189-167cfa97b858"
+  },
+  {
+   "id": "2dbf2832-9ff1-47a3-880e-d5b3cbe9b682",
+   "type": "Note",
+   "standard_id": "note--c8ec0539-452a-57d8-8120-1cac61a8abd3"
+  },
+  {
+   "id": "1966009c-b447-4fc8-b3a5-59eb1e8d5b6e",
+   "type": "Observed-Data",
+   "standard_id": "observed-data--2bc9c0eb-c323-52f5-9e01-010afa9e5481"
+  },
+  {
+   "id": "05c17f0d-63ea-4285-9481-fc98b2625d79",
+   "type": "Observed-Data",
+   "standard_id": "observed-data--4370c578-3b28-592b-9151-4304f621a38b"
+  },
+  {
+   "id": "c501769b-70b5-4944-8208-46c300acd417",
+   "type": "Observed-Data",
+   "standard_id": "observed-data--54db755a-19d2-5dad-a2c4-1d7bcdc0621d"
+  },
+  {
+   "id": "1fdc26a1-befd-458f-9027-0186d7f05b62",
+   "type": "Observed-Data",
+   "standard_id": "observed-data--e2d1fe6c-76bd-5f47-8930-0e482e83013e"
+  },
+  {
+   "id": "3ec91c0f-915b-4e1d-9cd9-c1c12c79f342",
+   "type": "Report",
+   "standard_id": "report--34ed0069-850a-5bce-9f9b-6d72f29d094f"
+  },
+  {
+   "id": "5b520000-bfaf-4b95-ae76-efc567571979",
+   "type": "Url",
+   "standard_id": "url--9a6f142e-bbda-5f84-872b-43948eecc7bf"
+  },
+  {
+   "id": "7ad50437-12dd-4ab6-b818-4b95841a938e",
+   "type": "Url",
+   "standard_id": "url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3"
+  },
+  {
+   "id": "bbc7930b-93f1-47c1-b54b-5f3123265ab1",
+   "type": "Url",
+   "standard_id": "url--d09d25c1-a894-5c60-971c-4c95e7b653b4"
+  },
+  {
+   "id": "a7993d2d-b32a-4e30-a5c1-cac85192c37a",
+   "type": "Url",
+   "standard_id": "url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a"
+  },
+  {
+   "id": "133d9b95-2a51-4a9a-8595-4815490f2cbd",
+   "type": "Url",
+   "standard_id": "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25"
+  },
+  {
+   "id": "d5922341-334a-46b8-ab90-5d741cd53c04",
+   "type": "User-Account",
+   "standard_id": "user-account--51df54e2-27d6-5fef-a4a3-5864e1baf39b"
+  },
+  {
+   "id": "26cabc79-3692-4152-8a0d-40c1e9b23209",
+   "type": "X509-Certificate",
+   "standard_id": "x509-certificate--b42c2559-1040-583c-a389-8d5517003f96"
+  },
+  {
+   "id": "d7823815-142b-4b7f-a770-0065caa262ea",
+   "type": "X509-Certificate",
+   "standard_id": "x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9"
+  },
+  {
+   "id": "1229cddc-c9c9-4a5a-ba4d-db619d72f6b9",
+   "type": "X509-Certificate",
+   "standard_id": "x509-certificate--de819979-c539-5789-93b0-b854225116a7"
+  }
+ ],
+ "relations_etiquetees": 20,
+ "relations_ids": [
+  "0d892462-cc9a-40ce-acf7-6ce50035d4cb",
+  "942d4e75-a49e-4aff-931e-15c7e7abfd5e",
+  "1dc23241-953b-4f86-84c0-150330f136cc",
+  "19826506-1f99-496a-b4d6-29da9da40340",
+  "10ea33c6-d2cf-4ecc-a9bf-0f3b9ea173d2",
+  "85036e84-d1a5-4a56-8295-4b17aed842f1",
+  "3c74b9e1-7ca8-4fd4-9551-ac9696c64a26",
+  "b6f8d17a-7196-4b68-9767-3029eaf05d02",
+  "718d7e57-7cc8-4b53-b6b8-37c911957716",
+  "22ca29f9-f098-4688-a3d3-945629ff33e7",
+  "766a3b03-a346-4d35-b4ce-ff9841150e1e",
+  "03528372-6afb-4401-b5ae-7593c9a5d8f2",
+  "69af4a7b-24aa-409c-a0e2-49b53f6d4242",
+  "e1959233-979d-4ea9-b2de-f0431ddf554b",
+  "87868514-f665-4bc0-9ea5-e4eaed267745",
+  "3a45a25d-bff3-4dc9-9602-d3a42a2854db",
+  "0224a105-400a-4e0d-b924-1762411f19c0",
+  "679e79c1-b753-45fa-a817-761107fb660f",
+  "d34e8b82-3883-4e35-b1a3-04b2394ad8da",
+  "3af8aafe-72b9-4bc1-bd47-bb49b2fd11b8"
+ ],
+ "detections_etiquetees": 4,
+ "detections_ids": [
+  "fb5d939d-0960-4dbf-9a4f-f6ad45d033a8",
+  "e2dd62bb-d177-4d02-a69c-2afc76a81ab6",
+  "a21f378b-5ff2-42cd-9c38-b406ae005f5a",
+  "5d1737ea-3505-435e-8520-790215e5b32f"
+ ],
+ "remarque": "6 relations based-on ne portent pas l etiquette de mission : elles disparaissent avec leurs indicateurs ou observables",
+ "labels_de_la_mission": {
+  "challenge:helios-fictif": "bf06ad75-560f-400e-82e3-46ffaa771ab5",
+  "challenge:source=rejeu-wazuh": "5efeb415-6de1-4096-9a41-21758021746c",
+  "challenge:source=dossier-pedagogique": "96cda987-153b-4f76-9fd1-001e2f74b409",
+  "analytic:declared-unverified": "825ab238-473b-4c2b-a758-299a819e0111",
+  "analytic:observed": "b09fd058-8511-47c4-89d8-0e689a2c604a",
+  "analytic:hypothesis": "059614c6-865d-4159-b00a-db13d80be4b2"
+ },
+ "labels_a_ne_pas_supprimer": "tout autre label de la plateforme (par exemple « trojanized coding challenge », « matomo analytics », « google analytics ») appartient à la production",
+ "references_externes": "sélection par source_name commençant par « Dossier Helios » (11 références) ; ne pas supprimer par numéro seul",
+ "creations_2026-10-07": {
+  "investigation": {
+   "id": "14c28507-2b09-48b8-9b36-c2dc2470d64a",
+   "retrait": "workspaceDelete (type investigation, non étiquetée par label mais par tags)"
+  },
+  "rfi": {
+   "RFI-01": "57660434-e941-4661-a1bb-c0648076323c",
+   "RFI-02": "c39f732d-816d-4592-891c-2c957b04ac41",
+   "RFI-03": "825f847d-b693-4615-8da3-104d70dfd27d",
+   "RFI-04": "5089e63a-9e6a-407e-919f-ed37e90d93a2",
+   "RFI-05": "f3f59cfe-1c3d-4095-9a87-a3d8dbfad317"
+  },
+  "retrait_rfi": "caseRfiDelete par identifiant ; elles portent le label de la mission : un retrait par label en inclurait 5 de plus (52 objets étiquetés au lieu de 47)",
+  "a_ne_pas_supprimer": [
+   "enquête essaie1 (688e2b47…)",
+   "RFI TEST-HL (3bf6b831…)"
+  ]
+ },
+ "organisations_etiquetees_2026-10-07": {
+  "Équipe CTI": "6448890f-906c-4c33-8494-6281c72d17b1",
+  "Dossier pédagogique": "de91dc76-bd49-421c-b6e6-868cb511870e",
+  "Helios Energy (fictif)": "5c7aeff2-a19c-431a-8e67-1fd2644c53cb"
+ },
+ "etat_etiquette_2026-10-07": "52 objets portent le label de la mission d'après l'API (47 d'origine + 5 RFI) ; les 3 organisations l'ont reçu le 2026-10-07 (P1) : 55 objets au total ; l'enquête (tags, pas de label) se retire par son identifiant"
+}

@@ -1,0 +1,76 @@
+<!-- Décodeurs de TEST pour le challenge CTI Helios (formats pseudo-syslog du dossier fourniture/05_journaux_bruts.log).
+     Ils ne couvrent QUE les 12 formats du dossier. Ne pas déployer en production sans revue. -->
+<decoder name="helios-sysmon">
+  <prematch>^\S+ \S+ Sysmon: </prematch>
+</decoder>
+<decoder name="helios-sysmon-create">
+  <parent>helios-sysmon</parent>
+  <prematch>Process Create: </prematch>
+  <regex type="pcre2">Process Create: (\S+) -> (\S+) (.*)$</regex>
+  <order>parent_image,image,command_line</order>
+</decoder>
+<decoder name="helios-sysmon-access">
+  <parent>helios-sysmon</parent>
+  <prematch>Process Access: </prematch>
+  <regex>Process Access: target=(\S+) granted=(\S+) by (\S+)</regex>
+  <order>target_image,granted_access,source_image</order>
+</decoder>
+<decoder name="helios-sysmon-remotethread">
+  <parent>helios-sysmon</parent>
+  <prematch>CreateRemoteThread into </prematch>
+  <regex>CreateRemoteThread into (\S+) </regex>
+  <order>target_image</order>
+</decoder>
+<decoder name="helios-sysmon-task">
+  <parent>helios-sysmon</parent>
+  <prematch>Scheduled Task Created: </prematch>
+  <regex>Scheduled Task Created: (\S+)</regex>
+  <order>task_name</order>
+</decoder>
+<decoder name="helios-squid">
+  <prematch>^\S+ \S+ Squid: GET </prematch>
+  <regex>GET (\S+) (\d+)</regex>
+  <order>http_url,http_status</order>
+</decoder>
+<decoder name="helios-zeek">
+  <prematch>^\S+ \S+ Zeek: </prematch>
+</decoder>
+<decoder name="helios-zeek-conn">
+  <parent>helios-zeek</parent>
+  <prematch>conn </prematch>
+  <regex>conn (\S+):(\d+) duration=\S+ orig_bytes=(\d+)</regex>
+  <order>dst_ip,dst_port,orig_bytes</order>
+</decoder>
+<decoder name="helios-zeek-large">
+  <parent>helios-zeek</parent>
+  <prematch>large outbound </prematch>
+  <regex>large outbound (\S+):(\d+) bytes=(\d+)</regex>
+  <order>dst_ip,dst_port,orig_bytes</order>
+</decoder>
+<decoder name="helios-zeek-scan">
+  <parent>helios-zeek</parent>
+  <prematch>scan detected </prematch>
+  <regex>scan detected (\S+) -> (\S+) dports=(\S+)</regex>
+  <order>src_ip,scan_target,dports</order>
+</decoder>
+<decoder name="helios-security">
+  <prematch>^\S+ \S+ Security: </prematch>
+</decoder>
+<decoder name="helios-security-logon">
+  <parent>helios-security</parent>
+  <prematch>Logon type=</prematch>
+  <regex>Security: (\d+) Logon type=(\d+) RDP account=(\S+)</regex>
+  <order>event_id,logon_type,win_user</order>
+</decoder>
+<decoder name="helios-security-useradd">
+  <parent>helios-security</parent>
+  <prematch>User created </prematch>
+  <regex>Security: (\d+) User created (\S+)</regex>
+  <order>event_id,win_user</order>
+</decoder>
+<decoder name="helios-security-cleared">
+  <parent>helios-security</parent>
+  <prematch>audit log cleared</prematch>
+  <regex>Security: (1102) audit log cleared</regex>
+  <order>event_id</order>
+</decoder>

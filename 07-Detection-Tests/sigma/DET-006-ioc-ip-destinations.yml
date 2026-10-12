@@ -1,0 +1,25 @@
+title: Connexion vers une IP du dossier (IoC non vérifiés)
+id: 91b1e333-d5ff-56af-9a53-83f766a12e94
+status: experimental
+description: 'IP en plages de documentation RFC 5737. Règle IOC. Ne démontre pas un balisage ni une exfiltration. [DET-006 | fondement : IOC |
+  artefacts : IOC-020, IOC-021, IOC-022, IOC-024, journal l.4, l.10]'
+references:
+- IOC-020, 021, 022, 024
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.command-and-control
+logsource:
+  product: zeek
+  service: conn
+detection:
+  sel:
+    id.resp_h:
+    - 198.51.100.24
+    - 203.0.113.14
+    - 203.0.113.15
+    - 203.0.113.28
+  condition: sel
+falsepositives:
+- Aucun hors exercice (plages de documentation)
+level: medium

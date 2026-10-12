@@ -1,0 +1,2977 @@
+{
+ "type": "bundle",
+ "id": "bundle--11a140b3-be97-5b24-b283-255ce45a621a",
+ "objects": [
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:02:27.000Z",
+   "modified": "2026-10-06T10:02:27.000Z",
+   "name": "CHALLENGE-FICTIF",
+   "identity_class": "organization",
+   "external_references": [
+    {
+     "source_name": "MISP 2.5.46 (export STIX 2.1 de l'événement 6)",
+     "description": "organisation propriétaire de l'événement exporté, date de collecte 2026-10-06T10:02:27.000Z"
+    }
+   ]
+  },
+  {
+   "type": "grouping",
+   "spec_version": "2.1",
+   "id": "grouping--33c1053e-e1e1-405f-ae75-b1c747a7f7b2",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:02:27.000Z",
+   "modified": "2026-10-06T10:02:27.000Z",
+   "name": "[CHALLENGE FICTIF] Helios Energy INC-2026-0302",
+   "context": "suspicious-activity",
+   "object_refs": [
+    "observed-data--53959d06-8667-4646-ad88-0e774fe30fb2",
+    "file--6f2536f6-fe34-554d-b1b7-be0601158b28",
+    "observed-data--f0c999cc-6e08-4a76-a61b-e29c777f176e",
+    "file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad",
+    "observed-data--3ea8b70c-eb57-4800-acd2-de49fb651c0a",
+    "file--8158819a-4d72-5660-b804-bc899c7d77be",
+    "observed-data--3deb0060-4ada-439e-ab59-85d5f6a9b04d",
+    "domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9",
+    "observed-data--3c29b262-a324-4631-b18f-7d5c7696b144",
+    "domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf",
+    "observed-data--5122bd48-1d87-46ec-a4c2-bc1a62d56993",
+    "domain-name--f79ec794-1673-5e7b-80da-7a61697f242a",
+    "observed-data--a6993fb8-fea3-41fe-88f4-8c4b653e338c",
+    "domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef",
+    "observed-data--b5052584-02a1-46a7-8139-e80255ad0e80",
+    "network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013",
+    "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559",
+    "observed-data--3d487d20-4771-435e-9d99-ff2374a112bb",
+    "network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa",
+    "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f",
+    "observed-data--4d7ea69c-d984-45f6-8b74-3071070d4e9d",
+    "network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9",
+    "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628",
+    "observed-data--b8191765-0447-49ec-a8db-6c9ba78cac0e",
+    "network-traffic--46e66c73-8652-510b-9f35-56259d8432b9",
+    "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+    "observed-data--65531525-8961-422d-8deb-8f62512718c2",
+    "network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c",
+    "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578",
+    "observed-data--0ecd0204-16c6-4c7c-a8a1-e1e2d7f86912",
+    "network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c",
+    "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249",
+    "observed-data--f1d9e7e8-cfbf-4764-aa5c-994cb09cb271",
+    "network-traffic--4557854c-6214-5885-976b-7e129f29d429",
+    "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b",
+    "observed-data--06abfd71-44e7-4df0-9cd7-25df1680adf6",
+    "network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773",
+    "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b",
+    "observed-data--67f2a338-1ea4-4078-87ff-c5001760ea67",
+    "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25",
+    "observed-data--66bb2ea5-e34d-401b-85ec-06efbf7a61f8",
+    "url--d09d25c1-a894-5c60-971c-4c95e7b653b4",
+    "observed-data--b2416d3a-62ac-4ba7-9071-4d7a5e1fdd7f",
+    "url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a",
+    "observed-data--763080fb-fd06-4a77-bf0b-f02ed1fa9cb8",
+    "url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3",
+    "observed-data--7332a699-58f0-4560-bd91-d06ec077f990",
+    "x509-certificate--b42c2559-1040-583c-a389-8d5517003f96",
+    "observed-data--d1eedd9a-e19f-41ed-a0a6-dc8ad0ada5e8",
+    "x509-certificate--de819979-c539-5789-93b0-b854225116a7",
+    "observed-data--6bddbd54-c7f8-4dca-bf9e-e7c665adc9b0",
+    "x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9",
+    "observed-data--3ffaccf1-d209-4caf-a8d7-1be15a0d1199",
+    "file--cb105689-9711-5632-b3ed-90174227038b",
+    "observed-data--b3fed1b4-4523-4004-ab00-df060905182e",
+    "file--48d4206a-fd5b-55fd-a195-3986a461309f",
+    "observed-data--4da6f064-f05b-4954-b441-9cc953016aa6",
+    "file--4a6185da-a712-5bc9-be00-bc689787d5e7",
+    "observed-data--073e81c7-caa5-4f78-b46d-e5ef0cb39f41",
+    "file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99",
+    "observed-data--cc270e5f-f5a4-4003-a21a-e2847a42760f",
+    "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df",
+    "domain-name--8968289e-0006-5e21-b130-b953237dfd0c",
+    "observed-data--68443f5d-f1ef-447f-a3d9-9e7cc97b93e7",
+    "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+    "domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc",
+    "note--c3e5fbd3-6aa6-4f64-847c-c3fbbb49c982",
+    "relationship--6d7adb66-c222-4a92-8ca4-620529ab3780"
+   ],
+   "labels": [
+    "Threat-Report",
+    "misp:tool=\"MISP-STIX-Converter\"",
+    "misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\"",
+    "misp-galaxy:mitre-attack-pattern=\"Hidden Window - T1564.003\"",
+    "misp-galaxy:mitre-attack-pattern=\"Ingress Tool Transfer - T1105\"",
+    "misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053.005\"",
+    "misp-galaxy:mitre-attack-pattern=\"Network Service Discovery - T1046\"",
+    "misp-galaxy:mitre-attack-pattern=\"Remote Desktop Protocol - T1021.001\"",
+    "misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\"",
+    "misp-galaxy:mitre-attack-pattern=\"Clear Windows Event Logs - T1070.001\""
+   ],
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--53959d06-8667-4646-ad88-0e774fe30fb2",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T08:32:00Z",
+   "last_observed": "2026-03-02T08:32:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--6f2536f6-fe34-554d-b1b7-be0601158b28"
+   ],
+   "labels": [
+    "misp:type=\"sha256\"",
+    "misp:category=\"Artifacts dropped\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--6f2536f6-fe34-554d-b1b7-be0601158b28",
+   "hashes": {
+    "SHA-256": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-010 (ligne 11)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-010 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--f0c999cc-6e08-4a76-a61b-e29c777f176e",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-04T11:06:00Z",
+   "last_observed": "2026-03-04T11:06:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad"
+   ],
+   "labels": [
+    "misp:type=\"sha256\"",
+    "misp:category=\"Artifacts dropped\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad",
+   "hashes": {
+    "SHA-256": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-011 (ligne 12)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-011 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--3ea8b70c-eb57-4800-acd2-de49fb651c0a",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-05T14:45:00Z",
+   "last_observed": "2026-03-05T14:45:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--8158819a-4d72-5660-b804-bc899c7d77be"
+   ],
+   "labels": [
+    "misp:type=\"sha256\"",
+    "misp:category=\"Artifacts dropped\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--8158819a-4d72-5660-b804-bc899c7d77be",
+   "hashes": {
+    "SHA-256": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-012 (ligne 13)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-012 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--3deb0060-4ada-439e-ab59-85d5f6a9b04d",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T07:58:00Z",
+   "last_observed": "2026-03-02T07:58:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9"
+   ],
+   "labels": [
+    "misp:type=\"domain\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9",
+   "value": "mail-secure-login.test",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-015 (ligne 16)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-015 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--3c29b262-a324-4631-b18f-7d5c7696b144",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-03T03:22:00Z",
+   "last_observed": "2026-03-03T03:22:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf"
+   ],
+   "labels": [
+    "misp:type=\"domain\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf",
+   "value": "static-assets-cache.test",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-016 (ligne 17)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-016 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--5122bd48-1d87-46ec-a4c2-bc1a62d56993",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T06:40:00Z",
+   "last_observed": "2026-03-02T06:40:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "domain-name--f79ec794-1673-5e7b-80da-7a61697f242a"
+   ],
+   "labels": [
+    "misp:type=\"domain\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--f79ec794-1673-5e7b-80da-7a61697f242a",
+   "value": "helios-energy-portal.test",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-017 (ligne 18)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-017 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--a6993fb8-fea3-41fe-88f4-8c4b653e338c",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-04T11:04:00Z",
+   "last_observed": "2026-03-04T11:04:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef"
+   ],
+   "labels": [
+    "misp:type=\"domain\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef",
+   "value": "update-win-msft.test",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-018 (ligne 19)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-018 C5"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--b5052584-02a1-46a7-8139-e80255ad0e80",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T09:20:00Z",
+   "last_observed": "2026-03-02T09:20:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013",
+    "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013",
+   "dst_ref": "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-021 (ligne 22)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-021 C4"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559",
+   "value": "203.0.113.14",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-021 (ligne 22)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-021 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--3d487d20-4771-435e-9d99-ff2374a112bb",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-03T02:00:00Z",
+   "last_observed": "2026-03-03T02:00:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa",
+    "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa",
+   "dst_ref": "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-022 (ligne 23)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-022 C4"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f",
+   "value": "203.0.113.15",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-022 (ligne 23)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-022 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--4d7ea69c-d984-45f6-8b74-3071070d4e9d",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T07:58:00Z",
+   "last_observed": "2026-03-02T07:58:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9",
+    "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9",
+   "dst_ref": "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-023 (ligne 24)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-023 C4"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628",
+   "value": "198.51.100.40",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-023 (ligne 24)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-023 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--b8191765-0447-49ec-a8db-6c9ba78cac0e",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-05T15:30:00Z",
+   "last_observed": "2026-03-05T15:30:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--46e66c73-8652-510b-9f35-56259d8432b9",
+    "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--46e66c73-8652-510b-9f35-56259d8432b9",
+   "dst_ref": "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-024 (ligne 25)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-024 C3"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+   "value": "203.0.113.28",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-024 (ligne 25)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-024 C3"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--65531525-8961-422d-8deb-8f62512718c2",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-03T10:12:00Z",
+   "last_observed": "2026-03-03T10:12:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c",
+    "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c",
+   "dst_ref": "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-025 (ligne 26)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-025 C5"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578",
+   "value": "198.51.100.55",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-025 (ligne 26)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-025 C5"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--0ecd0204-16c6-4c7c-a8a1-e1e2d7f86912",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-04T01:47:00Z",
+   "last_observed": "2026-03-04T01:47:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c",
+    "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c",
+   "dst_ref": "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-026 (ligne 27)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-026 C5"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249",
+   "value": "203.0.113.44",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-026 (ligne 27)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-026 C5"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--f1d9e7e8-cfbf-4764-aa5c-994cb09cb271",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-03T03:22:00Z",
+   "last_observed": "2026-03-03T03:22:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--4557854c-6214-5885-976b-7e129f29d429",
+    "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--4557854c-6214-5885-976b-7e129f29d429",
+   "dst_ref": "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-027 (ligne 28)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-027 C5"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b",
+   "value": "198.51.100.61",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-027 (ligne 28)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-027 C5"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--06abfd71-44e7-4df0-9cd7-25df1680adf6",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-06T09:00:00Z",
+   "last_observed": "2026-03-06T09:00:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773",
+    "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b"
+   ],
+   "labels": [
+    "misp:type=\"ip-dst\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "network-traffic",
+   "spec_version": "2.1",
+   "id": "network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773",
+   "dst_ref": "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b",
+   "protocols": [
+    "tcp"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-028 (ligne 29)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-028 C6"
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b",
+   "value": "203.0.113.60",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-028 (ligne 29)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-028 C6"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--67f2a338-1ea4-4078-87ff-c5001760ea67",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T08:41:00Z",
+   "last_observed": "2026-03-02T08:41:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25"
+   ],
+   "labels": [
+    "misp:type=\"url\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "url",
+   "spec_version": "2.1",
+   "id": "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25",
+   "value": "https://cdn-svc-update.test/win/svchost_update.exe",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-029 (ligne 30)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-029 C3"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--66bb2ea5-e34d-401b-85ec-06efbf7a61f8",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T07:58:00Z",
+   "last_observed": "2026-03-02T07:58:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "url--d09d25c1-a894-5c60-971c-4c95e7b653b4"
+   ],
+   "labels": [
+    "misp:type=\"url\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "url",
+   "spec_version": "2.1",
+   "id": "url--d09d25c1-a894-5c60-971c-4c95e7b653b4",
+   "value": "https://mail-secure-login.test/owa/auth",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-030 (ligne 31)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-030 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--b2416d3a-62ac-4ba7-9071-4d7a5e1fdd7f",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T09:15:00Z",
+   "last_observed": "2026-03-02T09:15:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a"
+   ],
+   "labels": [
+    "misp:type=\"url\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "url",
+   "spec_version": "2.1",
+   "id": "url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a",
+   "value": "https://api-telemetry-eu.test/v2/beacon",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-031 (ligne 32)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-031 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--763080fb-fd06-4a77-bf0b-f02ed1fa9cb8",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T06:40:00Z",
+   "last_observed": "2026-03-02T06:40:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3"
+   ],
+   "labels": [
+    "misp:type=\"url\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "url",
+   "spec_version": "2.1",
+   "id": "url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3",
+   "value": "https://helios-energy-portal.test/hr/doc",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-032 (ligne 33)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-032 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--7332a699-58f0-4560-bd91-d06ec077f990",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T09:20:00Z",
+   "last_observed": "2026-03-02T09:20:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "x509-certificate--b42c2559-1040-583c-a389-8d5517003f96"
+   ],
+   "labels": [
+    "misp:type=\"x509-fingerprint-sha1\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "x509-certificate",
+   "spec_version": "2.1",
+   "id": "x509-certificate--b42c2559-1040-583c-a389-8d5517003f96",
+   "hashes": {
+    "SHA-1": "bda5d6c36e3ff362f9ce0957370a429fff58eb37"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-033 (ligne 34)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-033 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--d1eedd9a-e19f-41ed-a0a6-dc8ad0ada5e8",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T07:58:00Z",
+   "last_observed": "2026-03-02T07:58:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "x509-certificate--de819979-c539-5789-93b0-b854225116a7"
+   ],
+   "labels": [
+    "misp:type=\"x509-fingerprint-sha1\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "x509-certificate",
+   "spec_version": "2.1",
+   "id": "x509-certificate--de819979-c539-5789-93b0-b854225116a7",
+   "hashes": {
+    "SHA-1": "0315d14dd4b9095a10e359cbaf4129f0a6322a59"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-034 (ligne 35)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-034 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--6bddbd54-c7f8-4dca-bf9e-e7c665adc9b0",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-06T10:00:00Z",
+   "last_observed": "2026-03-06T10:00:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9"
+   ],
+   "labels": [
+    "misp:type=\"x509-fingerprint-sha1\"",
+    "misp:category=\"Network activity\""
+   ]
+  },
+  {
+   "type": "x509-certificate",
+   "spec_version": "2.1",
+   "id": "x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9",
+   "hashes": {
+    "SHA-1": "1e8bd87af841cda6441306558f11d973eb0a5601"
+   },
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-035 (ligne 36)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-035 C6"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--3ffaccf1-d209-4caf-a8d7-1be15a0d1199",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-05T14:40:00Z",
+   "last_observed": "2026-03-05T14:40:00Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--cb105689-9711-5632-b3ed-90174227038b"
+   ],
+   "labels": [
+    "misp:type=\"filename\"",
+    "misp:category=\"Artifacts dropped\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--cb105689-9711-5632-b3ed-90174227038b",
+   "name": "%WINDIR%\\Temp\\~df3a9.tmp",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-039 (ligne 40)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-039 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--b3fed1b4-4523-4004-ab00-df060905182e",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T08:30:00Z",
+   "last_observed": "2026-10-06T10:00:33Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--48d4206a-fd5b-55fd-a195-3986a461309f"
+   ],
+   "labels": [
+    "misp:name=\"file\"",
+    "misp:meta-category=\"file\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--48d4206a-fd5b-55fd-a195-3986a461309f",
+   "hashes": {
+    "MD5": "8ba35251cca8daa4a05331bba8f95b05",
+    "SHA-1": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+    "SHA-256": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5"
+   },
+   "name": "facture_mars_2026.xlsm",
+   "size": 68242,
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-001 (ligne 2), IOC-002 (ligne 3), IOC-003 (ligne 4)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-001 C4, IOC-002 C4, IOC-003 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--4da6f064-f05b-4954-b441-9cc953016aa6",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:34.000Z",
+   "modified": "2026-10-06T10:00:34.000Z",
+   "first_observed": "2026-03-02T08:41:00Z",
+   "last_observed": "2026-10-06T10:00:34Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--4a6185da-a712-5bc9-be00-bc689787d5e7"
+   ],
+   "labels": [
+    "misp:name=\"file\"",
+    "misp:meta-category=\"file\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--4a6185da-a712-5bc9-be00-bc689787d5e7",
+   "hashes": {
+    "MD5": "91678506a5474354f1ceb4c12c3c56dd",
+    "SHA-1": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+    "SHA-256": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9"
+   },
+   "name": "svchost_update.exe",
+   "size": 421376,
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-004 (ligne 5), IOC-005 (ligne 6), IOC-006 (ligne 7)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-004 C3, IOC-005 C3, IOC-006 C3"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--073e81c7-caa5-4f78-b46d-e5ef0cb39f41",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-05T14:05:00Z",
+   "last_observed": "2026-10-06T10:00:33Z",
+   "number_observed": 1,
+   "object_refs": [
+    "file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99"
+   ],
+   "labels": [
+    "misp:name=\"file\"",
+    "misp:meta-category=\"file\""
+   ]
+  },
+  {
+   "type": "file",
+   "spec_version": "2.1",
+   "id": "file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99",
+   "hashes": {
+    "MD5": "3435016f3f2aacce36b71abb636cfc64",
+    "SHA-1": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+    "SHA-256": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0"
+   },
+   "name": "rundll32_helper.dll",
+   "size": 210944,
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-007 (ligne 8), IOC-008 (ligne 9), IOC-009 (ligne 10)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-007 C4, IOC-008 C4, IOC-009 C4"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--cc270e5f-f5a4-4003-a21a-e2847a42760f",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T08:41:00Z",
+   "last_observed": "2026-10-06T10:00:33Z",
+   "number_observed": 1,
+   "object_refs": [
+    "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df",
+    "domain-name--8968289e-0006-5e21-b130-b953237dfd0c"
+   ],
+   "labels": [
+    "misp:name=\"domain-ip\"",
+    "misp:meta-category=\"network\""
+   ]
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df",
+   "value": "198.51.100.23",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-019 (ligne 20)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-019 C4"
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--8968289e-0006-5e21-b130-b953237dfd0c",
+   "value": "cdn-svc-update.test",
+   "resolves_to_refs": [
+    "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-013 (ligne 14)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-013 C3"
+  },
+  {
+   "type": "observed-data",
+   "spec_version": "2.1",
+   "id": "observed-data--68443f5d-f1ef-447f-a3d9-9e7cc97b93e7",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:33.000Z",
+   "modified": "2026-10-06T10:00:33.000Z",
+   "first_observed": "2026-03-02T09:15:00Z",
+   "last_observed": "2026-10-06T10:00:33Z",
+   "number_observed": 1,
+   "object_refs": [
+    "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+    "domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc"
+   ],
+   "labels": [
+    "misp:name=\"domain-ip\"",
+    "misp:meta-category=\"network\""
+   ]
+  },
+  {
+   "type": "ipv4-addr",
+   "spec_version": "2.1",
+   "id": "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+   "value": "198.51.100.24",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-020 (ligne 21)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-020 C3"
+  },
+  {
+   "type": "domain-name",
+   "spec_version": "2.1",
+   "id": "domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc",
+   "value": "api-telemetry-eu.test",
+   "resolves_to_refs": [
+    "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a"
+   ],
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-014 (ligne 15)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-014 C3"
+  },
+  {
+   "type": "note",
+   "spec_version": "2.1",
+   "id": "note--c3e5fbd3-6aa6-4f64-847c-c3fbbb49c982",
+   "created_by_ref": "identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f",
+   "created": "2026-10-06T10:00:36.000Z",
+   "modified": "2026-10-06T10:00:36.000Z",
+   "abstract": "Synthèse provisoire de l'analyse",
+   "content": "# [CHALLENGE FICTIF] Helios Energy INC-2026-0302\n\nDonnées FICTIVES (plages RFC 5737, domaines .test). Aucun attribut n'est marqué to_ids.\n\n- Dossier : fourniture/ (7 fichiers), inventaires et analyses dans le dossier de mission.\n- Dates : bornes d'observation, pas début/fin certains de l'intrusion.\n- Attribution : INCONNUE (cluster non attribué) ; aucune galaxie d'acteur.\n- Limites : 3 fiches binaires, 0 échantillon ; IOC-025/026/028 de nature incertaine.\n",
+   "object_refs": [
+    "grouping--33c1053e-e1e1-405f-ae75-b1c747a7f7b2"
+   ],
+   "labels": [
+    "misp:data-layer=\"Event Report\""
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--6d7adb66-c222-4a92-8ca4-620529ab3780",
+   "created": "2026-10-06T10:00:34.000Z",
+   "modified": "2026-10-06T10:00:34.000Z",
+   "relationship_type": "related-to",
+   "source_ref": "file--4a6185da-a712-5bc9-be00-bc689787d5e7",
+   "target_ref": "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25",
+   "description": "MISP : référence « downloaded-from » de l'objet file vers l'URL (déclaré par la fiche, non vérifié)",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ]
+  },
+  {
+   "type": "marking-definition",
+   "spec_version": "2.1",
+   "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+   "created": "2017-01-20T00:00:00.000Z",
+   "definition_type": "tlp",
+   "name": "TLP:AMBER",
+   "definition": {
+    "tlp": "amber"
+   }
+  },
+  {
+   "type": "user-account",
+   "spec_version": "2.1",
+   "id": "user-account--41676b5a-3cda-57ac-a085-48839255dcc6",
+   "user_id": "svc-backup-temp",
+   "account_login": "svc-backup-temp",
+   "x_helios_source": "Dossier Helios (challenge fictif), fourniture/02_indicateurs_40.csv : IOC-037 (ligne 38)",
+   "x_helios_collected_at": "2026-10-06T09:05:00Z",
+   "x_helios_admiralty": "IOC-037 C4"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Équipe CTI",
+   "identity_class": "organization",
+   "description": "Auteur de l'analyse. Composition non communiquée.",
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "identité de l'équipe auteur de l'analyse, créée le 2026-10-06"
+    }
+   ]
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--9ecaad58-3b65-597f-aa5d-200da8c3773b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Helios Energy (fictif)",
+   "identity_class": "organization",
+   "description": "[CHALLENGE FICTIF] Victime fictive. Statut d'opérateur d'importance vitale : énoncé du sujet, non établi par les artefacts.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--fc4c54fc-d124-5406-ae15-1ab120da7c04",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "comptabilite-07",
+   "identity_class": "system",
+   "description": "Poste d'entrée selon le dossier.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--a39cef96-0c30-5f2d-a5dd-955164152a77",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "srv-fichiers-02",
+   "identity_class": "system",
+   "description": "Nom évoquant un serveur de fichiers (rôle non documenté).",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--ddc7687d-6771-570e-9d38-5a671b23683d",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "dc-01",
+   "identity_class": "system",
+   "description": "Contrôleur de domaine selon le mémo (non vérifié).",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "PowerShell",
+   "description": "alerte 1, journal ligne 1 : powershell.exe -enc",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1059.001",
+     "url": "https://attack.mitre.org/techniques/T1059/001/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 1, journal ligne 1 : powershell.exe -enc"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Hidden Window",
+   "description": "alerte 1 : -w hidden",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1564.003",
+     "url": "https://attack.mitre.org/techniques/T1564/003/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 1 : -w hidden"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Ingress Tool Transfer",
+   "description": "alerte 2 : GET 200 d'un exécutable",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1105",
+     "url": "https://attack.mitre.org/techniques/T1105/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 2 : GET 200 d'un exécutable"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Scheduled Task",
+   "description": "alerte 3 : création de tâche",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1053.005",
+     "url": "https://attack.mitre.org/techniques/T1053/005/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 3 : création de tâche"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Network Service Discovery",
+   "description": "alerte 6 : balayage 445 et 3389",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1046",
+     "url": "https://attack.mitre.org/techniques/T1046/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 6 : balayage 445 et 3389"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Remote Desktop Protocol",
+   "description": "alerte 7 : 4624 type 10",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1021.001",
+     "url": "https://attack.mitre.org/techniques/T1021/001/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 7 : 4624 type 10"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Process Injection",
+   "description": "alerte 8 : CreateRemoteThread dans explorer.exe (sous-technique non démontrée)",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1055",
+     "url": "https://attack.mitre.org/techniques/T1055/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 8 : CreateRemoteThread dans explorer.exe (sous-technique non démontrée)"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "Clear Windows Event Logs",
+   "description": "alerte 12 : 1102 + wevtutil cl Security ; ancien identifiant T1070.001 (ATT&CK <= v18)",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1685.005",
+     "url": "https://attack.mitre.org/techniques/T1685/005/"
+    },
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "technique OBSERVEE, preuve : alerte 12 : 1102 + wevtutil cl Security ; ancien identifiant T1070.001 (ATT&CK <= v18)"
+    }
+   ]
+  },
+  {
+   "type": "campaign",
+   "spec_version": "2.1",
+   "id": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Cluster non attribué INC-2026-0302",
+   "description": "Regroupement d'activités observées dans le dossier. NON ATTRIBUE : aucun acteur, groupe ou famille nommée n'est démontré. Dates = bornes d'OBSERVATION, pas début ni fin certains.",
+   "first_seen": "2026-03-02T08:31:00Z",
+   "last_seen": "2026-03-07T09:02:00Z",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "non-attribue"
+   ],
+   "confidence": 50,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "alertes 1 à 12, journal brut lignes 1 à 12",
+     "external_id": "ALERT-001..012"
+    }
+   ]
+  },
+  {
+   "type": "malware",
+   "spec_version": "2.1",
+   "id": "malware--217f1232-8d80-517d-8dd9-72c6542ec749",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "facture_mars_2026.xlsm (BIN-001)",
+   "is_family": false,
+   "malware_types": [
+    "dropper"
+   ],
+   "description": "DECLARE par la fiche, non vérifié. Verdict de la fiche : dropper. Échantillon non fourni.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "declare"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "fiche 01_fiches_analyse_binaires.md : BIN-001",
+     "external_id": "BIN-001"
+    }
+   ]
+  },
+  {
+   "type": "malware",
+   "spec_version": "2.1",
+   "id": "malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "svchost_update.exe (BIN-002)",
+   "is_family": false,
+   "malware_types": [
+    "backdoor"
+   ],
+   "description": "DECLARE par la fiche, non vérifié. Verdict de la fiche : balise de commande et contrôle. Échantillon non fourni.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "declare"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "fiche 01_fiches_analyse_binaires.md : BIN-002",
+     "external_id": "BIN-002"
+    }
+   ]
+  },
+  {
+   "type": "malware",
+   "spec_version": "2.1",
+   "id": "malware--fd879985-6c14-58b0-9c60-0a115d99b91a",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "rundll32_helper.dll (BIN-003)",
+   "is_family": false,
+   "malware_types": [
+    "unknown"
+   ],
+   "description": "DECLARE par la fiche, non vérifié. Verdict de la fiche : outil de collecte d'identifiants (outil générique selon la fiche). Échantillon non fourni.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "declare"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "fiche 01_fiches_analyse_binaires.md : BIN-003",
+     "external_id": "BIN-003"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-01 BIN-001 dropper (fiche)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-001, fiche BIN-01. Confiance de l'analyste, pas une cote Admiralty. Statut : declare.",
+   "pattern": "[file:hashes.'SHA-256' = '2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-02T08:31:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "unknown"
+   ],
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-001, fiche BIN-01"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-02 BIN-002 balise (fiche)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-004, fiche BIN-02, journal ligne 2 (taille). Confiance de l'analyste, pas une cote Admiralty. Statut : declare.",
+   "pattern": "[file:hashes.'SHA-256' = 'cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-02T08:42:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "unknown"
+   ],
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-004, fiche BIN-02, journal ligne 2 (taille)"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-03 BIN-003 outil d'identifiants (fiche)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-007, fiche BIN-03. Confiance de l'analyste, pas une cote Admiralty. Statut : declare.",
+   "pattern": "[file:hashes.'SHA-256' = 'f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-05T14:07:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "unknown"
+   ],
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-007, fiche BIN-03"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-04 domaine de téléchargement de BIN-002",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-013, ALERT-002, journal ligne 2. Confiance de l'analyste, pas une cote Admiralty. Statut : hypothese.",
+   "pattern": "[domain-name:value = 'cdn-svc-update.test']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-02T08:42:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "anomalous-activity"
+   ],
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-013, ALERT-002, journal ligne 2"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-05 URL de la seconde charge",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-029, ALERT-002, journal ligne 2. Confiance de l'analyste, pas une cote Admiralty. Statut : hypothese.",
+   "pattern": "[url:value = 'https://cdn-svc-update.test/win/svchost_update.exe']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-02T08:42:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "anomalous-activity"
+   ],
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-029, ALERT-002, journal ligne 2"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-06 destination de la connexion de balise (ALERT-004)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-020, ALERT-004, journal ligne 4. Confiance de l'analyste, pas une cote Admiralty. Statut : hypothese.",
+   "pattern": "[ipv4-addr:value = '198.51.100.24']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-02T09:16:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "anomalous-activity"
+   ],
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-020, ALERT-004, journal ligne 4"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-07 destination de la sortie de 2 469 135 790 octets (ALERT-010)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-024, ALERT-010, journal ligne 10. Confiance de l'analyste, pas une cote Admiralty. Statut : hypothese.",
+   "pattern": "[ipv4-addr:value = '203.0.113.28']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-05T15:31:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "anomalous-activity"
+   ],
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-024, ALERT-010, journal ligne 10"
+    }
+   ]
+  },
+  {
+   "type": "indicator",
+   "spec_version": "2.1",
+   "id": "indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] IND-08 domaine du « repli C2 » (ALERT-011)",
+   "description": "Indicateur HISTORIQUE (expiré, non destiné à la détection). Sources : IOC-016, ALERT-011, journal ligne 11. Confiance de l'analyste, pas une cote Admiralty. Statut : hypothese.",
+   "pattern": "[domain-name:value = 'static-assets-cache.test']",
+   "pattern_type": "stix",
+   "pattern_version": "2.1",
+   "valid_from": "2026-03-06T03:10:00Z",
+   "valid_until": "2026-04-02T00:00:00Z",
+   "indicator_types": [
+    "anomalous-activity"
+   ],
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "IOC-016, ALERT-011, journal ligne 11"
+    }
+   ]
+  },
+  {
+   "type": "tool",
+   "spec_version": "2.1",
+   "id": "tool--aaa894f0-e340-5243-9757-432871928c2e",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "powershell.exe",
+   "description": "Utilitaire Windows légitime dont l'emploi figure dans les artefacts (OBSERVE). Preuve : ALERT-001, journal ligne 1 : winword.exe -> powershell.exe -enc ... -w hidden. Aucun échantillon, aucune famille.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "confidence": 50,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-001, journal ligne 1 : winword.exe -> powershell.exe -enc ... -w hidden",
+     "external_id": "ALERT-001"
+    }
+   ]
+  },
+  {
+   "type": "tool",
+   "spec_version": "2.1",
+   "id": "tool--49a696f7-0695-5a3f-bd59-b9beec7e1496",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "wevtutil.exe",
+   "description": "Utilitaire Windows légitime dont l'emploi figure dans les artefacts (OBSERVE). Preuve : ALERT-012, journal ligne 12 : Security 1102 audit log cleared / wevtutil cl Security. Aucun échantillon, aucune famille.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "confidence": 50,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-012, journal ligne 12 : Security 1102 audit log cleared / wevtutil cl Security",
+     "external_id": "ALERT-012"
+    }
+   ]
+  },
+  {
+   "type": "tool",
+   "spec_version": "2.1",
+   "id": "tool--09560a4d-4ab5-5a9a-819b-39ac6b108490",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "schtasks.exe",
+   "description": "Utilitaire Windows légitime dont l'emploi figure dans les artefacts (DECLARE). Preuve : ALERT-003 (détail de l'alerte seulement : la commande schtasks /create n'est pas dans le journal brut, I-20). Aucun échantillon, aucune famille.",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "declare"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-003 (détail de l'alerte seulement : la commande schtasks /create n'est pas dans le journal brut, I-20)",
+     "external_id": "ALERT-003"
+    }
+   ]
+  },
+  {
+   "type": "infrastructure",
+   "spec_version": "2.1",
+   "id": "infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Hébergement du téléchargement (cdn-svc-update.test)",
+   "description": "Rôle réseau décrit par une alerte (OBSERVE). Preuve : ALERT-002, journal ligne 2 : GET 200 de svchost_update.exe, 421376 octets (IOC-013, IOC-029). Plage ou domaine de documentation : aucune résolution possible.",
+   "infrastructure_types": [
+    "hosting-malware"
+   ],
+   "first_seen": "2026-03-02T08:42:00Z",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "confidence": 50,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-002, journal ligne 2 : GET 200 de svchost_update.exe, 421376 octets (IOC-013, IOC-029)",
+     "external_id": "ALERT-002"
+    }
+   ]
+  },
+  {
+   "type": "infrastructure",
+   "spec_version": "2.1",
+   "id": "infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Destination de la connexion de balise (198.51.100.24)",
+   "description": "Rôle réseau décrit par une alerte (OBSERVE). Preuve : ALERT-004, journal ligne 4 : une connexion vers 198.51.100.24:443 ; le rôle de balise vient du texte de l'alerte, la périodicité n'est pas démontrée (IOC-020). Plage ou domaine de documentation : aucune résolution possible.",
+   "infrastructure_types": [
+    "command-and-control"
+   ],
+   "first_seen": "2026-03-02T09:16:00Z",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-004, journal ligne 4 : une connexion vers 198.51.100.24:443 ; le rôle de balise vient du texte de l'alerte, la périodicité n'est pas démontrée (IOC-020)",
+     "external_id": "ALERT-004"
+    }
+   ]
+  },
+  {
+   "type": "infrastructure",
+   "spec_version": "2.1",
+   "id": "infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Destination de la sortie de données (203.0.113.28)",
+   "description": "Rôle réseau décrit par une alerte (OBSERVE). Preuve : ALERT-010, journal ligne 10 : 2 469 135 790 octets vers 203.0.113.28:8080 en clair (IOC-024). Plage ou domaine de documentation : aucune résolution possible.",
+   "infrastructure_types": [
+    "exfiltration"
+   ],
+   "first_seen": "2026-03-05T15:31:00Z",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "observe"
+   ],
+   "confidence": 50,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-010, journal ligne 10 : 2 469 135 790 octets vers 203.0.113.28:8080 en clair (IOC-024)",
+     "external_id": "ALERT-010"
+    }
+   ]
+  },
+  {
+   "type": "infrastructure",
+   "spec_version": "2.1",
+   "id": "infrastructure--36b67c60-cdbd-5e21-85ed-741795271706",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Repli de commande supposé (static-assets-cache.test)",
+   "description": "Rôle réseau décrit par une alerte (HYPOTHESE). Preuve : ALERT-011, journal ligne 11 : contact du domaine ; le rôle de repli vient du texte de l'alerte et contredit I-11 (IOC-016 vu dès le 3 mars). Plage ou domaine de documentation : aucune résolution possible.",
+   "infrastructure_types": [
+    "command-and-control"
+   ],
+   "first_seen": "2026-03-06T03:10:00Z",
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "labels": [
+    "hypothese"
+   ],
+   "confidence": 15,
+   "external_references": [
+    {
+     "source_name": "Dossier Helios (challenge fictif)",
+     "description": "ALERT-011, journal ligne 11 : contact du domaine ; le rôle de repli vient du texte de l'alerte et contredit I-11 (IOC-016 vu dès le 3 mars)",
+     "external_id": "ALERT-011"
+    }
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--46969d46-dfdc-5938-9c24-4ddc4da09cb6",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914",
+   "target_ref": "observed-data--b3fed1b4-4523-4004-ab00-df060905182e",
+   "description": "pattern identique à l'observable exporté par MISP (declare)",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--25a9c579-d9f8-5e84-87dc-4e976c1f12b6",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--044f0e9b-7d49-592e-927d-753ceacdb5f2",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85",
+   "target_ref": "observed-data--4da6f064-f05b-4954-b441-9cc953016aa6",
+   "description": "pattern identique à l'observable exporté par MISP (declare)",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--50a2f6b7-56b9-5d21-9296-54a9d663e76a",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--adb4a9ce-a4cb-5d1e-b897-3d7ad9810b26",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690",
+   "target_ref": "observed-data--073e81c7-caa5-4f78-b46d-e5ef0cb39f41",
+   "description": "pattern identique à l'observable exporté par MISP (declare)",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--c6624f3a-6dc3-5bca-b405-27a157b6054f",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917",
+   "target_ref": "domain-name--8968289e-0006-5e21-b130-b953237dfd0c",
+   "description": "pattern identique à l'observable exporté par MISP (hypothese)",
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--9671f99b-87bd-5ac7-ba1e-fa25b4884cee",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--96ca0128-8833-5548-b6fc-9acc58aa19f2",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6",
+   "target_ref": "observed-data--67f2a338-1ea4-4078-87ff-c5001760ea67",
+   "description": "pattern identique à l'observable exporté par MISP (hypothese)",
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--d4be121c-3734-53ea-91fb-96bddac8d8d6",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--9da50369-0df4-5c02-ac93-1181b645c6b5",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1",
+   "target_ref": "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+   "description": "pattern identique à l'observable exporté par MISP (hypothese)",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--d9726873-b6f1-58d3-8312-7cfb940b873e",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29",
+   "target_ref": "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+   "description": "pattern identique à l'observable exporté par MISP (hypothese)",
+   "confidence": 50,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--1e2cc0ce-b6f0-54c0-9acb-3adf78f9f5e7",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--79eaec38-1551-5748-aa2e-8d8b24b08ff5",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "based-on",
+   "source_ref": "indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8",
+   "target_ref": "observed-data--3c29b262-a324-4631-b18f-7d5c7696b144",
+   "description": "pattern identique à l'observable exporté par MISP (hypothese)",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--896b48fe-344e-5151-8f5c-aa251ecd490b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "indicates",
+   "source_ref": "indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8",
+   "target_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "description": "HYPOTHESE : l'indicateur est rattaché au cluster non attribué ; aucune causalité démontrée",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--011a3da1-431c-57c1-bca5-4b8faa09ac2d",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 1, journal ligne 1 : powershell.exe -enc",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b50b8329-fd30-5164-8fb4-e5328bfd7324",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 1 : -w hidden",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--dcc3d856-0a0c-5da7-b984-051ac04449be",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 2 : GET 200 d'un exécutable",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f3af3314-c3f8-554e-8219-0b356ccd751c",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 3 : création de tâche",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--58373742-a72f-571f-b16b-acffcd08e9c4",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 6 : balayage 445 et 3389",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--74f6d4bc-d81c-56a6-952a-af67b49d02e2",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 7 : 4624 type 10",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--8cad1f14-b287-5b45-8c83-84e1152504bc",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 8 : CreateRemoteThread dans explorer.exe (sous-technique non démontrée)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--297efbfb-7ad7-50ca-bb6d-fb5b8d33a87b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b",
+   "description": "technique OBSERVEE : technique OBSERVEE, preuve : alerte 12 : 1102 + wevtutil cl Security ; ancien identifiant T1070.001 (ATT&CK <= v18)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--966545ad-b0fb-5718-bd49-f9c46b3caf39",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "targets",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "identity--9ecaad58-3b65-597f-aa5d-200da8c3773b",
+   "description": "victime du dossier",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--cbbea81c-345d-53ab-90e0-ae81d0626d42",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "targets",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "identity--fc4c54fc-d124-5406-ae15-1ab120da7c04",
+   "description": "événements observés sur comptabilite-07",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4965af79-e48a-5f4a-bfce-5900961c7565",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "targets",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "identity--a39cef96-0c30-5f2d-a5dd-955164152a77",
+   "description": "événements observés sur srv-fichiers-02",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--cf92acaa-993a-5c76-a765-6620d2387ea4",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "targets",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "identity--ddc7687d-6771-570e-9d38-5a671b23683d",
+   "description": "événements observés sur dc-01",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f655934d-c354-5397-9bf1-dffad778430c",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "malware--217f1232-8d80-517d-8dd9-72c6542ec749",
+   "description": "DECLARE par la fiche ; échantillon non fourni ; lien non vérifié",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f8f4d561-6801-5bfc-a26f-beebf63b0cc9",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a",
+   "description": "DECLARE par la fiche ; échantillon non fourni ; lien non vérifié",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a9ab7018-f2f3-508c-a816-d1b83cd2905b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "malware--fd879985-6c14-58b0-9c60-0a115d99b91a",
+   "description": "DECLARE par la fiche ; échantillon non fourni ; lien non vérifié",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f3c2f5ca-668d-5a09-ad3c-15d7acbaa062",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "tool--aaa894f0-e340-5243-9757-432871928c2e",
+   "description": "OBSERVE : ALERT-001, journal ligne 1 : winword.exe -> powershell.exe -enc ... -w hidden",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--35d8dcda-5ee3-5ac6-8c5e-0ab14e20db21",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "tool--49a696f7-0695-5a3f-bd59-b9beec7e1496",
+   "description": "OBSERVE : ALERT-012, journal ligne 12 : Security 1102 audit log cleared / wevtutil cl Security",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--fcc7c6f0-c293-502d-b7a8-dfc90dd047af",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "tool--09560a4d-4ab5-5a9a-819b-39ac6b108490",
+   "description": "DECLARE : ALERT-003 (détail de l'alerte seulement : la commande schtasks /create n'est pas dans le journal brut, I-20)",
+   "confidence": 15,
+   "labels": [
+    "declare"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--43c4bc01-c2bc-57ca-bb50-c6009d72425b",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425",
+   "description": "OBSERVE : ALERT-002, journal ligne 2 : GET 200 de svchost_update.exe, 421376 octets (IOC-013, IOC-029)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--5429855f-f3ed-5051-aa45-9c4c77e0b2f9",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "consists-of",
+   "source_ref": "infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425",
+   "target_ref": "domain-name--8968289e-0006-5e21-b130-b953237dfd0c",
+   "description": "observable déjà présent dans le bundle (export MISP)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--abd2287d-4a4c-5bf0-bc0c-bede7283ee7d",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "consists-of",
+   "source_ref": "infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425",
+   "target_ref": "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25",
+   "description": "observable déjà présent dans le bundle (export MISP)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--e817fcbe-c754-5ff5-8275-ed6514b3e098",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0",
+   "description": "OBSERVE : ALERT-004, journal ligne 4 : une connexion vers 198.51.100.24:443 ; le rôle de balise vient du texte de l'alerte, la périodicité n'est pas démontrée (IOC-020)",
+   "confidence": 15,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--519fbbc6-475b-59ee-be91-e54adbe85ef9",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "consists-of",
+   "source_ref": "infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0",
+   "target_ref": "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+   "description": "observable déjà présent dans le bundle (export MISP)",
+   "confidence": 15,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--48a30dc5-fc04-581c-98b0-63f4cff339e3",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a",
+   "description": "OBSERVE : ALERT-010, journal ligne 10 : 2 469 135 790 octets vers 203.0.113.28:8080 en clair (IOC-024)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b80e6507-e501-5f3f-8d33-c62d068d0820",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "consists-of",
+   "source_ref": "infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a",
+   "target_ref": "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+   "description": "observable déjà présent dans le bundle (export MISP)",
+   "confidence": 50,
+   "labels": [
+    "observe"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--c7cc415f-618d-58e9-9e38-c0d8a2f77faf",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+   "target_ref": "infrastructure--36b67c60-cdbd-5e21-85ed-741795271706",
+   "description": "HYPOTHESE : ALERT-011, journal ligne 11 : contact du domaine ; le rôle de repli vient du texte de l'alerte et contredit I-11 (IOC-016 vu dès le 3 mars)",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--26611b5c-c840-5993-bb15-bb4a3db3ab11",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "relationship_type": "consists-of",
+   "source_ref": "infrastructure--36b67c60-cdbd-5e21-85ed-741795271706",
+   "target_ref": "domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf",
+   "description": "observable déjà présent dans le bundle (export MISP)",
+   "confidence": 15,
+   "labels": [
+    "hypothese"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "note",
+   "spec_version": "2.1",
+   "id": "note--f5d27372-c0ec-581a-8bef-769e225995cc",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "abstract": "Éléments MISP sans type STIX standard",
+   "content": "Retirés du bundle (voir Export-MISP-brut.json) : nom de tâche planifiée MicrosoftEdgeUpdateTaskMachine (IOC-036), valeur de registre tronquée HKCU\\...\\Run\\WinTelemetry (IOC-038, valeur incomplète dans la source), hôte victime comptabilite-07 (IOC-040, représenté par l'identité système). Le compte svc-backup-temp est représenté par un user-account (chronologie contradictoire : I-03).",
+   "object_refs": [
+    "user-account--41676b5a-3cda-57ac-a085-48839255dcc6",
+    "identity--fc4c54fc-d124-5406-ae15-1ab120da7c04"
+   ],
+   "authors": [
+    "Équipe CTI (challenge fictif)"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "note",
+   "spec_version": "2.1",
+   "id": "note--5d601110-57be-5d7c-bcb3-d97afc925310",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "abstract": "Limites et incohérences",
+   "content": "21 incohérences ou réserves dans le dossier (I-01 à I-21) : compte svc-backup-temp utilisé avant sa création (I-03), mémo daté avant les faits (I-02), 3 fiches binaires sans échantillon, journal Security de comptabilite-07 effacé le 7 mars. Les dates sont des bornes d'observation.",
+   "object_refs": [
+    "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9"
+   ],
+   "authors": [
+    "Équipe CTI (challenge fictif)"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "note",
+   "spec_version": "2.1",
+   "id": "note--b14ea5bc-626a-5e5b-948f-62240f7a95f7",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "abstract": "Attribution hypothétique : INCONNUE",
+   "content": "Aucun élément vérifiable ne désigne un acteur. Le LISEZ-MOI du dossier pédagogique contient une indication d'attribution qui n'est PAS une preuve. Conclusion : cluster non attribué.",
+   "object_refs": [
+    "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9"
+   ],
+   "authors": [
+    "Équipe CTI (challenge fictif)"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "note",
+   "spec_version": "2.1",
+   "id": "note--f53c135f-35a0-5301-88a0-096e4297adf3",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "abstract": "Identifiant ATT&CK renuméroté",
+   "content": "T1070.001 (ATT&CK <= v18) correspond à T1685.005 en v19 (Defense Impairment). Les galaxies MISP et certaines entités OpenCTI de production portent encore l'ancien identifiant.",
+   "object_refs": [
+    "attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b"
+   ],
+   "authors": [
+    "Équipe CTI (challenge fictif)"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--e7f0587f-6783-5605-88b1-ed849addb811",
+   "created": "2026-10-06T12:00:00.000Z",
+   "modified": "2026-10-06T12:00:00.000Z",
+   "name": "[CHALLENGE FICTIF] Helios Energy — Investigation CTI",
+   "description": "Rapport STIX du challenge : cluster non attribué, techniques observées, indicateurs historiques. Voir Rapport-validation-STIX.md pour les transformations.",
+   "published": "2026-10-06T12:00:00.000Z",
+   "report_types": [
+    "threat-report"
+   ],
+   "object_refs": [
+    "attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df",
+    "attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1",
+    "attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238",
+    "attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b",
+    "attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068",
+    "attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4",
+    "attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712",
+    "attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c",
+    "campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9",
+    "domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc",
+    "domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9",
+    "domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf",
+    "domain-name--8968289e-0006-5e21-b130-b953237dfd0c",
+    "domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef",
+    "domain-name--f79ec794-1673-5e7b-80da-7a61697f242a",
+    "file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad",
+    "file--48d4206a-fd5b-55fd-a195-3986a461309f",
+    "file--4a6185da-a712-5bc9-be00-bc689787d5e7",
+    "file--6f2536f6-fe34-554d-b1b7-be0601158b28",
+    "file--8158819a-4d72-5660-b804-bc899c7d77be",
+    "file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99",
+    "file--cb105689-9711-5632-b3ed-90174227038b",
+    "grouping--33c1053e-e1e1-405f-ae75-b1c747a7f7b2",
+    "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+    "identity--9ecaad58-3b65-597f-aa5d-200da8c3773b",
+    "identity--a39cef96-0c30-5f2d-a5dd-955164152a77",
+    "identity--ddc7687d-6771-570e-9d38-5a671b23683d",
+    "identity--fc4c54fc-d124-5406-ae15-1ab120da7c04",
+    "indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914",
+    "indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6",
+    "indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85",
+    "indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917",
+    "indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8",
+    "indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29",
+    "indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1",
+    "indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690",
+    "infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425",
+    "infrastructure--36b67c60-cdbd-5e21-85ed-741795271706",
+    "infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0",
+    "infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a",
+    "ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b",
+    "ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a",
+    "ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628",
+    "ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060",
+    "ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578",
+    "ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249",
+    "ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f",
+    "ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559",
+    "ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df",
+    "ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b",
+    "malware--217f1232-8d80-517d-8dd9-72c6542ec749",
+    "malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a",
+    "malware--fd879985-6c14-58b0-9c60-0a115d99b91a",
+    "network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa",
+    "network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c",
+    "network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c",
+    "network-traffic--4557854c-6214-5885-976b-7e129f29d429",
+    "network-traffic--46e66c73-8652-510b-9f35-56259d8432b9",
+    "network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9",
+    "network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773",
+    "network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013",
+    "note--5d601110-57be-5d7c-bcb3-d97afc925310",
+    "note--b14ea5bc-626a-5e5b-948f-62240f7a95f7",
+    "note--c3e5fbd3-6aa6-4f64-847c-c3fbbb49c982",
+    "note--f53c135f-35a0-5301-88a0-096e4297adf3",
+    "note--f5d27372-c0ec-581a-8bef-769e225995cc",
+    "observed-data--06abfd71-44e7-4df0-9cd7-25df1680adf6",
+    "observed-data--073e81c7-caa5-4f78-b46d-e5ef0cb39f41",
+    "observed-data--0ecd0204-16c6-4c7c-a8a1-e1e2d7f86912",
+    "observed-data--3c29b262-a324-4631-b18f-7d5c7696b144",
+    "observed-data--3d487d20-4771-435e-9d99-ff2374a112bb",
+    "observed-data--3deb0060-4ada-439e-ab59-85d5f6a9b04d",
+    "observed-data--3ea8b70c-eb57-4800-acd2-de49fb651c0a",
+    "observed-data--3ffaccf1-d209-4caf-a8d7-1be15a0d1199",
+    "observed-data--4d7ea69c-d984-45f6-8b74-3071070d4e9d",
+    "observed-data--4da6f064-f05b-4954-b441-9cc953016aa6",
+    "observed-data--5122bd48-1d87-46ec-a4c2-bc1a62d56993",
+    "observed-data--53959d06-8667-4646-ad88-0e774fe30fb2",
+    "observed-data--65531525-8961-422d-8deb-8f62512718c2",
+    "observed-data--66bb2ea5-e34d-401b-85ec-06efbf7a61f8",
+    "observed-data--67f2a338-1ea4-4078-87ff-c5001760ea67",
+    "observed-data--68443f5d-f1ef-447f-a3d9-9e7cc97b93e7",
+    "observed-data--6bddbd54-c7f8-4dca-bf9e-e7c665adc9b0",
+    "observed-data--7332a699-58f0-4560-bd91-d06ec077f990",
+    "observed-data--763080fb-fd06-4a77-bf0b-f02ed1fa9cb8",
+    "observed-data--a6993fb8-fea3-41fe-88f4-8c4b653e338c",
+    "observed-data--b2416d3a-62ac-4ba7-9071-4d7a5e1fdd7f",
+    "observed-data--b3fed1b4-4523-4004-ab00-df060905182e",
+    "observed-data--b5052584-02a1-46a7-8139-e80255ad0e80",
+    "observed-data--b8191765-0447-49ec-a8db-6c9ba78cac0e",
+    "observed-data--cc270e5f-f5a4-4003-a21a-e2847a42760f",
+    "observed-data--d1eedd9a-e19f-41ed-a0a6-dc8ad0ada5e8",
+    "observed-data--f0c999cc-6e08-4a76-a61b-e29c777f176e",
+    "observed-data--f1d9e7e8-cfbf-4764-aa5c-994cb09cb271",
+    "relationship--011a3da1-431c-57c1-bca5-4b8faa09ac2d",
+    "relationship--044f0e9b-7d49-592e-927d-753ceacdb5f2",
+    "relationship--1e2cc0ce-b6f0-54c0-9acb-3adf78f9f5e7",
+    "relationship--25a9c579-d9f8-5e84-87dc-4e976c1f12b6",
+    "relationship--26611b5c-c840-5993-bb15-bb4a3db3ab11",
+    "relationship--297efbfb-7ad7-50ca-bb6d-fb5b8d33a87b",
+    "relationship--35d8dcda-5ee3-5ac6-8c5e-0ab14e20db21",
+    "relationship--43c4bc01-c2bc-57ca-bb50-c6009d72425b",
+    "relationship--46969d46-dfdc-5938-9c24-4ddc4da09cb6",
+    "relationship--48a30dc5-fc04-581c-98b0-63f4cff339e3",
+    "relationship--4965af79-e48a-5f4a-bfce-5900961c7565",
+    "relationship--50a2f6b7-56b9-5d21-9296-54a9d663e76a",
+    "relationship--519fbbc6-475b-59ee-be91-e54adbe85ef9",
+    "relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b",
+    "relationship--5429855f-f3ed-5051-aa45-9c4c77e0b2f9",
+    "relationship--58373742-a72f-571f-b16b-acffcd08e9c4",
+    "relationship--6d7adb66-c222-4a92-8ca4-620529ab3780",
+    "relationship--74f6d4bc-d81c-56a6-952a-af67b49d02e2",
+    "relationship--79eaec38-1551-5748-aa2e-8d8b24b08ff5",
+    "relationship--896b48fe-344e-5151-8f5c-aa251ecd490b",
+    "relationship--8cad1f14-b287-5b45-8c83-84e1152504bc",
+    "relationship--966545ad-b0fb-5718-bd49-f9c46b3caf39",
+    "relationship--9671f99b-87bd-5ac7-ba1e-fa25b4884cee",
+    "relationship--96ca0128-8833-5548-b6fc-9acc58aa19f2",
+    "relationship--9da50369-0df4-5c02-ac93-1181b645c6b5",
+    "relationship--a9ab7018-f2f3-508c-a816-d1b83cd2905b",
+    "relationship--abd2287d-4a4c-5bf0-bc0c-bede7283ee7d",
+    "relationship--adb4a9ce-a4cb-5d1e-b897-3d7ad9810b26",
+    "relationship--b50b8329-fd30-5164-8fb4-e5328bfd7324",
+    "relationship--b80e6507-e501-5f3f-8d33-c62d068d0820",
+    "relationship--c6624f3a-6dc3-5bca-b405-27a157b6054f",
+    "relationship--c7cc415f-618d-58e9-9e38-c0d8a2f77faf",
+    "relationship--cbbea81c-345d-53ab-90e0-ae81d0626d42",
+    "relationship--cf92acaa-993a-5c76-a765-6620d2387ea4",
+    "relationship--d4be121c-3734-53ea-91fb-96bddac8d8d6",
+    "relationship--d9726873-b6f1-58d3-8312-7cfb940b873e",
+    "relationship--dcc3d856-0a0c-5da7-b984-051ac04449be",
+    "relationship--e817fcbe-c754-5ff5-8275-ed6514b3e098",
+    "relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465",
+    "relationship--f3af3314-c3f8-554e-8219-0b356ccd751c",
+    "relationship--f3c2f5ca-668d-5a09-ad3c-15d7acbaa062",
+    "relationship--f655934d-c354-5397-9bf1-dffad778430c",
+    "relationship--f8f4d561-6801-5bfc-a26f-beebf63b0cc9",
+    "relationship--fcc7c6f0-c293-502d-b7a8-dfc90dd047af",
+    "tool--09560a4d-4ab5-5a9a-819b-39ac6b108490",
+    "tool--49a696f7-0695-5a3f-bd59-b9beec7e1496",
+    "tool--aaa894f0-e340-5243-9757-432871928c2e",
+    "url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3",
+    "url--d09d25c1-a894-5c60-971c-4c95e7b653b4",
+    "url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a",
+    "url--fd3e3b03-7616-57b8-9c18-dfdc93515f25",
+    "x509-certificate--b42c2559-1040-583c-a389-8d5517003f96",
+    "x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9",
+    "x509-certificate--de819979-c539-5789-93b0-b854225116a7"
+   ],
+   "created_by_ref": "identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6",
+   "object_marking_refs": [
+    "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+   ],
+   "confidence": 50
+  }
+ ]
+}

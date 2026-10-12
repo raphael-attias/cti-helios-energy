@@ -1,0 +1,745 @@
+[
+ {
+  "id": "W01",
+  "origine": "dossier:journal l.1",
+  "attendu": "130101",
+  "regle": "130101",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "winword.exe",
+   "image": "powershell.exe",
+   "command_line": "-enc SQBFAFgA... -w hidden"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": [
+   "INFO: (7202): Session initialized with token 'e1af840b'"
+  ]
+ },
+ {
+  "id": "W02",
+  "origine": "dossier:journal l.2",
+  "attendu": "130103",
+  "regle": "130103",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://cdn-svc-update.test/win/svchost_update.exe",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W03",
+  "origine": "dossier:journal l.3",
+  "attendu": "130105",
+  "regle": "130105",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "task_name": "MicrosoftEdgeUpdateTaskMachine"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W04",
+  "origine": "dossier:journal l.4",
+  "attendu": "130106",
+  "regle": "130106",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "198.51.100.24",
+   "dst_port": "443",
+   "orig_bytes": "812"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W05",
+  "origine": "dossier:journal l.5",
+  "attendu": "130108",
+  "regle": "130108",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "src_ip": "198.51.100.55",
+   "scan_target": "10.20.0.0/16",
+   "dports": "445,3389"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W06",
+  "origine": "dossier:journal l.6",
+  "attendu": "130109",
+  "regle": "130109",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4624",
+   "logon_type": "10",
+   "win_user": "svc-backup-temp"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W07",
+  "origine": "dossier:journal l.7",
+  "attendu": "130110",
+  "regle": "130110",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "explorer.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W08",
+  "origine": "dossier:journal l.8",
+  "attendu": "130107",
+  "regle": "130107",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "lsass.exe",
+   "granted_access": "0x1010",
+   "source_image": "rundll32_helper.dll"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W09",
+  "origine": "dossier:journal l.9",
+  "attendu": "130111",
+  "regle": "130111",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4720",
+   "win_user": "svc-backup-temp"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W10",
+  "origine": "dossier:journal l.10",
+  "attendu": "130112",
+  "regle": "130112",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "203.0.113.28",
+   "dst_port": "8080",
+   "orig_bytes": "2469135790"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W11",
+  "origine": "dossier:journal l.11",
+  "attendu": "130104",
+  "regle": "130104",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://static-assets-cache.test/",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "W12",
+  "origine": "dossier:journal l.12",
+  "attendu": "130113",
+  "regle": "130113",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "1102"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": [
+   "WARNING: Mitre Technique ID 'T1685.005' not found in database."
+  ]
+ },
+ {
+  "id": "SP01",
+  "origine": "synthétique positif",
+  "attendu": "130101",
+  "regle": "130101",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "EXCEL.EXE",
+   "image": "powershell.exe",
+   "command_line": "-EncodedCommand AAAA -WindowStyle hidden"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP02",
+  "origine": "synthétique positif",
+  "attendu": "130102",
+  "regle": "130102",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "cmd.exe",
+   "image": "powershell.exe",
+   "command_line": "-enc SQBFAFgAIAAoAA=="
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP03",
+  "origine": "synthétique positif",
+  "attendu": "130103",
+  "regle": "130103",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "http://exemple.test/outils/a.exe",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP04",
+  "origine": "synthétique positif",
+  "attendu": "130104",
+  "regle": "130104",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://api-telemetry-eu.test/v2/beacon",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP05",
+  "origine": "synthétique positif",
+  "attendu": "130105",
+  "regle": "130105",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "task_name": "MicrosoftEdgeUpdateTaskMachine"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP06",
+  "origine": "synthétique positif",
+  "attendu": "130106",
+  "regle": "130106",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "203.0.113.14",
+   "dst_port": "443",
+   "orig_bytes": "500"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP07",
+  "origine": "synthétique positif",
+  "attendu": "130107",
+  "regle": "130107",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "lsass.exe",
+   "granted_access": "0x1410",
+   "source_image": "C:\\Temp\\x.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP08",
+  "origine": "synthétique positif",
+  "attendu": "130108",
+  "regle": "130108",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "src_ip": "192.0.2.77",
+   "scan_target": "10.20.1.0/24",
+   "dports": "3389,445"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP09",
+  "origine": "synthétique positif",
+  "attendu": "130109",
+  "regle": "130109",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4624",
+   "logon_type": "10",
+   "win_user": "svc-sql"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP10",
+  "origine": "synthétique positif",
+  "attendu": "130110",
+  "regle": "130110",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "explorer.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP11",
+  "origine": "synthétique positif",
+  "attendu": "130111",
+  "regle": "130111",
+  "niveau": 5,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4720",
+   "win_user": "svc-test-temp"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP12",
+  "origine": "synthétique positif",
+  "attendu": "130112",
+  "regle": "130112",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "192.0.2.50",
+   "dst_port": "443",
+   "orig_bytes": "1500000000"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SP13",
+  "origine": "synthétique positif",
+  "attendu": "130113",
+  "regle": "130113",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "1102"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": [
+   "WARNING: Mitre Technique ID 'T1685.005' not found in database."
+  ]
+ },
+ {
+  "id": "SP14",
+  "origine": "synthétique positif",
+  "attendu": "130114",
+  "regle": "130114",
+  "niveau": 7,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "cmd.exe",
+   "image": "wevtutil.exe",
+   "command_line": "cl Security"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": [
+   "WARNING: Mitre Technique ID 'T1685.005' not found in database."
+  ]
+ },
+ {
+  "id": "SP15",
+  "origine": "synthétique positif",
+  "attendu": "130115",
+  "regle": "130115",
+  "niveau": 4,
+  "alerte": true,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "services.exe",
+   "image": "svchost_update.exe",
+   "command_line": "-k x"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN01",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "winword.exe",
+   "image": "powershell.exe",
+   "command_line": "-File c:\\scripts\\rapport.ps1"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN02",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "excel.exe",
+   "image": "powershell.exe",
+   "command_line": "-enc AAAA"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN03",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://exemple.test/doc/rapport.pdf",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN04",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://exemple.test/outils/b.exe",
+   "http_status": "404"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN05",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "task_name": "MicrosoftEdgeUpdateTaskMachineCore"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN06",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "192.0.2.1",
+   "dst_port": "443",
+   "orig_bytes": "900"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN07",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "lsass.exe",
+   "granted_access": "0x1010",
+   "source_image": "C:\\Windows\\System32\\csrss.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN08",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "lsass.exe",
+   "granted_access": "0x0400",
+   "source_image": "C:\\Temp\\y.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN09",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4624",
+   "logon_type": "3",
+   "win_user": "svc-sql"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN10",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4624",
+   "logon_type": "10",
+   "win_user": "jdupont"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN11",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "target_image": "notepad.exe"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN12",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-security",
+  "champs": {
+   "event_id": "4720",
+   "win_user": "jdupont"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN13",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-zeek",
+  "champs": {
+   "dst_ip": "192.0.2.60",
+   "dst_port": "443",
+   "orig_bytes": "50000000"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN14",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "cmd.exe",
+   "image": "wevtutil.exe",
+   "command_line": "qe Security /c:5"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN15",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "cmd.exe",
+   "image": "wevtutil.exe",
+   "command_line": "cl application"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN16",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-zeek",
+  "champs": {},
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN17",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-squid",
+  "champs": {
+   "http_url": "https://update.exemple.test/patch.zip",
+   "http_status": "200"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ },
+ {
+  "id": "SN18",
+  "origine": "synthétique négatif",
+  "attendu": "",
+  "regle": "",
+  "niveau": "",
+  "alerte": false,
+  "decodeur": "helios-sysmon",
+  "champs": {
+   "parent_image": "services.exe",
+   "image": "svchost.exe",
+   "command_line": "-k netsvcs"
+  },
+  "predecodeur": {},
+  "erreur": 0,
+  "messages": []
+ }
+]

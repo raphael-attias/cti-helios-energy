@@ -1,0 +1,372 @@
+2026-03-02T08:31:00Z comptabilite-07 Sysmon: Process Create: winword.exe -> powershell.exe -enc SQBFAFgA... -w hidden
+2026-03-02T08:42:00Z comptabilite-07 Squid: GET https://cdn-svc-update.test/win/svchost_update.exe 200 421376
+2026-03-02T08:46:00Z comptabilite-07 Sysmon: Scheduled Task Created: MicrosoftEdgeUpdateTaskMachine
+2026-03-02T09:16:00Z comptabilite-07 Zeek: conn 198.51.100.24:443 duration=0.4 orig_bytes=812 (beacon)
+2026-03-03T10:13:00Z comptabilite-07 Zeek: scan detected 198.51.100.55 -> 10.20.0.0/16 dports=445,3389
+2026-03-04T01:48:00Z srv-fichiers-02 Security: 4624 Logon type=10 RDP account=svc-backup-temp time=01:47
+2026-03-04T11:05:00Z srv-fichiers-02 Sysmon: CreateRemoteThread into explorer.exe RWX region
+2026-03-05T14:07:00Z dc-01 Sysmon: Process Access: target=lsass.exe granted=0x1010 by rundll32_helper.dll
+2026-03-05T14:12:00Z dc-01 Security: 4720 User created svc-backup-temp / 4726 deleted 45m later
+2026-03-05T15:31:00Z dc-01 Zeek: large outbound 203.0.113.28:8080 bytes=2469135790 cleartext
+2026-03-06T03:10:00Z srv-fichiers-02 Squid: GET https://static-assets-cache.test/ 200 (failover C2)
+2026-03-07T09:02:00Z comptabilite-07 Security: 1102 audit log cleared / wevtutil cl Security
+Mar 02 02:12:00 comptabilite-07 systemd: Started Session 488 of user m.durand.
+Mar 02 02:15:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.93 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:16:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 02:19:00 dc-01 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 02:20:00 dc-01 systemd: Started Session 683 of user j.moreau.
+Mar 02 02:23:00 srv-fichiers-02 systemd: Started Session 788 of user j.moreau.
+Mar 02 02:24:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.13 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:26:00 comptabilite-07 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 02:29:00 dc-01 systemd: Started Session 426 of user admin.sys.
+Mar 02 02:31:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.4.196 port 57597
+Mar 02 02:32:00 poste-rh-11 systemd: Started Session 634 of user s.leroy.
+Mar 02 02:35:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.244 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:36:00 srv-fichiers-02 systemd: Started Session 837 of user m.durand.
+Mar 02 02:39:00 dc-01 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 02:40:00 comptabilite-07 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 02:43:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.68 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:45:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 02:46:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.2.56 port 48795
+Mar 02 02:48:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.37 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:50:00 comptabilite-07 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 02:52:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 02:55:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.218 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 02:56:00 poste-dsi-03 systemd: Started Session 173 of user admin.sys.
+Mar 02 02:59:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.209 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 03:01:00 srv-fichiers-02 systemd: Started Session 801 of user j.moreau.
+Mar 02 03:02:00 poste-dsi-03 sshd: Accepted password for m.durand from 10.20.1.232 port 43465
+Mar 02 03:05:00 srv-fichiers-02 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:07:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.4 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 03:09:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.225 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 03:11:00 poste-dsi-03 sshd: Accepted password for a.petit from 10.20.2.154 port 48738
+Mar 02 03:12:00 poste-rh-11 sshd: Accepted password for s.leroy from 10.20.1.47 port 47174
+Mar 02 03:15:00 dc-01 sshd: Accepted password for admin.sys from 10.20.1.139 port 45755
+Mar 02 03:16:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 03:18:00 dc-01 systemd: Started Session 248 of user m.durand.
+Mar 02 03:20:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.2.107 port 41857
+Mar 02 03:23:00 dc-01 sshd: Accepted password for j.moreau from 10.20.4.166 port 53762
+Mar 02 03:25:00 srv-fichiers-02 systemd: Started Session 223 of user m.durand.
+Mar 02 03:26:00 poste-dsi-03 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:28:00 dc-01 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:31:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 03:32:00 comptabilite-07 systemd: Started Session 566 of user s.leroy.
+Mar 02 03:35:00 srv-fichiers-02 systemd: Started Session 630 of user a.petit.
+Mar 02 03:36:00 comptabilite-07 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.125 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 03:38:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.112 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 03:41:00 srv-fichiers-02 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:43:00 poste-rh-11 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:44:00 poste-dsi-03 systemd: Started Session 933 of user m.durand.
+Mar 02 03:47:00 poste-rh-11 systemd: Started Session 130 of user s.leroy.
+Mar 02 03:48:00 dc-01 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:51:00 dc-01 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 03:53:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 03:54:00 srv-fichiers-02 sshd: Accepted password for j.moreau from 10.20.4.104 port 56348
+Mar 02 03:57:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 03:59:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 04:00:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.104 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 04:02:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 04:05:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.166 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 04:06:00 comptabilite-07 systemd: Started Session 630 of user j.moreau.
+Mar 02 04:08:00 dc-01 sshd: Accepted password for admin.sys from 10.20.1.137 port 47808
+Mar 02 04:11:00 poste-rh-11 sshd: Accepted password for j.moreau from 10.20.2.153 port 45530
+Mar 02 04:12:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 04:15:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 04:17:00 poste-rh-11 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 04:18:00 poste-rh-11 sshd: Accepted password for admin.sys from 10.20.4.78 port 52665
+Mar 02 04:20:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.4.61 port 46739
+Mar 02 04:23:00 poste-rh-11 sshd: Accepted password for s.leroy from 10.20.1.186 port 41140
+Mar 02 04:24:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.158 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 04:26:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 04:28:00 poste-rh-11 sshd: Accepted password for j.moreau from 10.20.4.135 port 42043
+Mar 02 04:30:00 srv-fichiers-02 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 04:33:00 srv-fichiers-02 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 04:35:00 srv-fichiers-02 sshd: Accepted password for j.moreau from 10.20.2.115 port 52445
+Mar 02 04:37:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.1.194 port 46663
+Mar 02 04:39:00 dc-01 sshd: Accepted password for s.leroy from 10.20.1.127 port 41826
+Mar 02 04:41:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 04:43:00 comptabilite-07 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 04:45:00 poste-dsi-03 systemd: Started Session 232 of user m.durand.
+Mar 02 04:47:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 04:49:00 poste-rh-11 systemd: Started Session 682 of user j.moreau.
+Mar 02 04:50:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 04:53:00 comptabilite-07 sshd: Accepted password for j.moreau from 10.20.4.67 port 55808
+Mar 02 04:55:00 dc-01 systemd: Started Session 418 of user j.moreau.
+Mar 02 04:56:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 04:59:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 05:01:00 poste-rh-11 systemd: Started Session 784 of user j.moreau.
+Mar 02 05:03:00 dc-01 systemd: Started Session 552 of user s.leroy.
+Mar 02 05:05:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 05:06:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 05:08:00 srv-fichiers-02 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 05:10:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 05:13:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.219 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:15:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 05:17:00 dc-01 sshd: Accepted password for j.moreau from 10.20.2.136 port 52045
+Mar 02 05:19:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 05:21:00 poste-dsi-03 systemd: Started Session 314 of user a.petit.
+Mar 02 05:23:00 dc-01 systemd: Started Session 582 of user s.leroy.
+Mar 02 05:24:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.80 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:27:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 05:29:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.233 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:30:00 srv-fichiers-02 systemd: Started Session 698 of user s.leroy.
+Mar 02 05:33:00 poste-rh-11 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 05:35:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.136 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:36:00 srv-fichiers-02 systemd: Started Session 492 of user a.petit.
+Mar 02 05:38:00 dc-01 systemd: Started Session 121 of user a.petit.
+Mar 02 05:40:00 poste-rh-11 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 05:42:00 dc-01 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 05:45:00 poste-dsi-03 sshd: Accepted password for admin.sys from 10.20.3.237 port 58458
+Mar 02 05:46:00 dc-01 sshd: Accepted password for m.durand from 10.20.3.38 port 45886
+Mar 02 05:49:00 poste-dsi-03 systemd: Started Session 350 of user s.leroy.
+Mar 02 05:51:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.51 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:53:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.137 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 05:54:00 dc-01 systemd: Started Session 230 of user a.petit.
+Mar 02 05:56:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 05:59:00 srv-fichiers-02 systemd: Started Session 999 of user j.moreau.
+Mar 02 06:01:00 poste-rh-11 systemd: Started Session 191 of user a.petit.
+Mar 02 06:02:00 poste-rh-11 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 06:04:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.101 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:06:00 dc-01 systemd: Started Session 930 of user s.leroy.
+Mar 02 06:09:00 poste-rh-11 systemd: Started Session 888 of user s.leroy.
+Mar 02 06:10:00 poste-rh-11 sshd: Accepted password for s.leroy from 10.20.1.171 port 58123
+Mar 02 06:13:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.239 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:14:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 06:16:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.189 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:18:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 06:20:00 srv-fichiers-02 systemd: Started Session 673 of user j.moreau.
+Mar 02 06:23:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 06:25:00 dc-01 systemd: Started Session 166 of user a.petit.
+Mar 02 06:26:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.3.80 port 54933
+Mar 02 06:29:00 srv-fichiers-02 sshd: Accepted password for s.leroy from 10.20.1.159 port 44780
+Mar 02 06:30:00 srv-fichiers-02 systemd: Started Session 260 of user m.durand.
+Mar 02 06:33:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 06:35:00 comptabilite-07 systemd: Started Session 552 of user s.leroy.
+Mar 02 06:37:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.62 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:39:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 06:41:00 poste-rh-11 systemd: Started Session 942 of user a.petit.
+Mar 02 06:42:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 06:45:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 06:47:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 06:48:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.240 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:50:00 poste-dsi-03 sshd: Accepted password for a.petit from 10.20.1.102 port 42534
+Mar 02 06:53:00 poste-dsi-03 systemd: Started Session 675 of user a.petit.
+Mar 02 06:55:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.183 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 06:56:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.2.152 port 53601
+Mar 02 06:59:00 poste-dsi-03 sshd: Accepted password for a.petit from 10.20.1.40 port 42075
+Mar 02 07:01:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:02:00 comptabilite-07 systemd: Started Session 729 of user m.durand.
+Mar 02 07:05:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 07:06:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 07:08:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:11:00 poste-dsi-03 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:13:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.124 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 07:14:00 poste-rh-11 systemd: Started Session 104 of user s.leroy.
+Mar 02 07:17:00 poste-dsi-03 sshd: Accepted password for m.durand from 10.20.3.209 port 40797
+Mar 02 07:18:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.152 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 07:20:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:23:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.218 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 07:25:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 07:27:00 poste-rh-11 sshd: Accepted password for m.durand from 10.20.4.28 port 45205
+Mar 02 07:29:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.7 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 07:30:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 07:32:00 poste-dsi-03 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:34:00 poste-dsi-03 systemd: Started Session 536 of user j.moreau.
+Mar 02 07:36:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.3.62 port 55744
+Mar 02 07:39:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 07:40:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 07:43:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 07:44:00 poste-dsi-03 sshd: Accepted password for a.petit from 10.20.4.110 port 53404
+Mar 02 07:47:00 srv-fichiers-02 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:49:00 comptabilite-07 systemd: Started Session 502 of user m.durand.
+Mar 02 07:50:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 07:53:00 srv-fichiers-02 systemd: Started Session 813 of user s.leroy.
+Mar 02 07:55:00 poste-rh-11 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 07:57:00 poste-rh-11 systemd: Started Session 708 of user s.leroy.
+Mar 02 07:59:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.1.176 port 58388
+Mar 02 08:01:00 srv-fichiers-02 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:02:00 comptabilite-07 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:05:00 dc-01 sshd: Accepted password for s.leroy from 10.20.2.72 port 59394
+Mar 02 08:06:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.124 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 08:09:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 08:11:00 poste-dsi-03 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:13:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.2.24 port 43100
+Mar 02 08:15:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.154 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 08:16:00 poste-dsi-03 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:18:00 poste-rh-11 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:20:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 08:22:00 comptabilite-07 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.47 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 08:25:00 srv-fichiers-02 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:27:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.212 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 08:28:00 srv-fichiers-02 sshd: Accepted password for j.moreau from 10.20.2.125 port 43630
+Mar 02 08:31:00 comptabilite-07 sshd: Accepted password for s.leroy from 10.20.2.237 port 44499
+Mar 02 08:32:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 08:35:00 poste-rh-11 sshd: Accepted password for a.petit from 10.20.1.230 port 48111
+Mar 02 08:37:00 poste-dsi-03 sshd: Accepted password for j.moreau from 10.20.4.39 port 46695
+Mar 02 08:38:00 comptabilite-07 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:40:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.245 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 08:42:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 08:44:00 dc-01 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:46:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 08:49:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.1.189 port 51289
+Mar 02 08:51:00 srv-fichiers-02 sshd: Accepted password for admin.sys from 10.20.1.17 port 43948
+Mar 02 08:53:00 dc-01 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:54:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 08:56:00 comptabilite-07 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 08:58:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 09:00:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:03:00 poste-rh-11 sshd: Accepted password for admin.sys from 10.20.3.172 port 53499
+Mar 02 09:05:00 poste-dsi-03 sshd: Accepted password for s.leroy from 10.20.2.77 port 49173
+Mar 02 09:06:00 srv-fichiers-02 sshd: Accepted password for a.petit from 10.20.1.80 port 57814
+Mar 02 09:09:00 dc-01 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:11:00 comptabilite-07 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:13:00 poste-rh-11 systemd: Started Session 482 of user s.leroy.
+Mar 02 09:14:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.7 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 09:16:00 poste-rh-11 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:19:00 poste-rh-11 sshd: Accepted password for m.durand from 10.20.2.216 port 57681
+Mar 02 09:21:00 poste-dsi-03 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:23:00 srv-fichiers-02 systemd: Started Session 451 of user a.petit.
+Mar 02 09:24:00 poste-dsi-03 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:27:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.4.188 port 44822
+Mar 02 09:28:00 poste-dsi-03 systemd: Started Session 136 of user admin.sys.
+Mar 02 09:30:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:33:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:34:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.149 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 09:36:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 09:39:00 srv-fichiers-02 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:41:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 09:42:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 09:44:00 comptabilite-07 systemd: Started Session 462 of user m.durand.
+Mar 02 09:46:00 poste-rh-11 sshd: Accepted password for s.leroy from 10.20.2.242 port 54457
+Mar 02 09:49:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 09:51:00 poste-dsi-03 sshd: Accepted password for m.durand from 10.20.4.179 port 48569
+Mar 02 09:53:00 poste-dsi-03 sshd: Accepted password for m.durand from 10.20.2.184 port 54801
+Mar 02 09:55:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 09:56:00 comptabilite-07 sshd: Accepted password for a.petit from 10.20.4.152 port 50301
+Mar 02 09:59:00 srv-fichiers-02 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 10:01:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 10:02:00 poste-dsi-03 systemd: Started Session 618 of user j.moreau.
+Mar 02 10:05:00 poste-rh-11 sshd: Accepted password for s.leroy from 10.20.3.105 port 57300
+Mar 02 10:06:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 10:08:00 poste-rh-11 sshd: Accepted password for m.durand from 10.20.2.241 port 45786
+Mar 02 10:11:00 poste-dsi-03 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.169 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:13:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.1.67 port 50709
+Mar 02 10:14:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 10:16:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.3.209 port 48643
+Mar 02 10:18:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.19 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:20:00 poste-rh-11 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 10:23:00 dc-01 systemd: Started Session 570 of user j.moreau.
+Mar 02 10:25:00 poste-rh-11 systemd: Started Session 602 of user a.petit.
+Mar 02 10:26:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.148 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:29:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.1.131 port 44452
+Mar 02 10:30:00 srv-fichiers-02 sshd: Accepted password for a.petit from 10.20.3.94 port 44089
+Mar 02 10:33:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.15 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:35:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.66 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:37:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.89 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:38:00 comptabilite-07 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 10:41:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 10:43:00 dc-01 sshd: Accepted password for admin.sys from 10.20.2.9 port 51213
+Mar 02 10:44:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 10:47:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.48 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:48:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 10:51:00 srv-fichiers-02 sshd: Accepted password for s.leroy from 10.20.4.150 port 54598
+Mar 02 10:52:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 10:54:00 dc-01 systemd: Started Session 778 of user m.durand.
+Mar 02 10:57:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.104 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 10:58:00 srv-fichiers-02 systemd: Started Session 182 of user m.durand.
+Mar 02 11:01:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 11:03:00 poste-rh-11 systemd: Started Session 881 of user j.moreau.
+Mar 02 11:05:00 poste-rh-11 systemd: Started Session 123 of user m.durand.
+Mar 02 11:07:00 dc-01 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.118 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 11:08:00 dc-01 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:11:00 poste-rh-11 systemd: Started Session 968 of user a.petit.
+Mar 02 11:13:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 11:14:00 comptabilite-07 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.176 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 11:17:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:19:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:20:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.235 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 11:22:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:24:00 comptabilite-07 systemd: Started Session 133 of user a.petit.
+Mar 02 11:26:00 poste-dsi-03 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:28:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:30:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 11:32:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 11:34:00 poste-dsi-03 sshd: Accepted password for a.petit from 10.20.4.51 port 53460
+Mar 02 11:36:00 srv-fichiers-02 systemd: Started Session 947 of user s.leroy.
+Mar 02 11:39:00 dc-01 CRON: (a.petit) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:41:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.47 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 11:43:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:44:00 comptabilite-07 systemd: Started Session 806 of user a.petit.
+Mar 02 11:47:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:48:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 11:51:00 dc-01 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:53:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.3.169 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 11:54:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 11:56:00 srv-fichiers-02 systemd: Started Session 941 of user a.petit.
+Mar 02 11:59:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 12:00:00 dc-01 systemd: Started Session 346 of user m.durand.
+Mar 02 12:03:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 12:05:00 poste-rh-11 systemd: Started Session 751 of user s.leroy.
+Mar 02 12:06:00 dc-01 sshd: Accepted password for m.durand from 10.20.3.93 port 56034
+Mar 02 12:08:00 srv-fichiers-02 systemd: Started Session 454 of user admin.sys.
+Mar 02 12:11:00 poste-dsi-03 CRON: (s.leroy) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 12:13:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.95 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 12:15:00 poste-rh-11 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 12:17:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.206 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 12:19:00 comptabilite-07 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.39 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 12:20:00 srv-fichiers-02 sshd: Accepted password for a.petit from 10.20.3.190 port 55071
+Mar 02 12:22:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 12:25:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 12:27:00 poste-rh-11 systemd: Started Session 647 of user s.leroy.
+Mar 02 12:28:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 12:30:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 12:32:00 srv-fichiers-02 systemd: Started Session 930 of user admin.sys.
+Mar 02 12:34:00 comptabilite-07 systemd: Started Session 426 of user a.petit.
+Mar 02 12:37:00 srv-fichiers-02 sshd: Accepted password for m.durand from 10.20.4.138 port 51766
+Mar 02 12:39:00 poste-rh-11 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.68 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 12:40:00 poste-dsi-03 systemd: Started Session 778 of user m.durand.
+Mar 02 12:43:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.2.139 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 12:44:00 srv-fichiers-02 sshd: Accepted password for admin.sys from 10.20.1.159 port 43578
+Mar 02 12:46:00 dc-01 systemd: Started Session 587 of user m.durand.
+Mar 02 12:49:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 12:50:00 poste-rh-11 sshd: Accepted password for m.durand from 10.20.3.200 port 53024
+Mar 02 12:53:00 srv-fichiers-02 sshd: Accepted password for admin.sys from 10.20.2.103 port 48375
+Mar 02 12:54:00 poste-rh-11 sshd: Accepted password for j.moreau from 10.20.1.13 port 41846
+Mar 02 12:56:00 srv-fichiers-02 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 12:59:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 13:01:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 13:02:00 comptabilite-07 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 13:05:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 13:07:00 poste-dsi-03 systemd: Started Session 562 of user j.moreau.
+Mar 02 13:08:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 13:11:00 srv-fichiers-02 systemd: Started Session 867 of user admin.sys.
+Mar 02 13:13:00 poste-rh-11 systemd: Started Session 681 of user s.leroy.
+Mar 02 13:15:00 comptabilite-07 windefend: Scan completed. No threats found on comptabilite-07.
+Mar 02 13:16:00 dc-01 windefend: Scan completed. No threats found on dc-01.
+Mar 02 13:18:00 comptabilite-07 sshd: Accepted password for m.durand from 10.20.3.126 port 51559
+Mar 02 13:20:00 comptabilite-07 systemd: Started Session 563 of user j.moreau.
+Mar 02 13:23:00 srv-fichiers-02 sshd: Accepted password for s.leroy from 10.20.3.236 port 54609
+Mar 02 13:25:00 poste-dsi-03 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 13:27:00 dc-01 sshd: Accepted password for j.moreau from 10.20.4.155 port 55612
+Mar 02 13:28:00 poste-rh-11 systemd: Started Session 553 of user j.moreau.
+Mar 02 13:30:00 dc-01 systemd: Started Session 389 of user m.durand.
+Mar 02 13:32:00 poste-rh-11 windefend: Scan completed. No threats found on poste-rh-11.
+Mar 02 13:35:00 dc-01 sshd: Accepted password for j.moreau from 10.20.4.189 port 43768
+Mar 02 13:37:00 srv-fichiers-02 windefend: Scan completed. No threats found on srv-fichiers-02.
+Mar 02 13:38:00 comptabilite-07 systemd: Started Session 148 of user m.durand.
+Mar 02 13:41:00 poste-dsi-03 systemd: Started Session 808 of user a.petit.
+Mar 02 13:42:00 srv-fichiers-02 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.1.138 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 13:44:00 poste-rh-11 systemd: Started Session 792 of user admin.sys.
+Mar 02 13:47:00 poste-dsi-03 windefend: Scan completed. No threats found on poste-dsi-03.
+Mar 02 13:48:00 poste-rh-11 CRON: (admin.sys) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 13:50:00 dc-01 systemd: Started Session 811 of user s.leroy.
+Mar 02 13:52:00 srv-fichiers-02 systemd: Started Session 490 of user s.leroy.
+Mar 02 13:54:00 dc-01 sshd: Accepted password for j.moreau from 10.20.1.34 port 40192
+Mar 02 13:57:00 comptabilite-07 kernel: [UFW BLOCK] IN=eth0 SRC=10.20.4.190 DST=10.20.0.5 PROTO=TCP DPT=443
+Mar 02 13:58:00 comptabilite-07 systemd: Started Session 504 of user s.leroy.
+Mar 02 14:01:00 dc-01 systemd: Started Session 238 of user s.leroy.
+Mar 02 14:03:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 14:04:00 poste-dsi-03 CRON: (m.durand) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 14:07:00 srv-fichiers-02 sshd: Accepted password for a.petit from 10.20.4.144 port 51990
+Mar 02 14:08:00 comptabilite-07 CRON: (j.moreau) CMD (/usr/lib/sysstat/sa1 1 1)
+Mar 02 14:11:00 dc-01 sshd: Accepted password for j.moreau from 10.20.3.50 port 44270

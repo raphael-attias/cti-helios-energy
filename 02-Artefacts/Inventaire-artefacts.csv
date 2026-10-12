@@ -1,0 +1,8 @@
+id,chemin_relatif,fichier,taille_octets,lignes,sha256,mtime_fichier_utc,date_acquisition_utc
+ART-001,fourniture/00_LISEZ-MOI.md,00_LISEZ-MOI.md,1488,26,b07b83f22c9d07560207528a6a612eee17864273748a90d73c1c5e0dcbc346fd,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-002,fourniture/01_fiches_analyse_binaires.md,01_fiches_analyse_binaires.md,3997,95,ec40b1649a4b52161d5acfa6a230ca05c2ca4e7683fbd997db71dbf5d341e734,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-003,fourniture/02_indicateurs_40.csv,02_indicateurs_40.csv,4546,41,48b23612f54456310c71402f43c68cc05d68ca70900b00e2e7e269c4ee23b862,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-004,fourniture/02_indicateurs_40.json,02_indicateurs_40.json,8810,282,41266a1f9aadfb7ef8bf35852138f974d035a9c28589763fd56fd89bb9b4f7f4,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-005,fourniture/03_alertes_siem_12.csv,03_alertes_siem_12.csv,2041,13,fd712d00208d731e5a0fa0a8d867813ab6590916c82c29d4f8a9a2a1eb49a5e7,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-006,fourniture/04_memo_technique_SOC.md,04_memo_technique_SOC.md,2046,42,9cc2e0edf6e7697f08626215b66b7425aab4e8dfbfde1d397cf107975eca23a2,2026-09-23T05:40Z,2026-10-06T09:05Z
+ART-007,fourniture/05_journaux_bruts.log,05_journaux_bruts.log,32452,372,bc55524ab7f953e293ebc329c7353e3962c0f4b616a716445763ea278a7d49bd,2026-09-23T05:40Z,2026-10-06T09:05Z

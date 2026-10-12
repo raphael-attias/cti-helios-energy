@@ -1,0 +1,181 @@
+niveau_de_test,evenement,origine,regle_attendue,regle_obtenue,resultat
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W01,dossier:journal l.1,130101,130101,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W02,dossier:journal l.2,130103,130103,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W03,dossier:journal l.3,130105,130105,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W04,dossier:journal l.4,130106,130106,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W05,dossier:journal l.5,130108,130108,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W06,dossier:journal l.6,130109,130109,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W07,dossier:journal l.7,130110,130110,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W08,dossier:journal l.8,130107,130107,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W09,dossier:journal l.9,130111,130111,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W10,dossier:journal l.10,130112,130112,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W11,dossier:journal l.11,130104,130104,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",W12,dossier:journal l.12,130113,130113,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP01,synthétique positif,130101,130101,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP02,synthétique positif,130102,130102,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP03,synthétique positif,130103,130103,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP04,synthétique positif,130104,130104,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP05,synthétique positif,130105,130105,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP06,synthétique positif,130106,130106,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP07,synthétique positif,130107,130107,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP08,synthétique positif,130108,130108,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP09,synthétique positif,130109,130109,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP10,synthétique positif,130110,130110,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP11,synthétique positif,130111,130111,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP12,synthétique positif,130112,130112,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP13,synthétique positif,130113,130113,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP14,synthétique positif,130114,130114,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SP15,synthétique positif,130115,130115,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN01,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN02,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN03,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN04,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN05,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN06,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN07,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN08,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN09,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN10,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN11,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN12,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN13,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN14,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN15,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN16,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN17,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, conteneur de test isolé (sans réseau)",SN18,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W01,dossier:journal l.1,130101,130101,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W02,dossier:journal l.2,130103,130103,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W03,dossier:journal l.3,130105,130105,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W04,dossier:journal l.4,130106,130106,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W05,dossier:journal l.5,130108,130108,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W06,dossier:journal l.6,130109,130109,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W07,dossier:journal l.7,130110,130110,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W08,dossier:journal l.8,130107,130107,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W09,dossier:journal l.9,130111,130111,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W10,dossier:journal l.10,130112,130112,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W11,dossier:journal l.11,130104,130104,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",W12,dossier:journal l.12,130113,130113,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP01,synthétique positif,130101,130101,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP02,synthétique positif,130102,130102,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP03,synthétique positif,130103,130103,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP04,synthétique positif,130104,130104,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP05,synthétique positif,130105,130105,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP06,synthétique positif,130106,130106,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP07,synthétique positif,130107,130107,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP08,synthétique positif,130108,130108,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP09,synthétique positif,130109,130109,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP10,synthétique positif,130110,130110,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP11,synthétique positif,130111,130111,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP12,synthétique positif,130112,130112,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP13,synthétique positif,130113,130113,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP14,synthétique positif,130114,130114,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SP15,synthétique positif,130115,130115,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN01,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN02,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN03,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN04,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN05,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN06,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN07,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN08,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN09,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN10,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN11,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN12,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN13,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN14,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN15,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN16,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN17,synthétique négatif,aucune,aucune,OK
+"wazuh-logtest, manager de production (aucune alerte créée)",SN18,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W01,dossier:journal l.1,130101,130101,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W02,dossier:journal l.2,130103,130103,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W03,dossier:journal l.3,130105,130105,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W04,dossier:journal l.4,130106,130106,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W05,dossier:journal l.5,130108,130108,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W06,dossier:journal l.6,130109,130109,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W07,dossier:journal l.7,130110,130110,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W08,dossier:journal l.8,130107,130107,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W09,dossier:journal l.9,130111,130111,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W10,dossier:journal l.10,130112,130112,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W11,dossier:journal l.11,130104,130104,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",W12,dossier:journal l.12,130113,130113,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP01,synthétique positif,130101,130101,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP02,synthétique positif,130102,130102,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP03,synthétique positif,130103,130103,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP04,synthétique positif,130104,130104,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP05,synthétique positif,130105,130105,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP06,synthétique positif,130106,130106,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP07,synthétique positif,130107,130107,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP08,synthétique positif,130108,130108,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP09,synthétique positif,130109,130109,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP10,synthétique positif,130110,130110,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP11,synthétique positif,130111,130111,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP12,synthétique positif,130112,130112,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP13,synthétique positif,130113,130113,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP14,synthétique positif,130114,130114,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SP15,synthétique positif,130115,130115,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN01,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN02,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN03,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN04,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN05,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN06,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN07,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN08,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN09,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN10,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN11,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN12,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN13,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN14,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN15,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN16,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN17,synthétique négatif,aucune,aucune,OK
+"rejeu de bout en bout, conteneur isolé (alerts.json)",SN18,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",W01,dossier:journal l.1,130101,130101,OK
+"rejeu par l'API, manager de production (alerts.json)",W02,dossier:journal l.2,130103,130103,OK
+"rejeu par l'API, manager de production (alerts.json)",W03,dossier:journal l.3,130105,130105,OK
+"rejeu par l'API, manager de production (alerts.json)",W04,dossier:journal l.4,130106,130106,OK
+"rejeu par l'API, manager de production (alerts.json)",W05,dossier:journal l.5,130108,130108,OK
+"rejeu par l'API, manager de production (alerts.json)",W06,dossier:journal l.6,130109,130109,OK
+"rejeu par l'API, manager de production (alerts.json)",W07,dossier:journal l.7,130110,130110,OK
+"rejeu par l'API, manager de production (alerts.json)",W08,dossier:journal l.8,130107,130107,OK
+"rejeu par l'API, manager de production (alerts.json)",W09,dossier:journal l.9,130111,130111,OK
+"rejeu par l'API, manager de production (alerts.json)",W10,dossier:journal l.10,130112,130112,OK
+"rejeu par l'API, manager de production (alerts.json)",W11,dossier:journal l.11,130104,130104,OK
+"rejeu par l'API, manager de production (alerts.json)",W12,dossier:journal l.12,130113,130113,OK
+"rejeu par l'API, manager de production (alerts.json)",SP01,synthétique positif,130101,130101,OK
+"rejeu par l'API, manager de production (alerts.json)",SP02,synthétique positif,130102,130102,OK
+"rejeu par l'API, manager de production (alerts.json)",SP03,synthétique positif,130103,130103,OK
+"rejeu par l'API, manager de production (alerts.json)",SP04,synthétique positif,130104,130104,OK
+"rejeu par l'API, manager de production (alerts.json)",SP05,synthétique positif,130105,130105,OK
+"rejeu par l'API, manager de production (alerts.json)",SP06,synthétique positif,130106,130106,OK
+"rejeu par l'API, manager de production (alerts.json)",SP07,synthétique positif,130107,130107,OK
+"rejeu par l'API, manager de production (alerts.json)",SP08,synthétique positif,130108,130108,OK
+"rejeu par l'API, manager de production (alerts.json)",SP09,synthétique positif,130109,130109,OK
+"rejeu par l'API, manager de production (alerts.json)",SP10,synthétique positif,130110,130110,OK
+"rejeu par l'API, manager de production (alerts.json)",SP11,synthétique positif,130111,130111,OK
+"rejeu par l'API, manager de production (alerts.json)",SP12,synthétique positif,130112,130112,OK
+"rejeu par l'API, manager de production (alerts.json)",SP13,synthétique positif,130113,130113,OK
+"rejeu par l'API, manager de production (alerts.json)",SP14,synthétique positif,130114,130114,OK
+"rejeu par l'API, manager de production (alerts.json)",SP15,synthétique positif,130115,130115,OK
+"rejeu par l'API, manager de production (alerts.json)",SN01,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN02,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN03,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN04,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN05,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN06,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN07,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN08,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN09,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN10,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN11,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN12,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN13,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN14,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN15,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN16,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN17,synthétique négatif,aucune,aucune,OK
+"rejeu par l'API, manager de production (alerts.json)",SN18,synthétique négatif,aucune,aucune,OK

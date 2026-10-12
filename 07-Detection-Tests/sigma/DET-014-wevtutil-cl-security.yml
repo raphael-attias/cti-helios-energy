@@ -1,0 +1,24 @@
+title: Commande wevtutil cl Security
+id: 58e994de-6a83-53aa-bf21-f9f31d04ce52
+status: experimental
+description: 'Observé : wevtutil cl Security. [DET-014 | fondement : DIRECTE | artefacts : ALERT-012, journal l.12]'
+references:
+- alerte ALERT-012
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.defense-impairment
+- attack.t1685.005
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  sel:
+    Image|endswith: wevtutil.exe
+    CommandLine|contains|all:
+    - cl
+    - security
+  condition: sel
+falsepositives:
+- Maintenance planifiée des journaux
+level: high

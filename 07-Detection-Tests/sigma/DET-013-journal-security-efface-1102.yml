@@ -1,0 +1,21 @@
+title: Effacement du journal Security (1102)
+id: b874cd53-492f-5453-83e2-418203b73106
+status: experimental
+description: 'Observé : 1102 audit log cleared sur comptabilite-07. [DET-013 | fondement : DIRECTE | artefacts : ALERT-012, journal l.12]'
+references:
+- alerte ALERT-012
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.defense-impairment
+- attack.t1685.005
+logsource:
+  product: windows
+  service: security
+detection:
+  sel:
+    EventID: 1102
+  condition: sel
+falsepositives:
+- Maintenance planifiée des journaux
+level: high

@@ -1,0 +1,41 @@
+{
+ "objets_total": 152,
+ "composante_de_la_campagne_taille": 42,
+ "nombre_de_composantes": 1,
+ "methode_principale_objets_de_renseignement_lies": 27,
+ "par_type": {
+  "attack-pattern": 8,
+  "campaign": 1,
+  "malware": 3,
+  "indicator": 8,
+  "tool": 3,
+  "infrastructure": 4
+ },
+ "par_statut": {
+  "observe": 13,
+  "non-attribue": 1,
+  "declare": 7,
+  "hypothese": 6
+ },
+ "toutes_dans_la_composante_de_la_campagne": true,
+ "avec_actifs_victimes": 31,
+ "actifs_victimes": 4,
+ "avant_T13_methode_C_4_types": 20,
+ "sensibilite_sans_objets_T13_non_observes": 25,
+ "objets_T13_non_observes": [
+  "schtasks.exe",
+  "[CHALLENGE FICTIF] Repli de commande supposé (static-assets-cache.test)"
+ ],
+ "def_A_extremite_SRO": 42,
+ "def_D_toute_reference": 106,
+ "par_categorie_bundle": {
+  "identité (auteur)": 2,
+  "conteneur": 7,
+  "observed-data (conteneur d'observation)": 28,
+  "observable (SCO)": 39,
+  "relation": 44,
+  "marquage ou objet technique": 1,
+  "identité (actif victime)": 4,
+  "analytique": 27
+ }
+}

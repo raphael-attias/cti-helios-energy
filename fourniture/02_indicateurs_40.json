@@ -1,0 +1,282 @@
+[
+  {
+    "type": "sha256",
+    "valeur": "2d10d13c3f3a045dc12a48e0a484018c053d0e83c607f2796fc9b8307c0d66e5",
+    "contexte": "BIN-01 facture_mars_2026.xlsm",
+    "premiere_vue": "2026-03-02T08:30:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "sha1",
+    "valeur": "4911bfb2fa8f76909de149299ef05e6b1455ea24",
+    "contexte": "BIN-01 facture_mars_2026.xlsm (SHA-1)",
+    "premiere_vue": "2026-03-02T08:30:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "md5",
+    "valeur": "8ba35251cca8daa4a05331bba8f95b05",
+    "contexte": "BIN-01 facture_mars_2026.xlsm (empreinte faible, pour antivirus hérités)",
+    "premiere_vue": "2026-03-02T08:30:00Z",
+    "confiance_admiralty": "A2"
+  },
+  {
+    "type": "sha256",
+    "valeur": "cdf03e90d85977619f7881a13f59a275812dbf0e4ae29874493728b0ef78ebc9",
+    "contexte": "BIN-02 svchost_update.exe",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "sha1",
+    "valeur": "ca91f74f2438d710e130a5a413b2c75219c9d5a9",
+    "contexte": "BIN-02 svchost_update.exe (SHA-1)",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "md5",
+    "valeur": "91678506a5474354f1ceb4c12c3c56dd",
+    "contexte": "BIN-02 svchost_update.exe (empreinte faible, pour antivirus hérités)",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "A2"
+  },
+  {
+    "type": "sha256",
+    "valeur": "f4109cd2860816d568c5581edf8ed5df28d35471fa8ff849e9ee2451b69135f0",
+    "contexte": "BIN-03 rundll32_helper.dll",
+    "premiere_vue": "2026-03-05T14:05:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "sha1",
+    "valeur": "d1a4a3501bd1b1d9bc32ade2b4add3cb135e36b8",
+    "contexte": "BIN-03 rundll32_helper.dll (SHA-1)",
+    "premiere_vue": "2026-03-05T14:05:00Z",
+    "confiance_admiralty": "A1"
+  },
+  {
+    "type": "md5",
+    "valeur": "3435016f3f2aacce36b71abb636cfc64",
+    "contexte": "BIN-03 rundll32_helper.dll (empreinte faible, pour antivirus hérités)",
+    "premiere_vue": "2026-03-05T14:05:00Z",
+    "confiance_admiralty": "A2"
+  },
+  {
+    "type": "sha256",
+    "valeur": "81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f",
+    "contexte": "Charge PowerShell déchiffrée par BIN-01 (en mémoire)",
+    "premiere_vue": "2026-03-02T08:32:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "sha256",
+    "valeur": "8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171",
+    "contexte": "Module injecté par BIN-02 dans explorer.exe",
+    "premiere_vue": "2026-03-04T11:06:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "sha256",
+    "valeur": "a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730",
+    "contexte": "Archive chiffrée préparée avant exfiltration (BIN-03)",
+    "premiere_vue": "2026-03-05T14:45:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "domain",
+    "valeur": "cdn-svc-update[.]test",
+    "contexte": "Téléchargement de la charge BIN-02",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "domain",
+    "valeur": "api-telemetry-eu[.]test",
+    "contexte": "Commande et contrôle de BIN-02",
+    "premiere_vue": "2026-03-02T09:15:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "domain",
+    "valeur": "mail-secure-login[.]test",
+    "contexte": "Page d'hameçonnage liée au courriel initial",
+    "premiere_vue": "2026-03-02T07:58:00Z",
+    "confiance_admiralty": "C2"
+  },
+  {
+    "type": "domain",
+    "valeur": "static-assets-cache[.]test",
+    "contexte": "Second domaine de repli, même certificat",
+    "premiere_vue": "2026-03-03T03:22:00Z",
+    "confiance_admiralty": "C3"
+  },
+  {
+    "type": "domain",
+    "valeur": "helios-energy-portal[.]test",
+    "contexte": "Domaine d'usurpation imitant la victime",
+    "premiere_vue": "2026-03-02T06:40:00Z",
+    "confiance_admiralty": "B3"
+  },
+  {
+    "type": "domain",
+    "valeur": "update-win-msft[.]test",
+    "contexte": "Nom de tâche planifiée associé",
+    "premiere_vue": "2026-03-04T11:04:00Z",
+    "confiance_admiralty": "C3"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "198.51.100.23",
+    "contexte": "Résolution de cdn-svc-update[.]test",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "198.51.100.24",
+    "contexte": "Résolution de api-telemetry-eu[.]test",
+    "premiere_vue": "2026-03-02T09:15:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "203.0.113.14",
+    "contexte": "Serveur de commande principal (BIN-02)",
+    "premiere_vue": "2026-03-02T09:20:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "203.0.113.15",
+    "contexte": "Serveur de commande de repli",
+    "premiere_vue": "2026-03-03T02:00:00Z",
+    "confiance_admiralty": "C3"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "198.51.100.40",
+    "contexte": "Hébergement de la page d'hameçonnage",
+    "premiere_vue": "2026-03-02T07:58:00Z",
+    "confiance_admiralty": "C2"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "203.0.113.28",
+    "contexte": "Exfiltration, volume anormal sortant (BIN-03)",
+    "premiere_vue": "2026-03-05T15:30:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "198.51.100.55",
+    "contexte": "Balayage interne observé depuis poste compromis",
+    "premiere_vue": "2026-03-03T10:12:00Z",
+    "confiance_admiralty": "B3"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "203.0.113.44",
+    "contexte": "Connexion RDP entrante hors horaires",
+    "premiere_vue": "2026-03-04T01:47:00Z",
+    "confiance_admiralty": "C3"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "198.51.100.61",
+    "contexte": "Nœud intermédiaire, passive DNS partagé avec D-04",
+    "premiere_vue": "2026-03-03T03:22:00Z",
+    "confiance_admiralty": "C4"
+  },
+  {
+    "type": "ipv4",
+    "valeur": "203.0.113.60",
+    "contexte": "IP mentionnée dans un rapport public sur un cluster proche — à corréler, non confirmée",
+    "premiere_vue": "2026-03-06T09:00:00Z",
+    "confiance_admiralty": "D4"
+  },
+  {
+    "type": "url",
+    "valeur": "hxxps://cdn-svc-update[.]test/win/svchost_update.exe",
+    "contexte": "URL de la seconde charge",
+    "premiere_vue": "2026-03-02T08:41:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "url",
+    "valeur": "hxxps://mail-secure-login[.]test/owa/auth",
+    "contexte": "Page de collecte d'identifiants",
+    "premiere_vue": "2026-03-02T07:58:00Z",
+    "confiance_admiralty": "C2"
+  },
+  {
+    "type": "url",
+    "valeur": "hxxps://api-telemetry-eu[.]test/v2/beacon",
+    "contexte": "Point de contact de la balise",
+    "premiere_vue": "2026-03-02T09:15:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "url",
+    "valeur": "hxxps://helios-energy-portal[.]test/hr/doc",
+    "contexte": "Leurre imitant le portail RH de la victime",
+    "premiere_vue": "2026-03-02T06:40:00Z",
+    "confiance_admiralty": "B3"
+  },
+  {
+    "type": "sha1-cert",
+    "valeur": "BDA5D6C36E3FF362F9CE0957370A429FFF58EB37",
+    "contexte": "Certificat auto-signé partagé par les serveurs de commande, sujet CN=update-service",
+    "premiere_vue": "2026-03-02T09:20:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "sha1-cert",
+    "valeur": "0315D14DD4B9095A10E359CBAF4129F0A6322A59",
+    "contexte": "Certificat de la page d'hameçonnage",
+    "premiere_vue": "2026-03-02T07:58:00Z",
+    "confiance_admiralty": "C3"
+  },
+  {
+    "type": "sha1-cert",
+    "valeur": "1E8BD87AF841CDA6441306558F11D973EB0A5601",
+    "contexte": "Certificat révélant par pivot une campagne antérieure (janvier 2026)",
+    "premiere_vue": "2026-03-06T10:00:00Z",
+    "confiance_admiralty": "C4"
+  },
+  {
+    "type": "host",
+    "valeur": "MicrosoftEdgeUpdateTaskMachine",
+    "contexte": "Tâche planifiée de persistance (BIN-02)",
+    "premiere_vue": "2026-03-02T08:45:00Z",
+    "confiance_admiralty": "A2"
+  },
+  {
+    "type": "host",
+    "valeur": "svc-backup-temp",
+    "contexte": "Compte de service créé puis supprimé sur le contrôleur de domaine",
+    "premiere_vue": "2026-03-05T14:10:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "host",
+    "valeur": "HKCU\\...\\Run\\WinTelemetry",
+    "contexte": "Clé de registre de persistance",
+    "premiere_vue": "2026-03-02T08:44:00Z",
+    "confiance_admiralty": "A2"
+  },
+  {
+    "type": "host",
+    "valeur": "C:\\Windows\\Temp\\~df3a9.tmp",
+    "contexte": "Fichier de collecte chiffré avant exfiltration",
+    "premiere_vue": "2026-03-05T14:40:00Z",
+    "confiance_admiralty": "B2"
+  },
+  {
+    "type": "host",
+    "valeur": "comptabilite-07",
+    "contexte": "Poste d'entrée initial (patient zéro)",
+    "premiere_vue": "2026-03-02T08:30:00Z",
+    "confiance_admiralty": "A1"
+  }
+]

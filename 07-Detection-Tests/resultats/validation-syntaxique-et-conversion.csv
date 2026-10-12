@@ -1,0 +1,16 @@
+det,validation_pySigma,alertes,clause_SQL_produite
+DET-001,OK,,(ParentImage LIKE '%winword.exe' ESCAPE '\' OR ParentImage LIKE '%excel.exe' ESCAPE '\' OR ParentImage LIKE '%powerpnt.exe' ESCAPE '\') AND Image LIKE '%powershell.exe' ESCAPE '\' AND (CommandLine LIKE '%-enc%' ESCAPE '\' OR CommandLine LIKE '%-encodedcommand%' ESCAPE '\') AND (CommandLine LIKE '%-w hidden%' ESCAPE '\' OR CommandLine LIKE '%-windowstyle hidden%' ESCAPE '\')
+DET-002,OK,,Image LIKE '%powershell.exe' ESCAPE '\' AND (CommandLine LIKE '%-enc%' ESCAPE '\' AND CommandLine LIKE '%SQBFAFgA%' ESCAPE '\')
+DET-003,OK,,cs_method='GET' AND c_uri LIKE '%.exe' ESCAPE '\' AND sc_status=200
+DET-004,OK,,c_uri LIKE '%cdn-svc-update.test%' ESCAPE '\' OR c_uri LIKE '%api-telemetry-eu.test%' ESCAPE '\' OR c_uri LIKE '%mail-secure-login.test%' ESCAPE '\' OR c_uri LIKE '%static-assets-cache.test%' ESCAPE '\' OR c_uri LIKE '%helios-energy-portal.test%' ESCAPE '\' OR c_uri LIKE '%update-win-msft.test%' ESCAPE '\'
+DET-005,OK,,"(Image LIKE '%schtasks.exe' ESCAPE '\' AND (CommandLine LIKE '%/create%' ESCAPE '\' AND CommandLine LIKE '%MicrosoftEdgeUpdateTaskMachine%' ESCAPE '\')) AND (NOT COALESCE((ParentImage LIKE '%MicrosoftEdgeUpdate.exe' ESCAPE '\'), 0))"
+DET-006,OK,,id_resp_h='198.51.100.24' OR id_resp_h='203.0.113.14' OR id_resp_h='203.0.113.15' OR id_resp_h='203.0.113.28'
+DET-007,OK,,"(TargetImage LIKE '%lsass.exe' ESCAPE '\' AND (GrantedAccess='0x1010' OR GrantedAccess='0x1410')) AND (NOT COALESCE((SourceImage LIKE 'C:\\Windows\\System32\\%' ESCAPE '\' OR SourceImage LIKE 'C:\\Program Files\\Windows Defender\\%' ESCAPE '\'), 0))"
+DET-008,OK,,msg LIKE '%scan detected%' ESCAPE '\' AND (msg LIKE '%dports=445%' ESCAPE '\' OR msg LIKE '%3389%' ESCAPE '\')
+DET-009,OK,,EventID=4624 AND LogonType=10 AND TargetUserName LIKE 'svc-%' ESCAPE '\'
+DET-010,OK,,"TargetImage LIKE '%explorer.exe' ESCAPE '\' AND (NOT COALESCE((SourceImage LIKE 'C:\\Windows\\System32\\%' ESCAPE '\'), 0))"
+DET-011,OK,,EventID=4720 AND TargetUserName LIKE '%-temp' ESCAPE '\'
+DET-012,OK,,orig_bytes >= 1000000000
+DET-013,OK,,EventID=1102
+DET-014,OK,,Image LIKE '%wevtutil.exe' ESCAPE '\' AND (CommandLine LIKE '%cl%' ESCAPE '\' AND CommandLine LIKE '%security%' ESCAPE '\')
+DET-015,OK,,Image LIKE '%svchost\_update.exe' ESCAPE '\' OR Image LIKE '%rundll32\_helper.dll' ESCAPE '\'

@@ -1,0 +1,153 @@
+id,type,categorie,nom_ou_valeur,provenance,created_by_ref,statut_analytique,confiance
+identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,identity,identité,CHALLENGE-FICTIF,export MISP réel (événement 6),,,
+grouping--33c1053e-e1e1-405f-ae75-b1c747a7f7b2,grouping,analytique,[CHALLENGE FICTIF] Helios Energy INC-2026-0302,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+observed-data--53959d06-8667-4646-ad88-0e774fe30fb2,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--6f2536f6-fe34-554d-b1b7-be0601158b28,file,observable (SCO),{'SHA-256': '81aa487933bb715f9dabd1755eff6cfd13a9c635e1b3bc4adff3ccbc78b8660f'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--f0c999cc-6e08-4a76-a61b-e29c777f176e,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--39db1f5c-9a1f-5508-8dd5-a9ff630139ad,file,observable (SCO),{'SHA-256': '8772b487de8ea8d30a7630e906afa95dcbf4a75f5915066f8b6a40d487201171'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--3ea8b70c-eb57-4800-acd2-de49fb651c0a,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--8158819a-4d72-5660-b804-bc899c7d77be,file,observable (SCO),{'SHA-256': 'a0e1f129a0155e96b0e04e8bc26b0d07fa8fb47c79f63a7e5a6227b27f239730'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--3deb0060-4ada-439e-ab59-85d5f6a9b04d,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+domain-name--608d1591-d9d2-5970-8ef2-58e3a37b10d9,domain-name,observable (SCO),mail-secure-login.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--3c29b262-a324-4631-b18f-7d5c7696b144,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+domain-name--62b81e1e-4745-5e25-b46d-7c3e77a4d8cf,domain-name,observable (SCO),static-assets-cache.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--5122bd48-1d87-46ec-a4c2-bc1a62d56993,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+domain-name--f79ec794-1673-5e7b-80da-7a61697f242a,domain-name,observable (SCO),helios-energy-portal.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--a6993fb8-fea3-41fe-88f4-8c4b653e338c,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+domain-name--8f39c984-b273-5cc7-a6c2-c0e311707fef,domain-name,observable (SCO),update-win-msft.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--b5052584-02a1-46a7-8139-e80255ad0e80,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--b04b7371-b0b2-5c68-a8bd-75d7ba9fa013,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--c2e3a4c7-a0ec-5118-b3e5-e839cb125559,ipv4-addr,observable (SCO),203.0.113.14,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--3d487d20-4771-435e-9d99-ff2374a112bb,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--0d1134ee-7230-58b5-83e4-be0109bbb6fa,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--b08c3524-70c5-5490-b119-ff0524c7914f,ipv4-addr,observable (SCO),203.0.113.15,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--4d7ea69c-d984-45f6-8b74-3071070d4e9d,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--5124fa8a-889b-5dd2-95ed-72229e501ba9,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--58efd2bf-7422-5c22-a882-077f06048628,ipv4-addr,observable (SCO),198.51.100.40,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--b8191765-0447-49ec-a8db-6c9ba78cac0e,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--46e66c73-8652-510b-9f35-56259d8432b9,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--796e0064-4c24-538f-8ce4-f5725faca060,ipv4-addr,observable (SCO),203.0.113.28,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--65531525-8961-422d-8deb-8f62512718c2,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--1abda27b-6c41-5459-9805-6a88052ce22c,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--8bf7bd33-dafb-5be4-8fe1-876d7f58a578,ipv4-addr,observable (SCO),198.51.100.55,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--0ecd0204-16c6-4c7c-a8a1-e1e2d7f86912,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--1a90f549-1bdb-50e0-9789-87945bb3474c,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--a3702f06-36a7-5abb-a9d8-b1cdb6741249,ipv4-addr,observable (SCO),203.0.113.44,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--f1d9e7e8-cfbf-4764-aa5c-994cb09cb271,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--4557854c-6214-5885-976b-7e129f29d429,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--0618fbf2-0c4b-5213-b255-71567699e09b,ipv4-addr,observable (SCO),198.51.100.61,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--06abfd71-44e7-4df0-9cd7-25df1680adf6,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+network-traffic--6767b74e-6e92-5add-bc40-f6c9c9a74773,network-traffic,observable (SCO),,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+ipv4-addr--fd7caefa-2cfe-54fb-bb77-73eabfad7c9b,ipv4-addr,observable (SCO),203.0.113.60,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--67f2a338-1ea4-4078-87ff-c5001760ea67,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+url--fd3e3b03-7616-57b8-9c18-dfdc93515f25,url,observable (SCO),https://cdn-svc-update.test/win/svchost_update.exe,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--66bb2ea5-e34d-401b-85ec-06efbf7a61f8,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+url--d09d25c1-a894-5c60-971c-4c95e7b653b4,url,observable (SCO),https://mail-secure-login.test/owa/auth,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--b2416d3a-62ac-4ba7-9071-4d7a5e1fdd7f,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+url--f71c45ec-922e-5383-8ba8-dc1b03e27f7a,url,observable (SCO),https://api-telemetry-eu.test/v2/beacon,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--763080fb-fd06-4a77-bf0b-f02ed1fa9cb8,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+url--c09abe6d-4fc1-5d0b-9e71-4c5760a667a3,url,observable (SCO),https://helios-energy-portal.test/hr/doc,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--7332a699-58f0-4560-bd91-d06ec077f990,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+x509-certificate--b42c2559-1040-583c-a389-8d5517003f96,x509-certificate,observable (SCO),{'SHA-1': 'bda5d6c36e3ff362f9ce0957370a429fff58eb37'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--d1eedd9a-e19f-41ed-a0a6-dc8ad0ada5e8,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+x509-certificate--de819979-c539-5789-93b0-b854225116a7,x509-certificate,observable (SCO),{'SHA-1': '0315d14dd4b9095a10e359cbaf4129f0a6322a59'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--6bddbd54-c7f8-4dca-bf9e-e7c665adc9b0,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+x509-certificate--b9909ea9-5322-5945-8d62-44f15823eaa9,x509-certificate,observable (SCO),{'SHA-1': '1e8bd87af841cda6441306558f11d973eb0a5601'},export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--3ffaccf1-d209-4caf-a8d7-1be15a0d1199,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--cb105689-9711-5632-b3ed-90174227038b,file,observable (SCO),%WINDIR%\Temp\~df3a9.tmp,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--b3fed1b4-4523-4004-ab00-df060905182e,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--48d4206a-fd5b-55fd-a195-3986a461309f,file,observable (SCO),facture_mars_2026.xlsm,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--4da6f064-f05b-4954-b441-9cc953016aa6,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--4a6185da-a712-5bc9-be00-bc689787d5e7,file,observable (SCO),svchost_update.exe,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--073e81c7-caa5-4f78-b46d-e5ef0cb39f41,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+file--b4048edb-9e9e-57ad-bdcd-fd84bb8c4c99,file,observable (SCO),rundll32_helper.dll,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--cc270e5f-f5a4-4003-a21a-e2847a42760f,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+ipv4-addr--cec0294c-86c8-52cc-8448-ba43593736df,ipv4-addr,observable (SCO),198.51.100.23,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+domain-name--8968289e-0006-5e21-b130-b953237dfd0c,domain-name,observable (SCO),cdn-svc-update.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+observed-data--68443f5d-f1ef-447f-a3d9-9e7cc97b93e7,observed-data,observed-data,,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+ipv4-addr--247fc200-3ba0-53b5-b3fa-40958e35e60a,ipv4-addr,observable (SCO),198.51.100.24,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+domain-name--01cb1ca5-38dc-5dda-8ee7-dd1b1f4312cc,domain-name,observable (SCO),api-telemetry-eu.test,export MISP réel (événement 6),(SCO : provenance par observed-data/report),,
+note--c3e5fbd3-6aa6-4f64-847c-c3fbbb49c982,note,analytique,Synthèse provisoire de l'analyse,export MISP réel (événement 6),identity--ad95f307-c16c-11f1-b785-3ec53bff7a0f,,
+relationship--6d7adb66-c222-4a92-8ca4-620529ab3780,relationship,relation,related-to : file -> url,export MISP réel (événement 6),identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,15
+marking-definition--f88d31f6-486f-44da-b317-01333bde0b82,marking-definition,technique,TLP:AMBER,export MISP réel (événement 6),,,
+user-account--41676b5a-3cda-57ac-a085-48839255dcc6,user-account,observable (SCO),svc-backup-temp,enrichissement local documenté,(SCO : provenance par observed-data/report),,
+identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,identity,identité,[CHALLENGE FICTIF] Équipe CTI,enrichissement local documenté,,,
+identity--9ecaad58-3b65-597f-aa5d-200da8c3773b,identity,identité,Helios Energy (fictif),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+identity--fc4c54fc-d124-5406-ae15-1ab120da7c04,identity,identité,comptabilite-07,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+identity--a39cef96-0c30-5f2d-a5dd-955164152a77,identity,identité,srv-fichiers-02,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+identity--ddc7687d-6771-570e-9d38-5a671b23683d,identity,identité,dc-01,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+attack-pattern--905a0b30-064d-5a9f-92c7-16f4ac845068,attack-pattern,analytique,PowerShell,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--da4eaeba-dfc0-54c2-9523-f76289f9f712,attack-pattern,analytique,Hidden Window,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--40d5a68f-0d2d-5627-a083-7f77bbd890df,attack-pattern,analytique,Ingress Tool Transfer,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--4475787f-6c04-5844-9b52-107753ba9ef1,attack-pattern,analytique,Scheduled Task,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--a7cb0718-3a6c-50a5-9993-3e2fde1b3be4,attack-pattern,analytique,Network Service Discovery,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--47a264ed-f2cf-5d06-b39f-d3b542cbf238,attack-pattern,analytique,Remote Desktop Protocol,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--ed86fc2f-e55b-5add-ba2d-7206e6169e5c,attack-pattern,analytique,Process Injection,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+attack-pattern--79e532f7-3b19-5b1c-a8df-09c808035f2b,attack-pattern,analytique,Clear Windows Event Logs,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,
+campaign--00ef2a8a-20a5-5bc2-964b-1e6799877cf9,campaign,analytique,[CHALLENGE FICTIF] Cluster non attribué INC-2026-0302,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,non-attribue,50
+malware--217f1232-8d80-517d-8dd9-72c6542ec749,malware,analytique,facture_mars_2026.xlsm (BIN-001),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+malware--e1d16652-f5c7-5b20-ab02-421ce640fb1a,malware,analytique,svchost_update.exe (BIN-002),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+malware--fd879985-6c14-58b0-9c60-0a115d99b91a,malware,analytique,rundll32_helper.dll (BIN-003),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+indicator--10b593bb-4d37-5756-92ef-6f7b48f4f914,indicator,analytique,[CHALLENGE FICTIF] IND-01 BIN-001 dropper (fiche),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+indicator--5ab5b839-ef1e-5afa-839d-ca927291cb85,indicator,analytique,[CHALLENGE FICTIF] IND-02 BIN-002 balise (fiche),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+indicator--d7c48f42-8093-5d77-a3e8-378cb3c24690,indicator,analytique,[CHALLENGE FICTIF] IND-03 BIN-003 outil d'identifiants (fiche),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+indicator--807c3cbe-6d02-5d96-83b3-68fc6641c917,indicator,analytique,[CHALLENGE FICTIF] IND-04 domaine de téléchargement de BIN-002,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+indicator--57b691c7-a82e-5d9c-b4e8-6e70907b8fe6,indicator,analytique,[CHALLENGE FICTIF] IND-05 URL de la seconde charge,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+indicator--d32ff7bb-7480-5cb6-a845-88c39a300bb1,indicator,analytique,[CHALLENGE FICTIF] IND-06 destination de la connexion de balise (ALERT-004),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+indicator--97897198-7778-57b9-b5e8-bdfdc2e16a29,indicator,analytique,[CHALLENGE FICTIF] IND-07 destination de la sortie de 2 469 135 790 octets (ALERT-010),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+indicator--8a932155-1d42-5c49-a9f5-adf6bdb822a8,indicator,analytique,[CHALLENGE FICTIF] IND-08 domaine du « repli C2 » (ALERT-011),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+tool--aaa894f0-e340-5243-9757-432871928c2e,tool,technique,powershell.exe,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,50
+tool--49a696f7-0695-5a3f-bd59-b9beec7e1496,tool,technique,wevtutil.exe,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,50
+tool--09560a4d-4ab5-5a9a-819b-39ac6b108490,tool,technique,schtasks.exe,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,15
+infrastructure--0062c14c-7371-586e-a477-1a6ae1b2c425,infrastructure,technique,[CHALLENGE FICTIF] Hébergement du téléchargement (cdn-svc-update.test),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,50
+infrastructure--e421b902-ac2e-51f7-a6a5-1646ee5ae9f0,infrastructure,technique,[CHALLENGE FICTIF] Destination de la connexion de balise (198.51.100.24),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,15
+infrastructure--f19e05e8-0f0d-5ad0-b349-99c49f7e130a,infrastructure,technique,[CHALLENGE FICTIF] Destination de la sortie de données (203.0.113.28),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,50
+infrastructure--36b67c60-cdbd-5e21-85ed-741795271706,infrastructure,technique,[CHALLENGE FICTIF] Repli de commande supposé (static-assets-cache.test),enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,15
+relationship--46969d46-dfdc-5938-9c24-4ddc4da09cb6,relationship,relation,based-on : indicator -> observed-data,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--25a9c579-d9f8-5e84-87dc-4e976c1f12b6,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--044f0e9b-7d49-592e-927d-753ceacdb5f2,relationship,relation,based-on : indicator -> observed-data,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--50a2f6b7-56b9-5d21-9296-54a9d663e76a,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--adb4a9ce-a4cb-5d1e-b897-3d7ad9810b26,relationship,relation,based-on : indicator -> observed-data,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--c6624f3a-6dc3-5bca-b405-27a157b6054f,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--f36c3034-7b42-5eb8-991f-e1c01e7f5465,relationship,relation,based-on : indicator -> domain-name,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+relationship--9671f99b-87bd-5ac7-ba1e-fa25b4884cee,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--96ca0128-8833-5548-b6fc-9acc58aa19f2,relationship,relation,based-on : indicator -> observed-data,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+relationship--d4be121c-3734-53ea-91fb-96bddac8d8d6,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--9da50369-0df4-5c02-ac93-1181b645c6b5,relationship,relation,based-on : indicator -> ipv4-addr,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--d9726873-b6f1-58d3-8312-7cfb940b873e,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--525aa9c5-a7d1-5f6f-9a5e-89b4e5526c2b,relationship,relation,based-on : indicator -> ipv4-addr,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,50
+relationship--1e2cc0ce-b6f0-54c0-9acb-3adf78f9f5e7,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--79eaec38-1551-5748-aa2e-8d8b24b08ff5,relationship,relation,based-on : indicator -> observed-data,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--896b48fe-344e-5151-8f5c-aa251ecd490b,relationship,relation,indicates : indicator -> campaign,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--011a3da1-431c-57c1-bca5-4b8faa09ac2d,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--b50b8329-fd30-5164-8fb4-e5328bfd7324,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--dcc3d856-0a0c-5da7-b984-051ac04449be,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--f3af3314-c3f8-554e-8219-0b356ccd751c,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--58373742-a72f-571f-b16b-acffcd08e9c4,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--74f6d4bc-d81c-56a6-952a-af67b49d02e2,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--8cad1f14-b287-5b45-8c83-84e1152504bc,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--297efbfb-7ad7-50ca-bb6d-fb5b8d33a87b,relationship,relation,uses : campaign -> attack-pattern,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--966545ad-b0fb-5718-bd49-f9c46b3caf39,relationship,relation,targets : campaign -> identity,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--cbbea81c-345d-53ab-90e0-ae81d0626d42,relationship,relation,targets : campaign -> identity,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--4965af79-e48a-5f4a-bfce-5900961c7565,relationship,relation,targets : campaign -> identity,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--cf92acaa-993a-5c76-a765-6620d2387ea4,relationship,relation,targets : campaign -> identity,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--f655934d-c354-5397-9bf1-dffad778430c,relationship,relation,uses : campaign -> malware,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--f8f4d561-6801-5bfc-a26f-beebf63b0cc9,relationship,relation,uses : campaign -> malware,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--a9ab7018-f2f3-508c-a816-d1b83cd2905b,relationship,relation,uses : campaign -> malware,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--f3c2f5ca-668d-5a09-ad3c-15d7acbaa062,relationship,relation,uses : campaign -> tool,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--35d8dcda-5ee3-5ac6-8c5e-0ab14e20db21,relationship,relation,uses : campaign -> tool,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--fcc7c6f0-c293-502d-b7a8-dfc90dd047af,relationship,relation,uses : campaign -> tool,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,declare,15
+relationship--43c4bc01-c2bc-57ca-bb50-c6009d72425b,relationship,relation,uses : campaign -> infrastructure,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--5429855f-f3ed-5051-aa45-9c4c77e0b2f9,relationship,relation,consists-of : infrastructure -> domain-name,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--abd2287d-4a4c-5bf0-bc0c-bede7283ee7d,relationship,relation,consists-of : infrastructure -> url,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--e817fcbe-c754-5ff5-8275-ed6514b3e098,relationship,relation,uses : campaign -> infrastructure,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,15
+relationship--519fbbc6-475b-59ee-be91-e54adbe85ef9,relationship,relation,consists-of : infrastructure -> ipv4-addr,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,15
+relationship--48a30dc5-fc04-581c-98b0-63f4cff339e3,relationship,relation,uses : campaign -> infrastructure,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--b80e6507-e501-5f3f-8d33-c62d068d0820,relationship,relation,consists-of : infrastructure -> ipv4-addr,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,observe,50
+relationship--c7cc415f-618d-58e9-9e38-c0d8a2f77faf,relationship,relation,uses : campaign -> infrastructure,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+relationship--26611b5c-c840-5993-bb15-bb4a3db3ab11,relationship,relation,consists-of : infrastructure -> domain-name,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,hypothese,15
+note--f5d27372-c0ec-581a-8bef-769e225995cc,note,analytique,Éléments MISP sans type STIX standard,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+note--5d601110-57be-5d7c-bcb3-d97afc925310,note,analytique,Limites et incohérences,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+note--b14ea5bc-626a-5e5b-948f-62240f7a95f7,note,analytique,Attribution hypothétique : INCONNUE,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+note--f53c135f-35a0-5301-88a0-096e4297adf3,note,analytique,Identifiant ATT&CK renuméroté,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,
+report--e7f0587f-6783-5605-88b1-ed849addb811,report,analytique,[CHALLENGE FICTIF] Helios Energy — Investigation CTI,enrichissement local documenté,identity--9202928e-7fe5-542f-af7c-0701c8fa2aa6,,50

@@ -1,0 +1,45 @@
+== OK == 42
+  OK  original inchangé 00_LISEZ-MOI.md
+  OK  original inchangé 01_fiches_analyse_binaires.md
+  OK  original inchangé 02_indicateurs_40.csv
+  OK  original inchangé 02_indicateurs_40.json
+  OK  original inchangé 03_alertes_siem_12.csv
+  OK  original inchangé 04_memo_technique_SOC.md
+  OK  original inchangé 05_journaux_bruts.log
+  OK  arborescence cible : fichiers présents : 57/57 ; manquants : []
+  OK  dossiers sigma, wazuh, jeux-tests non vides
+  OK  pagination 01-Cadrage/Note-cadrage.pdf : 2 pages (attendu 2 à 2) ; texte extractible 4408 caractères
+  OK  pagination 08-Rapports/Rapport-strategique.pdf : 2 pages (attendu 2 à 3) ; texte extractible 6463 caractères
+  OK  pagination 08-Rapports/Rapport-tactique.pdf : 11 pages (attendu 8 à 12) ; texte extractible 37093 caractères
+  OK  pagination 08-Rapports/Note-reglementaire-ANSSI.pdf : 1 pages (attendu 1 à 1) ; texte extractible 3487 caractères
+  OK  pagination 08-Rapports/Note-partage-communautaire.pdf : 1 pages (attendu 1 à 1) ; texte extractible 2941 caractères
+  OK  pagination 10-Soutenance/Support-soutenance.pdf : 15 pages (attendu 10 à 20) ; texte extractible 8992 caractères
+  OK  bundle : 152 objets
+  OK  bundle : 8 indicateurs, 8 attack-pattern, 3 malware, 1 campaign, 1 report
+  OK  bundle : 44 relations
+  OK  rapport STIX cite 152 et 44
+  OK  aucun acteur dans le bundle
+  OK  inventaire : 40 IoC, 12 alertes, 3 binaires
+  OK  15 règles Sigma, 11 directes, 3 IOC, 1 chasse
+  OK  fichiers Sigma présents (15)
+  OK  Sigma : 0 écart dans 162 tests
+  OK  Wazuh : 180 lignes, tout conforme
+  OK  Wazuh production : 27 alertes archivées, niveaux 4 à 7
+  OK  Wazuh production : aucune alerte niveau >= 10 (seuil TheHive)
+  OK  matrice des alertes : 12 lignes, 22 colonnes
+  OK  T1070.001 : plus utilisé comme technique retenue
+  OK  alerte 8 : T1055.012 non retenue
+  OK  alerte 9 : T1543.003 non retenue
+  OK  manifeste OpenCTI : 27 observables, 8 indicateurs, 0 domaine
+  OK  identifiants OpenCTI archivés (rapport, incident, 3 notes)
+  OK  guide : liens du rapport et de l'incident corrects
+  OK  guide : statut des contrôles d'interface daté et réserves listées
+  OK  04-Analyse/Analyse-IoC.md : somme 9+3+1+25+2 = 40
+  OK  00-Pilotage/Tableau-de-bord.md : aucune valeur périmée ['3 / 35 (8,6', '3 / 36 (8,3']
+  OK  01-Cadrage/Note-cadrage.md : aucune valeur périmée ['17 incohérences']
+  OK  08-Rapports/Rapport-strategique.md : aucune valeur périmée ['17 incohérences']
+  OK  aucun secret détecté (motifs courants) : []
+  OK  aucun binaire ou document Office dans le dossier de mission : []
+  OK  liens internes Markdown résolus : 0 cassés : []
+== ÉCARTS == 0
+== Information : fichiers .md contenant un tiret long (noms exacts demandés ou citations de la source) : 8 ['AGENTS.md', '05-Plateformes/Guide-consultation-OpenCTI.md', '05-Plateformes/Investigation-OpenCTI-finale.md', '11-Validation/Controle-final.md', '11-Validation/Audit-final-criteres.md', '00-Pilotage/Suivi-RFI.md', '00-Pilotage/Decisions-et-limites-finales.md', '99-Historique/Plan-modelisation-OpenCTI.md']

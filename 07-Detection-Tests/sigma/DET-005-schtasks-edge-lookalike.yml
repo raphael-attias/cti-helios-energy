@@ -1,0 +1,28 @@
+title: Création de tâche planifiée imitant la mise à jour Edge
+id: ed6c782f-3cd1-5eab-ab2c-5b1c423ed0b7
+status: experimental
+description: 'Observé : création de MicrosoftEdgeUpdateTaskMachine (la commande schtasks n''est visible que dans le détail de l''alerte). [DET-005
+  | fondement : DIRECTE | artefacts : ALERT-003, journal l.3]'
+references:
+- alerte ALERT-003
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.persistence
+- attack.t1053.005
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  sel:
+    Image|endswith: schtasks.exe
+    CommandLine|contains|all:
+    - /create
+    - MicrosoftEdgeUpdateTaskMachine
+  legit:
+    ParentImage|endswith: MicrosoftEdgeUpdate.exe
+  condition: sel and not legit
+falsepositives:
+- Installation légitime de Microsoft Edge (parent MicrosoftEdgeUpdate.exe, exclu)
+- Noms réels de tâches Edge à vérifier sur un poste de référence
+level: medium

@@ -1,0 +1,16 @@
+det,logsource,evenements_logsource,tp,fn,fp,tn,croise,bruit,total_parcourus
+DET-001,windows/process_creation,16,2,0,0,14,0,0,410
+DET-002,windows/process_creation,16,2,0,0,14,0,0,410
+DET-003,proxy,7,2,0,0,5,0,0,410
+DET-004,proxy,7,3,0,0,4,0,0,410
+DET-005,windows/process_creation,16,2,0,0,14,0,0,410
+DET-006,zeek/conn,6,3,0,0,3,0,0,410
+DET-007,windows/process_access,4,2,0,0,2,0,0,410
+DET-008,zeek/notice,3,2,0,0,1,0,0,410
+DET-009,windows/security,10,2,0,0,8,0,0,410
+DET-010,windows/create_remote_thread,4,2,0,0,2,0,0,410
+DET-011,windows/security,10,2,0,0,8,0,0,410
+DET-012,zeek/conn,6,2,0,0,4,0,0,410
+DET-013,windows/security,10,1,0,0,9,0,0,410
+DET-014,windows/process_creation,16,2,0,0,14,0,0,410
+DET-015,windows/process_creation,16,2,0,0,14,0,0,410

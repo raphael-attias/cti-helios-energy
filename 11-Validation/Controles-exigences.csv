@@ -1,0 +1,102 @@
+exigence,controle_technique,resultat,detail
+REQ-05,sha256 des 7 originaux recalculés et présents (valeurs complètes) dans l'inventaire,OK,7/7
+REQ-05,préfixes de hash du document conformes aux recalculs,OK,7/7
+REQ-05,incohérences numérotées I-01..I-21 toutes présentes,OK,21
+REQ-05,"comptages d'origine, doublons et valeurs invalides conservés séparément",OK,
+REQ-05,inventaire des artefacts : 7 lignes avec hash,OK,7
+REQ-06,"registre : 21 sources, champs non vides",OK,21
+REQ-06,toute source citée au journal existe au registre,OK,[]
+REQ-06,formats Admiralty : lettre A-F et chiffre 1-6,OK,
+REQ-07,PDF de 2 pages,OK,2
+REQ-07,"remise tardive déclarée, équipe non inventée",OK,
+REQ-07,"sections contexte, périmètre, livrables, planning, risques",OK,
+REQ-08,"total 35 h, J1 à J5",OK,
+REQ-08,somme des lignes J1..J5 = 35,OK,35.0
+REQ-08,caractère prévisionnel explicite,OK,
+REQ-09,rôles et communication présents,OK,
+REQ-09,titulaires non inventés : « non communiqué »,OK,
+REQ-10,matrice : 12 alertes x 22 colonnes,OK,12x22
+REQ-10,aucune cellule vide,OK,[]
+REQ-10,horodatage et hôte de chaque alerte identiques à l'original,OK,12
+REQ-10,ligne de journal citée contient l'horodatage de l'alerte,OK,12/12 (l'alerte 12 peut citer une ligne voisine)
+REQ-10,analyses IoC / alertes / binaires présentes,OK,
+REQ-10,"Analyse-IoC : 40 IoC, somme des catégories",OK,
+REQ-10,vocabulaire OBSERVÉ/CORROBORÉ/HYPOTHÈSE/INCONNU/NON TESTÉ utilisé,OK,
+REQ-11,34 événements triés,OK,34
+REQ-11,"colonnes exigées (heure originale/normalisée, artefact, observation, interprétation, confiance, limites)",OK,
+REQ-11,références artefact:ligne résolues dans les originaux,OK,[]
+REQ-11,aucune cellule vide,OK,
+REQ-12,"sources ouvertes tracées : ATT&CK, ANSSI, CNIL, FIRST",OK,
+REQ-12,aucun envoi de valeur d'IoC à un tiers (décision documentée),OK,
+REQ-15,"≥ 25 objets de renseignement distincts, reliés par une relation, dans la composante de la campagne (méthode principale)",OK,27
+REQ-15,≥ 25 sans les ajouts dont la seule base est le texte d'une alerte (sensibilité),OK,25
+REQ-15,"les relations et marquages ne sont pas comptés (types comptés : campagne, malware, outil, infrastructure, technique, indicateur)",OK,
+REQ-15,comptage reproductible : script de liaison = recomptage indépendant,OK,"(27, 27)"
+REQ-15,chaque ajout T13 porte une preuve (external_references ALERT) et un statut,OK,
+REQ-15,"aucun acteur, groupe ni échantillon ajouté (pas d'intrusion-set, threat-actor)",OK,
+REQ-15,"bundle valide (validateur 0 erreur), références résolues",OK,
+REQ-15,"chaque objet du bundle porte sa source et sa date de collecte (SCO : x_helios_source et x_helios_collected_at ; autres : created_by_ref ou external_references, et created)",OK,152/152 objets (marquage TLP exclu)
+REQ-15,les 39 observables portent aussi la cote Admiralty de l'équipe (x_helios_admiralty),OK,
+REQ-19,"40 IoC cotés par l'équipe, fiabilité A-F et crédibilité 1-6 séparées (Cotes-Admiralty-IoC.csv)",OK,40
+REQ-13,"manifeste MISP : les 40 attributs d'IoC portent la cote de l'équipe dans leur commentaire (relu en direct le 2026-10-10 : 40 sur 46 attributs, 0 échec)",OK,40
+REQ-31,Resume-prez-doc.md : tous les liens relatifs pointent vers un fichier existant,OK,"113/113 liens, cassés : []"
+REQ-31,Resume-prez-doc.md : chaque point renvoie à un document complet (au moins autant de « Détail complet » que de points numérotés),OK,22 renvois pour 21 points
+OPT-05,"note dark web : règles (consultation seule, aucune interaction, aucun achat), méthode, journal horodaté, limites",OK,
+OPT-05,"chaque consultation figure au journal de collecte, horodatée, sans donnée envoyée à un tiers",OK,3
+OPT-05,les sources consultées sont enregistrées et cotées (SRC-019 à SRC-021),OK,
+REQ-17,18 lignes avec URL officielle,OK,18
+REQ-17,statut de vérification renseigné,OK,
+REQ-17,"correspondance v18.1/v19.2 : 19 lignes, toutes présentes dans l'une des deux versions",OK,19
+REQ-17,une seule renumérotation entre v18.1 et v19.2 (T1070.001 / T1685.005),OK,"['T1685.005', 'T1070.001']"
+REQ-17,noms du dossier conformes aux noms officiels v19.2,OK,
+REQ-17,méthode de version documentée (v19.2 courante + correspondance v18.1),OK,
+REQ-18,"4 sommets (adversaire, infrastructure, capacités, victime)",OK,
+REQ-18,relations connues et inconnues explicites,OK,
+REQ-18,adversaire non nommé,OK,
+REQ-18,identifiants cités existent,OK,[]
+REQ-19,plusieurs hypothèses comparées (≥ 3 HYP),OK,"['HYP-A1', 'HYP-A2', 'HYP-A3', 'HYP-A4', 'HYP-A5']"
+REQ-19,"preuves contradictoires, indépendance des sources, 3 niveaux, biais",OK,
+REQ-19,Admiralty : fiabilité A-F et crédibilité 1-6 séparées,OK,
+REQ-19,conclusion « non attribué » ; LISEZ-MOI traité comme non-preuve,OK,
+REQ-19,aucun acteur nommé dans le bundle,OK,
+REQ-20,"5 actifs, observé / potentiel / futur séparés",OK,
+REQ-20,"criticité justifiée, limites renseignées",OK,
+REQ-20,actifs rattachés à des hôtes de l'inventaire d'alertes,OK,
+REQ-21,"actifs, flux, dépendances, inconnues, méthode",OK,
+REQ-21,zones mentionnées,OK,
+REQ-25,2 à 3 pages,OK,2
+REQ-25,"contenu exigé : synthèse, périmètre, impact, risques, confiance/limites, décisions, recommandations",OK,
+REQ-26,8 à 12 pages,OK,11
+REQ-26,12 rubriques exigées,OK,
+REQ-26,références vers les règles Sigma complètes,OK,
+REQ-26,"chiffres : 12 alertes, 40 IoC, 162 tests, 27 alertes cités",OK,
+REQ-26,"aucune mention périmée (mai 2026, 126 avertissements)",OK,
+REQ-27,PDF 1 à 3 pages,OK,2
+REQ-27,"favorables, contradictoires, alternatives, Admiralty, confiance, biais",OK,
+REQ-28,1 page,OK,1
+REQ-28,OIV / SIIV / périmètre / sectoriel distingués ; NIS 2 et RGPD non appliqués automatiquement,OK,
+REQ-28,"destinataire, délai, canal, contenu, incertitudes",OK,
+REQ-28,aucune déclaration réelle,OK,
+REQ-29,1 page,OK,1
+REQ-29,"TLP 2.0, catégories, restrictions, marquages réels",OK,
+REQ-29,TLP:CLEAR (et non WHITE) cité pour la version courante,OK,
+REQ-30,J1 : sections exigées,OK,[]
+REQ-30,J2 : sections exigées,OK,[]
+REQ-30,J3 : sections exigées,OK,[]
+REQ-30,J4 : sections exigées,OK,[]
+REQ-30,J5 : sections exigées,OK,[]
+REQ-30,5 journaux J1 à J5,OK,
+REQ-30,dates réelles d'exécution indiquées (2026-10-06),OK,
+REQ-31,support PDF 10 à 20 diapositives,OK,15
+REQ-31,≥ 15 questions-réponses préparées,OK,18
+REQ-31,plan : 20 min d'exposé et 10 min de questions,OK,
+REQ-31,"défense de l'attribution, limites, impacts, règles, choix techniques",OK,
+REQ-32,"8 compétences avec attente, preuve, fichier, contrôle, statut, manque",OK,8
+REQ-32,fichiers cités existent,OK,[]
+REQ-32,écoresponsabilité : aucune économie revendiquée sans mesure,OK,
+REQ-35,Tableau-de-bord.md présent et non vide,OK,
+REQ-35,Matrice-exigences.csv présent et non vide,OK,
+REQ-35,Journal-decisions.md présent et non vide,OK,
+REQ-35,Decisions-et-limites-finales.md présent et non vide,OK,
+REQ-35,Inventaire-infrastructure.md présent et non vide,OK,
+REQ-35,tableau de bord cohérent avec la matrice (nombre de satisfaits et total),OK,33/36

@@ -1,0 +1,23 @@
+title: Création d'un compte dont le nom finit par -temp
+id: 2c27583f-794a-5cf9-acda-03bcf7fb488d
+status: experimental
+description: 'Observé : 4720 pour svc-backup-temp sur dc-01. Qualification T1136.002 probable (compte de domaine à confirmer). [DET-011 | fondement
+  : DIRECTE | artefacts : ALERT-009, journal l.9]'
+references:
+- alerte ALERT-009
+author: Équipe CTI (challenge fictif Helios)
+date: '2026-10-06'
+tags:
+- attack.persistence
+- attack.t1136.002
+logsource:
+  product: windows
+  service: security
+detection:
+  sel:
+    EventID: 4720
+    TargetUserName|endswith: -temp
+  condition: sel
+falsepositives:
+- Comptes temporaires légitimes suivant la même convention de nommage
+level: medium

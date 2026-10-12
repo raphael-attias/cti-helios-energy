@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-07",
+ "approbation": "explicite (utilisateur)",
+ "rapport": "3ec91c0f-915b-4e1d-9cd9-c1c12c79f342",
+ "avant": {
+  "Rapport-tactique.pdf": {
+   "octets": 813014,
+   "sha256": "2e508c46c048b2f9873f80aeb136c14500bbc8c9e5061d55f395410ea6f0b76e"
+  },
+  "Rapport-strategique.pdf": {
+   "octets": 110835,
+   "sha256": "0a146691da68785e015fc5b50bddd44664216295209b15ceb6eec19e20f22b49"
+  }
+ },
+ "apres": {
+  "Rapport-tactique.pdf": {
+   "octets": 1031071,
+   "sha256": "3435f4cdc827d74eee315eabaae4b6fdf38738c3dc068a6773602d670643a15c"
+  },
+  "Rapport-strategique.pdf": {
+   "octets": 115709,
+   "sha256": "66b6f9ac160158a80ad638fef10c0bc53d9c1b30cd65bef6ff5f747772a9a786"
+  }
+ },
+ "archive_locale": "99-Historique/pieces-jointes-opencti-avant-remplacement/",
+ "retour_arriere": "re-téléverser les PDF archivés par octi_pdf_replace.py",
+ "second_passage": "le rapport tactique a été remplacé une seconde fois le 2026-10-07 (annexe du graphe pivotée, graphe corrigé) ; version intermédiaire archivée : Rapport-tactique-version-intermediaire-2026-10-07.pdf",
+ "troisieme_passage": {
+  "date": "2026-10-10",
+  "approbation": "explicite (utilisateur : plutôt du Markdown que du PDF)",
+  "apres": {
+   "Rapport-strategique.md": {
+    "octets": 7037,
+    "sha256": "021e09bf6f77d73476d7cfba0846d02bdf3fa0703e08bad9811011f287566b8a"
+   },
+   "Rapport-tactique.md": {
+    "octets": 40031,
+    "sha256": "91c1e726df6b77d960c28185281a6f9abb51e2ed62b15bd8b5ba57b03394e3ac"
+   }
+  },
+  "archives": "99-Historique/pieces-jointes-opencti-avant-remplacement/*-version-finale-2026-10-07-avant-md.pdf",
+  "retour_arriere": "re-téléverser les PDF archivés avec octi_pdf_replace.py",
+  "note": "publié deux fois le 2026-10-10 : la seconde après retrait de deux réserves devenues fausses dans le rapport tactique (tailles finales ci-dessus)"
+ }
+}

@@ -1,0 +1,193 @@
+{
+ "investigation": {
+  "id": "14c28507-2b09-48b8-9b36-c2dc2470d64a",
+  "name": "[CHALLENGE FICTIF] Helios Energy — Investigation CTI",
+  "type": "investigation",
+  "tags": [
+   "challenge:helios-fictif",
+   "INC-2026-0302",
+   "CTI",
+   "non-attribue"
+  ],
+  "description": "Investigation CTI sur l'intrusion INC-2026-0302 (victime fictive Helios Energy)....",
+  "currentUserAccessRight": "admin",
+  "authorizedMembers": [
+   {
+    "name": "admin",
+    "access_right": "admin"
+   }
+  ],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 86
+   }
+  },
+  "created_at": "2026-10-07T10:53:05.753Z",
+  "investigated_entities": 86
+ },
+ "RFI-01": {
+  "id": "57660434-e941-4661-a1bb-c0648076323c",
+  "name": "[CHALLENGE FICTIF] RFI-01 (investigation) Échantillons des trois binaires, ou confirmation que les fiches sont toute la fourniture",
+  "priority": "P2",
+  "severity": "medium",
+  "created_at": "2026-10-07T10:53:06.297Z",
+  "status": {
+   "template": {
+    "name": "NEW"
+   }
+  },
+  "createdBy": {
+   "name": "[CHALLENGE FICTIF] Équipe CTI"
+  },
+  "objectMarking": [
+   {
+    "definition": "TLP:RED"
+   }
+  ],
+  "objectLabel": [
+   {
+    "value": "challenge:helios-fictif"
+   }
+  ],
+  "objectAssignee": [],
+  "objectParticipant": [],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 5
+   }
+  },
+  "content_len": 1745
+ },
+ "RFI-02": {
+  "id": "c39f732d-816d-4592-891c-2c957b04ac41",
+  "name": "[CHALLENGE FICTIF] RFI-02 (investigation) Incohérences de dates, d'horloges et d'identifiants à lever",
+  "priority": "P2",
+  "severity": "medium",
+  "created_at": "2026-10-07T10:53:06.960Z",
+  "status": {
+   "template": {
+    "name": "NEW"
+   }
+  },
+  "createdBy": {
+   "name": "[CHALLENGE FICTIF] Équipe CTI"
+  },
+  "objectMarking": [
+   {
+    "definition": "TLP:RED"
+   }
+  ],
+  "objectLabel": [
+   {
+    "value": "challenge:helios-fictif"
+   }
+  ],
+  "objectAssignee": [],
+  "objectParticipant": [],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 8
+   }
+  },
+  "content_len": 2185
+ },
+ "RFI-03": {
+  "id": "825f847d-b693-4615-8da3-104d70dfd27d",
+  "name": "[CHALLENGE FICTIF] RFI-03 (investigation) Périmètre des actifs, SIIV concernés et conséquences métier",
+  "priority": "P3",
+  "severity": "medium",
+  "created_at": "2026-10-07T10:53:07.149Z",
+  "status": {
+   "template": {
+    "name": "NEW"
+   }
+  },
+  "createdBy": {
+   "name": "[CHALLENGE FICTIF] Équipe CTI"
+  },
+  "objectMarking": [
+   {
+    "definition": "TLP:RED"
+   }
+  ],
+  "objectLabel": [
+   {
+    "value": "challenge:helios-fictif"
+   }
+  ],
+  "objectAssignee": [],
+  "objectParticipant": [],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 6
+   }
+  },
+  "content_len": 1436
+ },
+ "RFI-04": {
+  "id": "5089e63a-9e6a-407e-919f-ed37e90d93a2",
+  "name": "[CHALLENGE FICTIF] RFI-04 (investigation) Éléments indépendants pour tester l'attribution",
+  "priority": "P3",
+  "severity": "low",
+  "created_at": "2026-10-07T10:53:07.549Z",
+  "status": {
+   "template": {
+    "name": "NEW"
+   }
+  },
+  "createdBy": {
+   "name": "[CHALLENGE FICTIF] Équipe CTI"
+  },
+  "objectMarking": [
+   {
+    "definition": "TLP:RED"
+   }
+  ],
+  "objectLabel": [
+   {
+    "value": "challenge:helios-fictif"
+   }
+  ],
+  "objectAssignee": [],
+  "objectParticipant": [],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 6
+   }
+  },
+  "content_len": 1560
+ },
+ "RFI-05": {
+  "id": "f3f59cfe-1c3d-4095-9a87-a3d8dbfad317",
+  "name": "[CHALLENGE FICTIF] RFI-05 (validation pédagogique) Définition de « objets liés » du bundle STIX et liste des exigences",
+  "priority": "P2",
+  "severity": "medium",
+  "created_at": "2026-10-07T10:53:07.737Z",
+  "status": {
+   "template": {
+    "name": "NEW"
+   }
+  },
+  "createdBy": {
+   "name": "[CHALLENGE FICTIF] Équipe CTI"
+  },
+  "objectMarking": [
+   {
+    "definition": "TLP:RED"
+   }
+  ],
+  "objectLabel": [
+   {
+    "value": "challenge:helios-fictif"
+   }
+  ],
+  "objectAssignee": [],
+  "objectParticipant": [],
+  "objects": {
+   "pageInfo": {
+    "globalCount": 2
+   }
+  },
+  "content_len": 1375
+ }
+}

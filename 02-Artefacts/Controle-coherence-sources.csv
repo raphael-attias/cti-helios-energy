@@ -1,0 +1,4 @@
+objet,categorie,constat_automatique
+ALERT-006,ordre_chrono,2026-03-03T10:13:00Z antérieure à une alerte qui la précède dans le fichier (2026-03-05T14:07:00Z) : l'alerte 5 est hors séquence alors que le LISEZ-MOI annonce l'ordre chronologique
+ALERT-007,ordre_chrono,2026-03-04T01:48:00Z antérieure à une alerte qui la précède dans le fichier (2026-03-05T14:07:00Z) : l'alerte 5 est hors séquence alors que le LISEZ-MOI annonce l'ordre chronologique
+ALERT-008,ordre_chrono,2026-03-04T11:05:00Z antérieure à une alerte qui la précède dans le fichier (2026-03-05T14:07:00Z) : l'alerte 5 est hors séquence alors que le LISEZ-MOI annonce l'ordre chronologique

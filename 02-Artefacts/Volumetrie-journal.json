@@ -1,0 +1,8 @@
+{
+  "lignes_total": 372,
+  "lignes_iso8601_Z": 12,
+  "lignes_syslog_sans_annee_ni_fuseau": 360,
+  "iso_vs_alertes": "12 lignes ISO pour 12 alertes",
+  "syslog_premiere": "Mar 02 02:12:00",
+  "syslog_derniere": "Mar 02 14:11:00"
+}
